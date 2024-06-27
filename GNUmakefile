@@ -17,7 +17,7 @@ DISPLAY = short
 DUNE = opam exec -- dune $1 --display $(DISPLAY)
 FREEBSDHOST = ocaml
 HOME_DESTDIR = ~
-DESTDIR = /opt/homebrew/Cellar/attc/0.0.6/bin
+DESTDIR = /usr
 PROJECT_ROOT = $(shell pwd)
 
 include $(LIB)/Makefile.gnumake
@@ -127,7 +127,7 @@ home-install: shell-copy opam-install
 install: shell-copy opam-install
 	eval $$(opam env)
 	@echo Installing to $(DESTDIR)/bin/attc...
-	cp $(shell opam var bin)/attc $(DESTDIR)/bin/attc
+	cp $(shell opam var bin)/attachment-converter $(DESTDIR)/bin/attc
 	ls -lh $(DESTDIR)/bin/attc
 	@echo Attachment Converter has been installed to $(DESTDIR)/bin/attc. 
 	@echo Please ensure that $(DESTDIR)/bin is on your path.
@@ -137,13 +137,11 @@ install: shell-copy opam-install
 
 brew-install: shell-copy opam-install
 	eval $$(opam env)
-	@echo Installing to $(DESTDIR)/attc...
-	cp $(shell opam var bin)/attc $(DESTDIR)/attc
-	ls -lh $(DESTDIR)/attc
-	@echo Attachment Converter has been installed to $(DESTDIR)/attc. 
+	@echo Installing to $(DESTDIR)/bin/attc...
+	cp $(shell opam var bin)/attc $(DESTDIR)/bin/attc
+	ls -lh $(DESTDIR)/bin/attc
+	@echo Attachment Converter has been installed to $(DESTDIR)/bin/attc. 
 	@echo Please ensure that $(DESTDIR)/bin is on your path.
-	@echo Please ensure that $(DESTDIR) is on your path.
 	cd $(PROJECT_ROOT)
-#	mv _build/default/main.exe $(DESTDIR)/attc
-	@echo Reached end of brew-install
+#	mv _build/default/main.exe $(DESTDIR)/bin/attc
 .PHONY: install
