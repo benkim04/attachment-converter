@@ -17,7 +17,7 @@ DISPLAY = short
 DUNE = opam exec -- dune $1 --display $(DISPLAY)
 FREEBSDHOST = ocaml
 HOME_DESTDIR = ~
-DESTDIR ?= /usr
+DESTDIR = /opt/homebrew/Cellar/attc/0.0.6/bin
 PROJECT_ROOT = $(shell pwd)
 
 include $(LIB)/Makefile.gnumake
