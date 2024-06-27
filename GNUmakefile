@@ -137,12 +137,9 @@ install: shell-copy opam-install
 .PHONY: install
 
 brew-install: shell-copy opam-install
-	eval $$(opam env)
-	@echo Installing to $(DESTDIR)/bin/attc...
-	cp $(shell opam var bin)/attc $(DESTDIR)/bin/attc
-	ls -lh $(DESTDIR)/bin/attc
-	@echo Attachment Converter has been installed to $(DESTDIR)/bin/attc. 
-	@echo Please ensure that $(DESTDIR)/bin is on your path.
+	@eval `opam env`
+	echo "Installing to $(HOME_DESTDIR)/bin/attc..."
+	cp $(shell opam var bin)/attc $(HOME_DESTDIR)/bin
 	cd $(PROJECT_ROOT)
-#	mv _build/default/main.exe $(DESTDIR)/bin/attc
+#	ls -lh $(HOME_DESTDIR)/bin/attc
 .PHONY: install
