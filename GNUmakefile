@@ -112,8 +112,7 @@ home-install: shell-copy opam-install
 	@eval `opam env`
 	echo "Installing to $(HOME_DESTDIR)/bin/attc..."
 	cp $(shell opam var bin)/attc $(HOME_DESTDIR)/bin
-	cd $(PROJECT_ROOT)
-#	ls -lh $(HOME_DESTDIR)/bin/attc
+	ls -lh $(HOME_DESTDIR)/bin/attc
 	echo
 	echo "Attachment Converter has been installed to $(HOME_DESTDIR)/bin/attc."
 	echo "Please ensure that $(HOME_DESTDIR)/bin is on your path."
@@ -141,5 +140,4 @@ brew-install: shell-copy opam-install
 	echo "Installing to $(HOME_DESTDIR)/bin/attc..."
 	cp $(shell opam var bin)/attc $(HOME_DESTDIR)/bin
 	cd $(PROJECT_ROOT)
-#	ls -lh $(HOME_DESTDIR)/bin/attc
-.PHONY: install
+.PHONY: brew-install
