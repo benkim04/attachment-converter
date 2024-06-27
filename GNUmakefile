@@ -17,7 +17,7 @@ DISPLAY = short
 DUNE = opam exec -- dune $1 --display $(DISPLAY)
 FREEBSDHOST = ocaml
 HOME_DESTDIR = ~
-DESTDIR = /usr
+DESTDIR = /opt/homebrew
 PROJECT_ROOT = $(shell pwd)
 
 include $(LIB)/Makefile.gnumake
