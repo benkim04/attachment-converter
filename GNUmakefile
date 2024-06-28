@@ -135,7 +135,18 @@ install: shell-copy opam-install
 	mv _build/default/main.exe $(DESTDIR)/bin/attc
 .PHONY: install
 
-brew-install: shell-copy opam-install
+# Homebrew specific targets
+brew-os-deps.maketrack: opam-deps.maketrack deps
+#	./os-install.sh libreoffice pandoc ghostscript gnumeric vips verapdf catdoc
+	touch os-deps.maketrack
+
+brew-shell-copy: brew-os-deps.maketrack
+	cd $(PROJECT_ROOT)
+	mkdir -p ~/.config/attachment-converter/scripts
+	cp $(wildcard conversion-scripts/*.sh) ~/.config/attachment-converter/scripts
+.PHONY: brew-shell-copy
+
+brew-install: brew-shell-copy opam-install
 	@eval `opam env`
 	echo "Installing to $(HOME_DESTDIR)/bin/attc..."
 	cp $(shell opam var bin)/attc $(HOME_DESTDIR)/bin
