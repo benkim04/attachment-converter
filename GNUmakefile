@@ -137,26 +137,15 @@ install: shell-copy opam-install
 
 # Homebrew specific targets
 brew-opam:
-#	./os-install.sh opam
 	opam init --yes --yes --disable-sandboxing
 .PHONY: brew-opam
 
-brew-mercurial: brew-opam
-#	./os-install.sh mercurial
-.PHONY: brew-mercurial
-
-cd-home:
-	cd $(PROJECT_ROOT)
-
-brew-opam-deps.maketrack: brew-mercurial cd-home deps	
+brew-opam-deps.maketrack: brew-opam cd-home deps	
 	eval $$(opam env)
 	touch opam-deps.maketrack
-
-brew-os-deps.maketrack: brew-opam-deps.maketrack deps
-#	./os-install.sh libreoffice pandoc ghostscript gnumeric vips verapdf catdoc
 	touch os-deps.maketrack
 
-brew-shell-copy: brew-os-deps.maketrack
+brew-shell-copy: brew-opam-deps.maketrack
 	cd $(PROJECT_ROOT)
 	mkdir -p ~/.config/attachment-converter/scripts
 	cp $(wildcard conversion-scripts/*.sh) ~/.config/attachment-converter/scripts
@@ -164,7 +153,7 @@ brew-shell-copy: brew-os-deps.maketrack
 
 brew-install: brew-shell-copy opam-install
 	@eval `opam env`
-	echo "Installing to $(HOME_DESTDIR)/bin/attc..."
+	@echo "Installing to $(HOME_DESTDIR)/bin/attc..."
 	cp $(shell opam var bin)/attc $(HOME_DESTDIR)/bin
 	cd $(PROJECT_ROOT)
 .PHONY: brew-install
