@@ -136,7 +136,23 @@ install: shell-copy opam-install
 .PHONY: install
 
 # Homebrew specific targets
-brew-os-deps.maketrack: opam-deps.maketrack deps
+brew-opam:
+#	./os-install.sh opam
+	opam init --yes --yes --disable-sandboxing
+.PHONY: brew-opam
+
+brew-mercurial: brew-opam
+#	./os-install.sh mercurial
+.PHONY: brew-mercurial
+
+cd-home:
+	cd $(PROJECT_ROOT)
+
+brew-opam-deps.maketrack: brew-mercurial cd-home deps	
+	eval $$(opam env)
+	touch opam-deps.maketrack
+
+brew-os-deps.maketrack: brew-opam-deps.maketrack deps
 #	./os-install.sh libreoffice pandoc ghostscript gnumeric vips verapdf catdoc
 	touch os-deps.maketrack
 
