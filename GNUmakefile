@@ -153,7 +153,7 @@ brew-shell-copy: brew-opam-deps.maketrack
 
 brew-install: brew-shell-copy opam-install
 	@eval `opam env`
-	@echo "Installing to $(HOME_DESTDIR)/bin/attc..."
-	cp $(shell opam var bin)/attc $(HOME_DESTDIR)/bin
+#	@echo "Installing to $(HOME_DESTDIR)/bin/attc..."
+#	cp $(shell opam var bin)/attc $(HOME_DESTDIR)/bin
 	cd $(PROJECT_ROOT)
 .PHONY: brew-install
