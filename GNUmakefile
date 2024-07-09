@@ -85,7 +85,7 @@ cd-home:
 deps::
 	eval $$(opam env)
 	opam repository add dldc https://dldc.lib.uchicago.edu/opam
-	opam install . --deps-only --yes
+	opam install ./dldc --deps-only --yes
 .PHONY: deps
 
 opam-deps.maketrack: mercurial cd-home deps	
@@ -140,7 +140,7 @@ brew-opam:
 	opam init --yes --yes --disable-sandboxing
 .PHONY: brew-opam
 
-brew-opam-deps.maketrack: brew-opam cd-home
+brew-opam-deps.maketrack: brew-opam cd-home deps
 	eval $$(opam env)
 	touch opam-deps.maketrack
 	touch os-deps.maketrack
