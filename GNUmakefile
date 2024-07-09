@@ -140,7 +140,7 @@ brew-opam:
 	opam init --yes --yes --disable-sandboxing
 .PHONY: brew-opam
 
-brew-opam-deps.maketrack: brew-opam cd-home deps	
+brew-opam-deps.maketrack: brew-opam cd-home
 	eval $$(opam env)
 	touch opam-deps.maketrack
 	touch os-deps.maketrack
