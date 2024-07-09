@@ -85,7 +85,8 @@ cd-home:
 deps::
 	eval $$(opam env)
 	opam repository add dldc https://dldc.lib.uchicago.edu/opam
-	opam install ./dldc --deps-only --yes
+	opam repository list --all
+	opam install ./dldc.opam --deps-only --yes
 .PHONY: deps
 
 opam-deps.maketrack: mercurial cd-home deps	
