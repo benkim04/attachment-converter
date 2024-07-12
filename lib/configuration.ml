@@ -112,7 +112,7 @@ module ConvUtil = struct
   let envoke ut = ut.envoke
 
   let default_script_dir () =
-    File.squiggle "/tmp/attachment-converter/scripts/"
+    File.squiggle "/usr/share/attachment-converter/scripts/"
 
   let script_call nm mt1 mt2 =
     let open Mime_type in

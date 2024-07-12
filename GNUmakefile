@@ -147,8 +147,8 @@ brew-opam-deps.maketrack: brew-opam cd-home deps
 
 brew-shell-copy: brew-opam-deps.maketrack
 	cd $(PROJECT_ROOT)
-	mkdir -p /usr/share/attachment-converter/scripts
-	cp $(wildcard conversion-scripts/*.sh) /usr/share/attachment-converter/scripts
+	mkdir -p /tmp/attachment-converter/scripts
+	cp $(wildcard conversion-scripts/*.sh) /tmp/attachment-converter/scripts
 .PHONY: brew-shell-copy
 
 brew-install: brew-shell-copy opam-install
