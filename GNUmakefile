@@ -132,7 +132,7 @@ install: shell-copy opam-install
 	@echo Attachment Converter has been installed to $(DESTDIR)/bin/attc. 
 	@echo Please ensure that $(DESTDIR)/bin is on your path.
 	cd $(PROJECT_ROOT)
-	mv _build/default/main.exe $(DESTDIR)/bin/attc
+#	mv _build/default/main.exe $(DESTDIR)/bin/attc
 .PHONY: install
 
 # Homebrew specific targets
