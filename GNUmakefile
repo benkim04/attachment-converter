@@ -127,8 +127,8 @@ home-install: shell-copy opam-install
 install: shell-copy opam-install
 	eval $$(opam env)
 	@echo Installing to $(DESTDIR)/bin/attc...
-	cp $(shell opam var bin)/attc $(DESTDIR)/bin/attc
-	ls -lh $(DESTDIR)/bin/attc
+#	cp $(shell opam var bin)/attc $(DESTDIR)/bin/attc
+#	ls -lh $(DESTDIR)/bin/attc
 	@echo Attachment Converter has been installed to $(DESTDIR)/bin/attc. 
 	@echo Please ensure that $(DESTDIR)/bin is on your path.
 	cd $(PROJECT_ROOT)
