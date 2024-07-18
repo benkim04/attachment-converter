@@ -56,7 +56,7 @@ doc::				## build documentation
 clean: $(SUBCLEANS)		## clean up build artifacts
 	eval $$(opam env)
 	$(call DUNE,clean)
-	rm $(wildcard *.maketrack)
+	rm -f $(wildcard *.maketrack)
 .PHONY: clean
 
 sandbox::
@@ -127,31 +127,31 @@ home-install: shell-copy opam-install
 install: shell-copy opam-install
 	eval $$(opam env)
 	@echo Installing to $(DESTDIR)/bin/attc...
-#	cp $(shell opam var bin)/attc $(DESTDIR)/bin/attc
-#	ls -lh $(DESTDIR)/bin/attc
+	cp $(shell opam var bin)/attachment-converter $(DESTDIR)/bin/attc
+	ls -lh $(DESTDIR)/bin/attc
 	@echo Attachment Converter has been installed to $(DESTDIR)/bin/attc. 
 	@echo Please ensure that $(DESTDIR)/bin is on your path.
 	cd $(PROJECT_ROOT)
-#	mv _build/default/main.exe $(DESTDIR)/bin/attc
+	mv _build/default/main.exe $(DESTDIR)/bin/attc
 .PHONY: install
 
-# Homebrew specific targets
-brew-opam:
+# Homebrew, ARCH, and Debian specific Targets
+pkg-opam:
 	opam init --yes --yes --disable-sandboxing
 .PHONY: brew-opam
 
-brew-opam-deps.maketrack: brew-opam cd-home deps
+pkg-opam-deps.maketrack: brew-opam cd-home deps
 	eval $$(opam env)
 	touch opam-deps.maketrack
 	touch os-deps.maketrack
 
-brew-shell-copy: brew-opam-deps.maketrack
+pkg-shell-copy: brew-opam-deps.maketrack
 	cd $(PROJECT_ROOT)
 	mkdir -p /tmp/attachment-converter/scripts
 	cp $(wildcard conversion-scripts/*.sh) /tmp/attachment-converter/scripts
 .PHONY: brew-shell-copy
 
-brew-install: brew-shell-copy opam-install
+pkg-install: brew-shell-copy opam-install
 	@eval `opam env`
 #	@echo "Installing to $(HOME_DESTDIR)/bin/attc..."
 #	cp $(shell opam var bin)/attc $(HOME_DESTDIR)/bin
