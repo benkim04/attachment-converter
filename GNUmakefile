@@ -145,18 +145,12 @@ pkg-opam-deps.maketrack: pkg-opam cd-home deps
 	touch opam-deps.maketrack
 	touch os-deps.maketrack
 
-pkg-shell-copy: pkg-opam-deps.maketrack
-	cd $(PROJECT_ROOT)
-	mkdir -p /tmp/attachment-converter/scripts
-	cp $(wildcard conversion-scripts/*.sh) /tmp/attachment-converter/scripts
-.PHONY: pkg-shell-copy
-
-pkgopam-install::
+pkg-opam-install::
 	eval $$(opam env)
 	$(call DUNE,build)
 .PHONY: pkg-opam-install
 
-pkg-install: pkg-shell-copy pkg-opam-install
+pkg-install: pkg-opam-deps.maketrack pkg-opam-install
 	@eval `opam env`
 #	@echo "Installing to $(HOME_DESTDIR)/bin/attc..."
 #	cp $(shell opam var bin)/attc $(HOME_DESTDIR)/bin
