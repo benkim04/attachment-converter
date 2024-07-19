@@ -1,0 +1,35 @@
+.TH ATTC 1 "July 2024" "0.1.16" "Attc manual"
+.SH NAME
+attc \- email attachment converter
+.SH DESCRIPTION
+Attachment Converter (attc) is a command-line tool for digital archivists. Given an email mailbox in MBOX format,  it will go through that mailbox and batch convert all the attachments it can into preservation formats, putting a converted copy of each attachment back into the email from which it originated. The user can then re-open the new mailbox in a mail user agent, such as Apple Mail, and browse through the mailbox the normal way. It is also possible to convert individual emails.
+.SH OPTIONS
+.TP
+.BI \-\-backend= BACKEND " (absent= " ocamlnet ")"
+Choose between 'ocamlnet' and 'mrmime' as the two possible email parsing backends.
+.TP
+.BI \-\-config= PATH
+Sets the absolute path \fBPATH\fR to be checked for a configuration file.
+.TP
+.B \-r , \-\-report
+Provides a list of all attachment types in a given mailbox.
+.TP
+.B \-\-report\-params
+Prints a list of all MIME types in the input along with all header and field parameters that go with it.
+.TP
+.B \-\-single\-email
+Converts email attachments assuming the input is a single plain text email.
+.SH "COMMON OPTIONS"
+.TP
+.BI \-\-help[= FMT ] " (default= " auto ")"
+Show this help in format \fBFMT\fR. The value \fBFMT\fR must be one of \fBauto\fR, \fBpager\fR, \fBgroff\fR, or \fBplain\fR. With \fBauto\fR, the format is \fBpager\fR or \fBplain\fR whenever the \fBTERM\fR environment variable is \fBdumb\fR or undefined.
+.SH "EXIT STATUS"
+attc exits with:
+.TP
+0   on success.
+.TP
+123 on indiscriminate errors reported on standard error.
+.TP
+124 on command line parsing errors.
+.TP
+125 on unexpected internal errors (bugs).
