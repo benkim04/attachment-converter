@@ -138,22 +138,27 @@ install: shell-copy opam-install
 # Homebrew, ARCH, and Debian specific Targets
 pkg-opam:
 	opam init --yes --yes --disable-sandboxing
-.PHONY: brew-opam
+.PHONY: pkg-opam
 
-pkg-opam-deps.maketrack: brew-opam cd-home deps
+pkg-opam-deps.maketrack: pkg-opam cd-home deps
 	eval $$(opam env)
 	touch opam-deps.maketrack
 	touch os-deps.maketrack
 
-pkg-shell-copy: brew-opam-deps.maketrack
+pkg-shell-copy: pkg-opam-deps.maketrack
 	cd $(PROJECT_ROOT)
 	mkdir -p /tmp/attachment-converter/scripts
 	cp $(wildcard conversion-scripts/*.sh) /tmp/attachment-converter/scripts
-.PHONY: brew-shell-copy
+.PHONY: pkg-shell-copy
 
-pkg-install: brew-shell-copy opam-install
+pkgopam-install::
+	eval $$(opam env)
+	$(call DUNE,build)
+.PHONY: pkg-opam-install
+
+pkg-install: pkg-shell-copy pkg-opam-install
 	@eval `opam env`
 #	@echo "Installing to $(HOME_DESTDIR)/bin/attc..."
 #	cp $(shell opam var bin)/attc $(HOME_DESTDIR)/bin
 	cd $(PROJECT_ROOT)
-.PHONY: brew-install
+.PHONY: pkg-install
