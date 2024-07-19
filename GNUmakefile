@@ -137,7 +137,7 @@ install: shell-copy opam-install
 
 # Homebrew, ARCH, and Debian specific Targets
 pkg-opam:
-	opam init --yes --yes --disable-sandboxing
+	opam init --yes --yes --disable-sandboxing -v
 .PHONY: pkg-opam
 
 pkg-opam-deps.maketrack: pkg-opam cd-home deps
