@@ -1,0 +1,7 @@
+version = "0.6"
+description = ""
+requires = "fmt"
+archive(byte) = "ke.cma"
+archive(native) = "ke.cmxa"
+plugin(byte) = "ke.cma"
+plugin(native) = "ke.cmxs"

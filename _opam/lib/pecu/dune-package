@@ -1,0 +1,33 @@
+(lang dune 3.16)
+(name pecu)
+(version 0.7)
+(sections (lib .) (libexec .) (doc ../../doc/pecu))
+(files
+ (lib
+  (META
+   dune-package
+   opam
+   pecu.a
+   pecu.cma
+   pecu.cmi
+   pecu.cmt
+   pecu.cmti
+   pecu.cmx
+   pecu.cmxa
+   pecu.ml
+   pecu.mli))
+ (libexec (pecu.cmxs))
+ (doc (CHANGES.md LICENSE.md README.md)))
+(library
+ (name pecu)
+ (kind normal)
+ (archives (byte pecu.cma) (native pecu.cmxa))
+ (plugins (byte pecu.cma) (native pecu.cmxs))
+ (native_archives pecu.a)
+ (main_module_name Pecu)
+ (modes byte native)
+ (modules
+  (singleton
+   (obj_name pecu)
+   (visibility public)
+   (source (path Pecu) (intf (path pecu.mli)) (impl (path pecu.ml))))))

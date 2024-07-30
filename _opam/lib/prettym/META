@@ -1,0 +1,7 @@
+version = "0.0.3"
+description = ""
+requires = "bigarray-overlap bigstringaf fmt ke"
+archive(byte) = "prettym.cma"
+archive(native) = "prettym.cmxa"
+plugin(byte) = "prettym.cma"
+plugin(native) = "prettym.cmxs"

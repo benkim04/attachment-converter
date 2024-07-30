@@ -1,0 +1,743 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Netsys_global.html">
+<link rel="next" href="Nettls_nettle_bindings.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of extensions" rel=Appendix href="index_extensions.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of class attributes" rel=Appendix href="index_attributes.html">
+<link title="Index of class methods" rel=Appendix href="index_methods.html">
+<link title="Index of classes" rel=Appendix href="index_classes.html">
+<link title="Index of class types" rel=Appendix href="index_class_types.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Uq_gtk" rel="Chapter" href="Uq_gtk.html">
+<link title="Uq_tcl" rel="Chapter" href="Uq_tcl.html">
+<link title="Equeue" rel="Chapter" href="Equeue.html">
+<link title="Unixqueue" rel="Chapter" href="Unixqueue.html">
+<link title="Unixqueue_pollset" rel="Chapter" href="Unixqueue_pollset.html">
+<link title="Unixqueue_select" rel="Chapter" href="Unixqueue_select.html">
+<link title="Uq_resolver" rel="Chapter" href="Uq_resolver.html">
+<link title="Uq_engines" rel="Chapter" href="Uq_engines.html">
+<link title="Uq_multiplex" rel="Chapter" href="Uq_multiplex.html">
+<link title="Uq_transfer" rel="Chapter" href="Uq_transfer.html">
+<link title="Uq_socks5" rel="Chapter" href="Uq_socks5.html">
+<link title="Uq_io" rel="Chapter" href="Uq_io.html">
+<link title="Uq_lwt" rel="Chapter" href="Uq_lwt.html">
+<link title="Uq_libevent" rel="Chapter" href="Uq_libevent.html">
+<link title="Uq_mt" rel="Chapter" href="Uq_mt.html">
+<link title="Uq_client" rel="Chapter" href="Uq_client.html">
+<link title="Uq_server" rel="Chapter" href="Uq_server.html">
+<link title="Uq_datagram" rel="Chapter" href="Uq_datagram.html">
+<link title="Uq_engines_compat" rel="Chapter" href="Uq_engines_compat.html">
+<link title="Equeue_intro" rel="Chapter" href="Equeue_intro.html">
+<link title="Equeue_howto" rel="Chapter" href="Equeue_howto.html">
+<link title="Netcamlbox" rel="Chapter" href="Netcamlbox.html">
+<link title="Netcgi_apache" rel="Chapter" href="Netcgi_apache.html">
+<link title="Netcgi_modtpl" rel="Chapter" href="Netcgi_modtpl.html">
+<link title="Netcgi_plex" rel="Chapter" href="Netcgi_plex.html">
+<link title="Netcgi_common" rel="Chapter" href="Netcgi_common.html">
+<link title="Netcgi" rel="Chapter" href="Netcgi.html">
+<link title="Netcgi_ajp" rel="Chapter" href="Netcgi_ajp.html">
+<link title="Netcgi_scgi" rel="Chapter" href="Netcgi_scgi.html">
+<link title="Netcgi_cgi" rel="Chapter" href="Netcgi_cgi.html">
+<link title="Netcgi_fcgi" rel="Chapter" href="Netcgi_fcgi.html">
+<link title="Netcgi_dbi" rel="Chapter" href="Netcgi_dbi.html">
+<link title="Netcgi1_compat" rel="Chapter" href="Netcgi1_compat.html">
+<link title="Netcgi_test" rel="Chapter" href="Netcgi_test.html">
+<link title="Netcgi_porting" rel="Chapter" href="Netcgi_porting.html">
+<link title="Nethttp_client_conncache" rel="Chapter" href="Nethttp_client_conncache.html">
+<link title="Nethttp_client" rel="Chapter" href="Nethttp_client.html">
+<link title="Nettelnet_client" rel="Chapter" href="Nettelnet_client.html">
+<link title="Netftp_data_endpoint" rel="Chapter" href="Netftp_data_endpoint.html">
+<link title="Netftp_client" rel="Chapter" href="Netftp_client.html">
+<link title="Nethttp_fs" rel="Chapter" href="Nethttp_fs.html">
+<link title="Netftp_fs" rel="Chapter" href="Netftp_fs.html">
+<link title="Netsmtp" rel="Chapter" href="Netsmtp.html">
+<link title="Netpop" rel="Chapter" href="Netpop.html">
+<link title="Netldap" rel="Chapter" href="Netldap.html">
+<link title="Netclient_tut" rel="Chapter" href="Netclient_tut.html">
+<link title="Netgss_bindings" rel="Chapter" href="Netgss_bindings.html">
+<link title="Netgss" rel="Chapter" href="Netgss.html">
+<link title="Nethttpd_types" rel="Chapter" href="Nethttpd_types.html">
+<link title="Nethttpd_kernel" rel="Chapter" href="Nethttpd_kernel.html">
+<link title="Nethttpd_reactor" rel="Chapter" href="Nethttpd_reactor.html">
+<link title="Nethttpd_engine" rel="Chapter" href="Nethttpd_engine.html">
+<link title="Nethttpd_services" rel="Chapter" href="Nethttpd_services.html">
+<link title="Nethttpd_plex" rel="Chapter" href="Nethttpd_plex.html">
+<link title="Nethttpd_util" rel="Chapter" href="Nethttpd_util.html">
+<link title="Nethttpd_intro" rel="Chapter" href="Nethttpd_intro.html">
+<link title="Netmcore" rel="Chapter" href="Netmcore.html">
+<link title="Netmcore_camlbox" rel="Chapter" href="Netmcore_camlbox.html">
+<link title="Netmcore_mempool" rel="Chapter" href="Netmcore_mempool.html">
+<link title="Netmcore_heap" rel="Chapter" href="Netmcore_heap.html">
+<link title="Netmcore_ref" rel="Chapter" href="Netmcore_ref.html">
+<link title="Netmcore_array" rel="Chapter" href="Netmcore_array.html">
+<link title="Netmcore_sem" rel="Chapter" href="Netmcore_sem.html">
+<link title="Netmcore_mutex" rel="Chapter" href="Netmcore_mutex.html">
+<link title="Netmcore_condition" rel="Chapter" href="Netmcore_condition.html">
+<link title="Netmcore_queue" rel="Chapter" href="Netmcore_queue.html">
+<link title="Netmcore_buffer" rel="Chapter" href="Netmcore_buffer.html">
+<link title="Netmcore_matrix" rel="Chapter" href="Netmcore_matrix.html">
+<link title="Netmcore_hashtbl" rel="Chapter" href="Netmcore_hashtbl.html">
+<link title="Netmcore_process" rel="Chapter" href="Netmcore_process.html">
+<link title="Netmcore_tut" rel="Chapter" href="Netmcore_tut.html">
+<link title="Netmcore_basics" rel="Chapter" href="Netmcore_basics.html">
+<link title="Netplex_types" rel="Chapter" href="Netplex_types.html">
+<link title="Netplex_mp" rel="Chapter" href="Netplex_mp.html">
+<link title="Netplex_mt" rel="Chapter" href="Netplex_mt.html">
+<link title="Netplex_log" rel="Chapter" href="Netplex_log.html">
+<link title="Netplex_controller" rel="Chapter" href="Netplex_controller.html">
+<link title="Netplex_container" rel="Chapter" href="Netplex_container.html">
+<link title="Netplex_sockserv" rel="Chapter" href="Netplex_sockserv.html">
+<link title="Netplex_workload" rel="Chapter" href="Netplex_workload.html">
+<link title="Netplex_main" rel="Chapter" href="Netplex_main.html">
+<link title="Netplex_config" rel="Chapter" href="Netplex_config.html">
+<link title="Netplex_kit" rel="Chapter" href="Netplex_kit.html">
+<link title="Rpc_netplex" rel="Chapter" href="Rpc_netplex.html">
+<link title="Netplex_cenv" rel="Chapter" href="Netplex_cenv.html">
+<link title="Netplex_semaphore" rel="Chapter" href="Netplex_semaphore.html">
+<link title="Netplex_sharedvar" rel="Chapter" href="Netplex_sharedvar.html">
+<link title="Netplex_mutex" rel="Chapter" href="Netplex_mutex.html">
+<link title="Netplex_encap" rel="Chapter" href="Netplex_encap.html">
+<link title="Netplex_mbox" rel="Chapter" href="Netplex_mbox.html">
+<link title="Netplex_internal" rel="Chapter" href="Netplex_internal.html">
+<link title="Netplex_intro" rel="Chapter" href="Netplex_intro.html">
+<link title="Netplex_advanced" rel="Chapter" href="Netplex_advanced.html">
+<link title="Netplex_admin" rel="Chapter" href="Netplex_admin.html">
+<link title="Netshm" rel="Chapter" href="Netshm.html">
+<link title="Netshm_data" rel="Chapter" href="Netshm_data.html">
+<link title="Netshm_hashtbl" rel="Chapter" href="Netshm_hashtbl.html">
+<link title="Netshm_array" rel="Chapter" href="Netshm_array.html">
+<link title="Netshm_intro" rel="Chapter" href="Netshm_intro.html">
+<link title="Netstring_pcre" rel="Chapter" href="Netstring_pcre.html">
+<link title="Netconversion" rel="Chapter" href="Netconversion.html">
+<link title="Netchannels" rel="Chapter" href="Netchannels.html">
+<link title="Netstream" rel="Chapter" href="Netstream.html">
+<link title="Netmime_string" rel="Chapter" href="Netmime_string.html">
+<link title="Netmime" rel="Chapter" href="Netmime.html">
+<link title="Netsendmail" rel="Chapter" href="Netsendmail.html">
+<link title="Neturl" rel="Chapter" href="Neturl.html">
+<link title="Netaddress" rel="Chapter" href="Netaddress.html">
+<link title="Netbuffer" rel="Chapter" href="Netbuffer.html">
+<link title="Netmime_header" rel="Chapter" href="Netmime_header.html">
+<link title="Netmime_channels" rel="Chapter" href="Netmime_channels.html">
+<link title="Neturl_ldap" rel="Chapter" href="Neturl_ldap.html">
+<link title="Netdate" rel="Chapter" href="Netdate.html">
+<link title="Netencoding" rel="Chapter" href="Netencoding.html">
+<link title="Netulex" rel="Chapter" href="Netulex.html">
+<link title="Netaccel" rel="Chapter" href="Netaccel.html">
+<link title="Netaccel_link" rel="Chapter" href="Netaccel_link.html">
+<link title="Nethtml" rel="Chapter" href="Nethtml.html">
+<link title="Netstring_str" rel="Chapter" href="Netstring_str.html">
+<link title="Netmappings" rel="Chapter" href="Netmappings.html">
+<link title="Netaux" rel="Chapter" href="Netaux.html">
+<link title="Nethttp" rel="Chapter" href="Nethttp.html">
+<link title="Netpagebuffer" rel="Chapter" href="Netpagebuffer.html">
+<link title="Netfs" rel="Chapter" href="Netfs.html">
+<link title="Netglob" rel="Chapter" href="Netglob.html">
+<link title="Netauth" rel="Chapter" href="Netauth.html">
+<link title="Netsockaddr" rel="Chapter" href="Netsockaddr.html">
+<link title="Netnumber" rel="Chapter" href="Netnumber.html">
+<link title="Netxdr_mstring" rel="Chapter" href="Netxdr_mstring.html">
+<link title="Netxdr" rel="Chapter" href="Netxdr.html">
+<link title="Netcompression" rel="Chapter" href="Netcompression.html">
+<link title="Netunichar" rel="Chapter" href="Netunichar.html">
+<link title="Netasn1" rel="Chapter" href="Netasn1.html">
+<link title="Netasn1_encode" rel="Chapter" href="Netasn1_encode.html">
+<link title="Netoid" rel="Chapter" href="Netoid.html">
+<link title="Netstring_tstring" rel="Chapter" href="Netstring_tstring.html">
+<link title="Netdn" rel="Chapter" href="Netdn.html">
+<link title="Netx509" rel="Chapter" href="Netx509.html">
+<link title="Netascii_armor" rel="Chapter" href="Netascii_armor.html">
+<link title="Nettls_support" rel="Chapter" href="Nettls_support.html">
+<link title="Netmech_scram" rel="Chapter" href="Netmech_scram.html">
+<link title="Netmech_scram_gssapi" rel="Chapter" href="Netmech_scram_gssapi.html">
+<link title="Netmech_scram_sasl" rel="Chapter" href="Netmech_scram_sasl.html">
+<link title="Netmech_scram_http" rel="Chapter" href="Netmech_scram_http.html">
+<link title="Netgssapi_support" rel="Chapter" href="Netgssapi_support.html">
+<link title="Netgssapi_auth" rel="Chapter" href="Netgssapi_auth.html">
+<link title="Netchannels_crypto" rel="Chapter" href="Netchannels_crypto.html">
+<link title="Netx509_pubkey" rel="Chapter" href="Netx509_pubkey.html">
+<link title="Netx509_pubkey_crypto" rel="Chapter" href="Netx509_pubkey_crypto.html">
+<link title="Netsaslprep" rel="Chapter" href="Netsaslprep.html">
+<link title="Netmech_plain_sasl" rel="Chapter" href="Netmech_plain_sasl.html">
+<link title="Netmech_crammd5_sasl" rel="Chapter" href="Netmech_crammd5_sasl.html">
+<link title="Netmech_digest_sasl" rel="Chapter" href="Netmech_digest_sasl.html">
+<link title="Netmech_digest_http" rel="Chapter" href="Netmech_digest_http.html">
+<link title="Netmech_krb5_sasl" rel="Chapter" href="Netmech_krb5_sasl.html">
+<link title="Netmech_gs2_sasl" rel="Chapter" href="Netmech_gs2_sasl.html">
+<link title="Netmech_spnego_http" rel="Chapter" href="Netmech_spnego_http.html">
+<link title="Netchannels_tut" rel="Chapter" href="Netchannels_tut.html">
+<link title="Netmime_tut" rel="Chapter" href="Netmime_tut.html">
+<link title="Netsendmail_tut" rel="Chapter" href="Netsendmail_tut.html">
+<link title="Netulex_tut" rel="Chapter" href="Netulex_tut.html">
+<link title="Neturl_tut" rel="Chapter" href="Neturl_tut.html">
+<link title="Netsys" rel="Chapter" href="Netsys.html">
+<link title="Netsys_posix" rel="Chapter" href="Netsys_posix.html">
+<link title="Netsys_pollset" rel="Chapter" href="Netsys_pollset.html">
+<link title="Netlog" rel="Chapter" href="Netlog.html">
+<link title="Netexn" rel="Chapter" href="Netexn.html">
+<link title="Netsys_win32" rel="Chapter" href="Netsys_win32.html">
+<link title="Netsys_pollset_posix" rel="Chapter" href="Netsys_pollset_posix.html">
+<link title="Netsys_pollset_win32" rel="Chapter" href="Netsys_pollset_win32.html">
+<link title="Netsys_pollset_generic" rel="Chapter" href="Netsys_pollset_generic.html">
+<link title="Netsys_signal" rel="Chapter" href="Netsys_signal.html">
+<link title="Netsys_oothr" rel="Chapter" href="Netsys_oothr.html">
+<link title="Netsys_xdr" rel="Chapter" href="Netsys_xdr.html">
+<link title="Netsys_rng" rel="Chapter" href="Netsys_rng.html">
+<link title="Netsys_crypto_types" rel="Chapter" href="Netsys_crypto_types.html">
+<link title="Netsys_types" rel="Chapter" href="Netsys_types.html">
+<link title="Netsys_mem" rel="Chapter" href="Netsys_mem.html">
+<link title="Netsys_tmp" rel="Chapter" href="Netsys_tmp.html">
+<link title="Netsys_sem" rel="Chapter" href="Netsys_sem.html">
+<link title="Netsys_pmanage" rel="Chapter" href="Netsys_pmanage.html">
+<link title="Netsys_crypto" rel="Chapter" href="Netsys_crypto.html">
+<link title="Netsys_tls" rel="Chapter" href="Netsys_tls.html">
+<link title="Netsys_ciphers" rel="Chapter" href="Netsys_ciphers.html">
+<link title="Netsys_digests" rel="Chapter" href="Netsys_digests.html">
+<link title="Netsys_crypto_modes" rel="Chapter" href="Netsys_crypto_modes.html">
+<link title="Netsys_gssapi" rel="Chapter" href="Netsys_gssapi.html">
+<link title="Netsys_sasl_types" rel="Chapter" href="Netsys_sasl_types.html">
+<link title="Netsys_sasl" rel="Chapter" href="Netsys_sasl.html">
+<link title="Netsys_polypipe" rel="Chapter" href="Netsys_polypipe.html">
+<link title="Netsys_polysocket" rel="Chapter" href="Netsys_polysocket.html">
+<link title="Netsys_global" rel="Chapter" href="Netsys_global.html">
+<link title="Nettls_gnutls_bindings" rel="Chapter" href="Nettls_gnutls_bindings.html">
+<link title="Nettls_nettle_bindings" rel="Chapter" href="Nettls_nettle_bindings.html">
+<link title="Nettls_gnutls" rel="Chapter" href="Nettls_gnutls.html">
+<link title="Netunidata" rel="Chapter" href="Netunidata.html">
+<link title="Netgzip" rel="Chapter" href="Netgzip.html">
+<link title="Rpc_auth_local" rel="Chapter" href="Rpc_auth_local.html">
+<link title="Rpc_xti_client" rel="Chapter" href="Rpc_xti_client.html">
+<link title="Rpc" rel="Chapter" href="Rpc.html">
+<link title="Rpc_program" rel="Chapter" href="Rpc_program.html">
+<link title="Rpc_util" rel="Chapter" href="Rpc_util.html">
+<link title="Rpc_portmapper_aux" rel="Chapter" href="Rpc_portmapper_aux.html">
+<link title="Rpc_packer" rel="Chapter" href="Rpc_packer.html">
+<link title="Rpc_transport" rel="Chapter" href="Rpc_transport.html">
+<link title="Rpc_client" rel="Chapter" href="Rpc_client.html">
+<link title="Rpc_simple_client" rel="Chapter" href="Rpc_simple_client.html">
+<link title="Rpc_portmapper_clnt" rel="Chapter" href="Rpc_portmapper_clnt.html">
+<link title="Rpc_portmapper" rel="Chapter" href="Rpc_portmapper.html">
+<link title="Rpc_server" rel="Chapter" href="Rpc_server.html">
+<link title="Rpc_auth_sys" rel="Chapter" href="Rpc_auth_sys.html">
+<link title="Rpc_auth_gssapi" rel="Chapter" href="Rpc_auth_gssapi.html">
+<link title="Rpc_proxy" rel="Chapter" href="Rpc_proxy.html">
+<link title="Rpc_intro" rel="Chapter" href="Rpc_intro.html">
+<link title="Rpc_mapping_ref" rel="Chapter" href="Rpc_mapping_ref.html">
+<link title="Rpc_intro_gss" rel="Chapter" href="Rpc_intro_gss.html">
+<link title="Shell_sys" rel="Chapter" href="Shell_sys.html">
+<link title="Shell" rel="Chapter" href="Shell.html">
+<link title="Shell_uq" rel="Chapter" href="Shell_uq.html">
+<link title="Shell_fs" rel="Chapter" href="Shell_fs.html">
+<link title="Shell_intro" rel="Chapter" href="Shell_intro.html">
+<link title="Intro" rel="Chapter" href="Intro.html">
+<link title="Platform" rel="Chapter" href="Platform.html">
+<link title="Foreword" rel="Chapter" href="Foreword.html">
+<link title="Ipv6" rel="Chapter" href="Ipv6.html">
+<link title="Regexp" rel="Chapter" href="Regexp.html">
+<link title="Tls" rel="Chapter" href="Tls.html">
+<link title="Crypto" rel="Chapter" href="Crypto.html">
+<link title="Authentication" rel="Chapter" href="Authentication.html">
+<link title="Credentials" rel="Chapter" href="Credentials.html">
+<link title="Gssapi" rel="Chapter" href="Gssapi.html">
+<link title="Ocamlnet4" rel="Chapter" href="Ocamlnet4.html">
+<link title="Get" rel="Chapter" href="Get.html"><title>Ocamlnet 4 Reference Manual : Nettls_gnutls_bindings</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Netsys_global.html" title="Netsys_global">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Nettls_nettle_bindings.html" title="Nettls_nettle_bindings">Next</a>
+</div>
+<h1>Module <a href="type_Nettls_gnutls_bindings.html">Nettls_gnutls_bindings</a></h1>
+
+<pre><span id="MODULENettls_gnutls_bindings"><span class="keyword">module</span> Nettls_gnutls_bindings</span>: <code class="code">sig</code> <a href="Nettls_gnutls_bindings.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p>Bindings of a C library</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><span id="TYPEgnutls_cipher_algorithm_t"><span class="keyword">type</span> <code class="type"></code>gnutls_cipher_algorithm_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_kx_algorithm_t"><span class="keyword">type</span> <code class="type"></code>gnutls_kx_algorithm_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_mac_algorithm_t"><span class="keyword">type</span> <code class="type"></code>gnutls_mac_algorithm_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_compression_method_t"><span class="keyword">type</span> <code class="type"></code>gnutls_compression_method_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_pk_algorithm_t"><span class="keyword">type</span> <code class="type"></code>gnutls_pk_algorithm_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_sign_algorithm_t"><span class="keyword">type</span> <code class="type"></code>gnutls_sign_algorithm_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_certificate_type_t"><span class="keyword">type</span> <code class="type"></code>gnutls_certificate_type_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_digest_algorithm_t"><span class="keyword">type</span> <code class="type"></code>gnutls_digest_algorithm_t</span> = <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_mac_algorithm_t">gnutls_mac_algorithm_t</a></code> </pre>
+
+
+<pre><span id="TYPEgnutls_session_t"><span class="keyword">type</span> <code class="type"></code>gnutls_session_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_dh_params_t"><span class="keyword">type</span> <code class="type"></code>gnutls_dh_params_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_priority_t"><span class="keyword">type</span> <code class="type"></code>gnutls_priority_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_cipher_hd_t"><span class="keyword">type</span> <code class="type"></code>gnutls_cipher_hd_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_x509_privkey_t"><span class="keyword">type</span> <code class="type"></code>gnutls_x509_privkey_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_x509_crl_t"><span class="keyword">type</span> <code class="type"></code>gnutls_x509_crl_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_x509_crt_t"><span class="keyword">type</span> <code class="type"></code>gnutls_x509_crt_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_certificate_credentials_t"><span class="keyword">type</span> <code class="type"></code>gnutls_certificate_credentials_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_anon_server_credentials_t"><span class="keyword">type</span> <code class="type"></code>gnutls_anon_server_credentials_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_anon_client_credentials_t"><span class="keyword">type</span> <code class="type"></code>gnutls_anon_client_credentials_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_srp_server_credentials_t"><span class="keyword">type</span> <code class="type"></code>gnutls_srp_server_credentials_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_srp_client_credentials_t"><span class="keyword">type</span> <code class="type"></code>gnutls_srp_client_credentials_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_psk_server_credentials_t"><span class="keyword">type</span> <code class="type"></code>gnutls_psk_server_credentials_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_psk_client_credentials_t"><span class="keyword">type</span> <code class="type"></code>gnutls_psk_client_credentials_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_pubkey_t"><span class="keyword">type</span> <code class="type"></code>gnutls_pubkey_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_privkey_t"><span class="keyword">type</span> <code class="type"></code>gnutls_privkey_t</span> </pre>
+
+
+<pre><span id="TYPEgnutls_params_type_t"><span class="keyword">type</span> <code class="type"></code>gnutls_params_type_t</span> = <code class="type">[ `Dh | `Ecdh | `Rsa_export ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_credentials_type_t"><span class="keyword">type</span> <code class="type"></code>gnutls_credentials_type_t</span> = <code class="type">[ `Anon | `Certificate | `Ia | `Psk | `Srp ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_alert_level_t"><span class="keyword">type</span> <code class="type"></code>gnutls_alert_level_t</span> = <code class="type">[ `Fatal | `Warning ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_alert_description_t"><span class="keyword">type</span> <code class="type"></code>gnutls_alert_description_t</span> = <code class="type">[ `Access_denied<br>       | `Bad_certificate<br>       | `Bad_record_mac<br>       | `Certificate_expired<br>       | `Certificate_revoked<br>       | `Certificate_unknown<br>       | `Certificate_unobtainable<br>       | `Close_notify<br>       | `Decode_error<br>       | `Decompression_failure<br>       | `Decrypt_error<br>       | `Decryption_failed<br>       | `Export_restriction<br>       | `Handshake_failure<br>       | `Illegal_parameter<br>       | `Inner_application_failure<br>       | `Inner_application_verification<br>       | `Insufficient_security<br>       | `Internal_error<br>       | `No_application_protocol<br>       | `No_renegotiation<br>       | `Protocol_version<br>       | `Record_overflow<br>       | `Ssl3_no_certificate<br>       | `Unexpected_message<br>       | `Unknown_ca<br>       | `Unknown_psk_identity<br>       | `Unrecognized_name<br>       | `Unsupported_certificate<br>       | `Unsupported_extension<br>       | `User_canceled ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_handshake_description_t"><span class="keyword">type</span> <code class="type"></code>gnutls_handshake_description_t</span> = <code class="type">[ `Certificate_pkt<br>       | `Certificate_request<br>       | `Certificate_verify<br>       | `Change_cipher_spec<br>       | `Client_hello<br>       | `Client_hello_v2<br>       | `Client_key_exchange<br>       | `Finished<br>       | `Hello_request<br>       | `Hello_verify_request<br>       | `New_session_ticket<br>       | `Server_hello<br>       | `Server_hello_done<br>       | `Server_key_exchange<br>       | `Supplemental ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_certificate_status_t_flag"><span class="keyword">type</span> <code class="type"></code>gnutls_certificate_status_t_flag</span> = <code class="type">[ `Expired<br>       | `Insecure_algorithm<br>       | `Invalid<br>       | `Mismatch<br>       | `Not_activated<br>       | `Purpose_mismatch<br>       | `Revocation_data_issued_in_future<br>       | `Revocation_data_superseded<br>       | `Revoked<br>       | `Signature_failure<br>       | `Signer_constraints_failure<br>       | `Signer_not_ca<br>       | `Signer_not_found<br>       | `Unexpected_owner ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_certificate_status_t"><span class="keyword">type</span> <code class="type"></code>gnutls_certificate_status_t</span> = <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_status_t_flag">gnutls_certificate_status_t_flag</a> list</code> </pre>
+
+
+<pre><span id="TYPEgnutls_certificate_request_t"><span class="keyword">type</span> <code class="type"></code>gnutls_certificate_request_t</span> = <code class="type">[ `Ignore | `Request | `Require ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_certificate_verify_flags_flag"><span class="keyword">type</span> <code class="type"></code>gnutls_certificate_verify_flags_flag</span> = <code class="type">[ `Allow_any_x509_v1_ca_crt<br>       | `Allow_sign_rsa_md2<br>       | `Allow_sign_rsa_md5<br>       | `Allow_x509_v1_ca_crt<br>       | `Disable_ca_sign<br>       | `Disable_crl_checks<br>       | `Disable_time_checks<br>       | `Disable_trusted_time_checks<br>       | `Do_not_allow_same<br>       | `Do_not_allow_x509_v1_ca_crt ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_certificate_verify_flags"><span class="keyword">type</span> <code class="type"></code>gnutls_certificate_verify_flags</span> = <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_verify_flags_flag">gnutls_certificate_verify_flags_flag</a> list</code> </pre>
+
+
+<pre><span id="TYPEgnutls_close_request_t"><span class="keyword">type</span> <code class="type"></code>gnutls_close_request_t</span> = <code class="type">[ `Rdwr | `Wr ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_protocol_t"><span class="keyword">type</span> <code class="type"></code>gnutls_protocol_t</span> = <code class="type">[ `Dtls0_9<br>       | `Dtls1_0<br>       | `Dtls1_2<br>       | `Ssl3<br>       | `Tls1_0<br>       | `Tls1_1<br>       | `Tls1_2<br>       | `Version_unknown ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_x509_crt_fmt_t"><span class="keyword">type</span> <code class="type"></code>gnutls_x509_crt_fmt_t</span> = <code class="type">[ `Der | `Pem ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_certificate_print_formats_t"><span class="keyword">type</span> <code class="type"></code>gnutls_certificate_print_formats_t</span> = <code class="type">[ `Compact | `Full | `Full_numbers | `Oneline | `Unsigned_full ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_ecc_curve_t"><span class="keyword">type</span> <code class="type"></code>gnutls_ecc_curve_t</span> = <code class="type">[ `Invalid | `Secp192r1 | `Secp224r1 | `Secp256r1 | `Secp384r1 | `Secp521r1 ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_sec_param_t"><span class="keyword">type</span> <code class="type"></code>gnutls_sec_param_t</span> = <code class="type">[ `Export<br>       | `High<br>       | `Insecure<br>       | `Legacy<br>       | `Low<br>       | `Normal<br>       | `Ultra<br>       | `Unknown<br>       | `Very_weak<br>       | `Weak ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_init_flags_flag"><span class="keyword">type</span> <code class="type"></code>gnutls_init_flags_flag</span> = <code class="type">[ `Client<br>       | `Datagram<br>       | `No_extensions<br>       | `No_replay_protection<br>       | `Nonblock<br>       | `Server ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_init_flags"><span class="keyword">type</span> <code class="type"></code>gnutls_init_flags</span> = <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_init_flags_flag">gnutls_init_flags_flag</a> list</code> </pre>
+
+
+<pre><span id="TYPEgnutls_server_name_type_t"><span class="keyword">type</span> <code class="type"></code>gnutls_server_name_type_t</span> = <code class="type">[ `Dns ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_supplemental_data_format_type_t"><span class="keyword">type</span> <code class="type"></code>gnutls_supplemental_data_format_type_t</span> = <code class="type">[ `Unknown ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_psk_key_flags"><span class="keyword">type</span> <code class="type"></code>gnutls_psk_key_flags</span> = <code class="type">[ `Hex | `Raw ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_x509_subject_alt_name_t"><span class="keyword">type</span> <code class="type"></code>gnutls_x509_subject_alt_name_t</span> = <code class="type">[ `Dn<br>       | `Dnsname<br>       | `Ipaddress<br>       | `Othername<br>       | `Othername_xmpp<br>       | `Rfc822name<br>       | `Uri ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_privkey_type_t"><span class="keyword">type</span> <code class="type"></code>gnutls_privkey_type_t</span> = <code class="type">[ `Ext | `Openpgp | `Pkcs11 | `X509 ]</code> </pre>
+
+
+<pre><span id="TYPEkey_usage_flag"><span class="keyword">type</span> <code class="type"></code>key_usage_flag</span> = <code class="type">[ `Crl_sign<br>       | `Data_encipherment<br>       | `Decipher_only<br>       | `Digital_signature<br>       | `Encipher_only<br>       | `Key_agreement<br>       | `Key_cert_sign<br>       | `Key_encipherment<br>       | `Non_repudiation ]</code> </pre>
+
+
+<pre><span id="TYPEkey_usage"><span class="keyword">type</span> <code class="type"></code>key_usage</span> = <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEkey_usage_flag">key_usage_flag</a> list</code> </pre>
+
+
+<pre><span id="TYPEgnutls_channel_binding_t"><span class="keyword">type</span> <code class="type"></code>gnutls_channel_binding_t</span> = <code class="type">[ `Tls_unique ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_info_access_what_t"><span class="keyword">type</span> <code class="type"></code>gnutls_info_access_what_t</span> = <code class="type">[ `Accesslocation_generalname_type<br>       | `Accessmethod_oid<br>       | `Caissuers_uri<br>       | `Ocsp_uri<br>       | `Unknown<br>       | `Uri ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_certificate_import_flags_flag"><span class="keyword">type</span> <code class="type"></code>gnutls_certificate_import_flags_flag</span> = <code class="type">[ `Fail_if_unsorted | `Import_fail_if_exceed | `Sort ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_certificate_import_flags"><span class="keyword">type</span> <code class="type"></code>gnutls_certificate_import_flags</span> = <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_import_flags_flag">gnutls_certificate_import_flags_flag</a> list</code> </pre>
+
+
+<pre><span id="TYPEerror_code"><span class="keyword">type</span> <code class="type"></code>error_code</span> = <code class="type">[ `Again<br>       | `Asn1_der_error<br>       | `Asn1_der_overflow<br>       | `Asn1_element_not_found<br>       | `Asn1_generic_error<br>       | `Asn1_identifier_not_found<br>       | `Asn1_syntax_error<br>       | `Asn1_tag_error<br>       | `Asn1_tag_implicit<br>       | `Asn1_type_any_error<br>       | `Asn1_value_not_found<br>       | `Asn1_value_not_valid<br>       | `Auth_error<br>       | `Bad_cookie<br>       | `Base64_decoding_error<br>       | `Base64_encoding_error<br>       | `Base64_unexpected_header_error<br>       | `Certificate_error<br>       | `Certificate_key_mismatch<br>       | `Certificate_list_unsorted<br>       | `Channel_binding_not_available<br>       | `Compression_failed<br>       | `Constraint_error<br>       | `Crypto_already_registered<br>       | `Crypto_init_failed<br>       | `Cryptodev_device_error<br>       | `Cryptodev_ioctl_error<br>       | `Db_error<br>       | `Decompression_failed<br>       | `Decryption_failed<br>       | `Dh_prime_unacceptable<br>       | `Ecc_no_supported_curves<br>       | `Ecc_unsupported_curve<br>       | `Encryption_failed<br>       | `Error_in_finished_packet<br>       | `Expired<br>       | `Fatal_alert_received<br>       | `File_error<br>       | `Got_application_data<br>       | `Handshake_too_large<br>       | `Hash_failed<br>       | `Heartbeat_ping_received<br>       | `Heartbeat_pong_received<br>       | `Ia_verify_failed<br>       | `Idna_error<br>       | `Illegal_parameter<br>       | `Illegal_srp_username<br>       | `Incompat_dsa_key_with_tls_protocol<br>       | `Incompatible_crypto_library<br>       | `Incompatible_libtasn1_library<br>       | `Insufficient_credentials<br>       | `Internal_error<br>       | `Interrupted<br>       | `Invalid_password<br>       | `Invalid_request<br>       | `Invalid_session<br>       | `Key_import_failed<br>       | `Key_usage_violation<br>       | `Large_packet<br>       | `Lib_in_error_state<br>       | `Locking_error<br>       | `Mac_verify_failed<br>       | `Memory_error<br>       | `Mpi_print_failed<br>       | `Mpi_scan_failed<br>       | `Need_fallback<br>       | `No_application_protocol<br>       | `No_certificate_found<br>       | `No_certificate_status<br>       | `No_cipher_suites<br>       | `No_compression_algorithms<br>       | `No_priorities_were_set<br>       | `No_self_test<br>       | `No_temporary_dh_params<br>       | `No_temporary_rsa_params<br>       | `Ocsp_response_error<br>       | `Openpgp_fingerprint_unsupported<br>       | `Openpgp_getkey_failed<br>       | `Openpgp_keyring_error<br>       | `Openpgp_preferred_key_error<br>       | `Openpgp_subkey_error<br>       | `Openpgp_uid_revoked<br>       | `Parsing_error<br>       | `Pk_decryption_failed<br>       | `Pk_encryption_failed<br>       | `Pk_generation_error<br>       | `Pk_sig_verify_failed<br>       | `Pk_sign_failed<br>       | `Pkcs11_attribute_error<br>       | `Pkcs11_data_error<br>       | `Pkcs11_device_error<br>       | `Pkcs11_error<br>       | `Pkcs11_key_error<br>       | `Pkcs11_load_error<br>       | `Pkcs11_pin_error<br>       | `Pkcs11_pin_expired<br>       | `Pkcs11_pin_locked<br>       | `Pkcs11_requested_object_not_availble<br>       | `Pkcs11_session_error<br>       | `Pkcs11_signature_error<br>       | `Pkcs11_slot_error<br>       | `Pkcs11_token_error<br>       | `Pkcs11_unsupported_feature_error<br>       | `Pkcs11_user_error<br>       | `Pkcs1_wrong_pad<br>       | `Premature_termination<br>       | `Pull_error<br>       | `Push_error<br>       | `Random_device_error<br>       | `Random_failed<br>       | `Received_illegal_extension<br>       | `Received_illegal_parameter<br>       | `Record_limit_reached<br>       | `Rehandshake<br>       | `Requested_data_not_available<br>       | `Safe_renegotiation_failed<br>       | `Self_test_error<br>       | `Session_eof<br>       | `Short_memory_buffer<br>       | `Sockets_init_error<br>       | `Srp_pwd_error<br>       | `Srp_pwd_parsing_error<br>       | `Success<br>       | `Timedout<br>       | `Too_many_empty_packets<br>       | `Too_many_handshake_packets<br>       | `Tpm_error<br>       | `Tpm_key_not_found<br>       | `Tpm_key_password_error<br>       | `Tpm_session_error<br>       | `Tpm_srk_password_error<br>       | `Tpm_uninitialized<br>       | `Unexpected_handshake_packet<br>       | `Unexpected_packet<br>       | `Unexpected_packet_length<br>       | `Unimplemented_feature<br>       | `Unknown_algorithm<br>       | `Unknown_cipher_suite<br>       | `Unknown_cipher_type<br>       | `Unknown_compression_algorithm<br>       | `Unknown_hash_algorithm<br>       | `Unknown_pk_algorithm<br>       | `Unknown_pkcs_bag_type<br>       | `Unknown_pkcs_content_type<br>       | `Unknown_srp_username<br>       | `Unsafe_renegotiation_denied<br>       | `Unsupported_certificate_type<br>       | `Unsupported_signature_algorithm<br>       | `Unsupported_version_packet<br>       | `Unwanted_algorithm<br>       | `User_error<br>       | `Warning_alert_received<br>       | `Warning_ia_fphf_received<br>       | `Warning_ia_iphf_received<br>       | `X509_unknown_san<br>       | `X509_unsupported_attribute<br>       | `X509_unsupported_critical_extension<br>       | `X509_unsupported_extension<br>       | `X509_unsupported_oid ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_pkcs_encrypt_flags_t_flag"><span class="keyword">type</span> <code class="type"></code>gnutls_pkcs_encrypt_flags_t_flag</span> = <code class="type">[ `Null_password<br>       | `Plain<br>       | `Use_pbes2_3des<br>       | `Use_pbes2_aes_128<br>       | `Use_pbes2_aes_192<br>       | `Use_pbes2_aes_256<br>       | `Use_pbes2_des<br>       | `Use_pkcs12_3des<br>       | `Use_pkcs12_arcfour<br>       | `Use_pkcs12_rc2_40 ]</code> </pre>
+
+
+<pre><span id="TYPEgnutls_pkcs_encrypt_flags_t"><span class="keyword">type</span> <code class="type"></code>gnutls_pkcs_encrypt_flags_t</span> = <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_pkcs_encrypt_flags_t_flag">gnutls_pkcs_encrypt_flags_t_flag</a> list</code> </pre>
+
+
+<pre><span id="TYPEempty_flags_flag"><span class="keyword">type</span> <code class="type"></code>empty_flags_flag</span> = <code class="type">[ `Dummy ]</code> </pre>
+
+
+<pre><span id="TYPEempty_flags"><span class="keyword">type</span> <code class="type"></code>empty_flags</span> = <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEempty_flags_flag">empty_flags_flag</a> list</code> </pre>
+
+
+<pre><span id="TYPEstr_datum"><span class="keyword">type</span> <code class="type"></code>str_datum</span> = <code class="type">string</code> </pre>
+
+
+<pre><span id="TYPEstr_datum_p"><span class="keyword">type</span> <code class="type"></code>str_datum_p</span> = <code class="type">string</code> </pre>
+
+
+<pre><span id="TYPEconst_str_datum_p"><span class="keyword">type</span> <code class="type"></code>const_str_datum_p</span> = <code class="type">string</code> </pre>
+
+
+<pre><span id="VALnettls_init"><span class="keyword">val</span> nettls_init</span> : <code class="type">unit -> unit</code></pre>
+<pre><span id="VALnettls_deinit"><span class="keyword">val</span> nettls_deinit</span> : <code class="type">unit -> unit</code></pre>
+<pre><span id="VALgnutls_error_is_fatal"><span class="keyword">val</span> gnutls_error_is_fatal</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEerror_code">error_code</a> -> bool</code></pre>
+<pre><span id="VALgnutls_strerror"><span class="keyword">val</span> gnutls_strerror</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEerror_code">error_code</a> -> string</code></pre>
+<pre><span id="VALgnutls_strerror_name"><span class="keyword">val</span> gnutls_strerror_name</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEerror_code">error_code</a> -> string</code></pre>
+<pre><span id="VALgnutls_check_version"><span class="keyword">val</span> gnutls_check_version</span> : <code class="type">unit -> string</code></pre>
+<pre><span id="VALgnutls_global_set_log_level"><span class="keyword">val</span> gnutls_global_set_log_level</span> : <code class="type">int -> unit</code></pre>
+<pre><span id="VALgnutls_init"><span class="keyword">val</span> gnutls_init</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_init_flags">gnutls_init_flags</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a></code></pre>
+<pre><span id="VALgnutls_certificate_server_set_request"><span class="keyword">val</span> gnutls_certificate_server_set_request</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_request_t">gnutls_certificate_request_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_certificate_send_x509_rdn_sequence"><span class="keyword">val</span> gnutls_certificate_send_x509_rdn_sequence</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> bool -> unit</code></pre>
+<pre><span id="VALgnutls_certificate_verify_peers2"><span class="keyword">val</span> gnutls_certificate_verify_peers2</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_status_t">gnutls_certificate_status_t</a></code></pre>
+<pre><span id="VALgnutls_certificate_get_peers"><span class="keyword">val</span> gnutls_certificate_get_peers</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> string array</code></pre>
+<pre><span id="VALgnutls_record_get_direction"><span class="keyword">val</span> gnutls_record_get_direction</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> bool</code></pre>
+<pre><span id="VALgnutls_handshake"><span class="keyword">val</span> gnutls_handshake</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_rehandshake"><span class="keyword">val</span> gnutls_rehandshake</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_record_send"><span class="keyword">val</span> gnutls_record_send</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> <a href="Netsys_mem.html#TYPEmemory">Netsys_mem.memory</a> -> int -> int</code></pre>
+<pre><span id="VALgnutls_record_recv"><span class="keyword">val</span> gnutls_record_recv</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> <a href="Netsys_mem.html#TYPEmemory">Netsys_mem.memory</a> -> int</code></pre>
+<pre><span id="VALgnutls_record_check_pending"><span class="keyword">val</span> gnutls_record_check_pending</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> int</code></pre>
+<pre><span id="VALgnutls_bye"><span class="keyword">val</span> gnutls_bye</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_close_request_t">gnutls_close_request_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_alert_get"><span class="keyword">val</span> gnutls_alert_get</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_alert_description_t">gnutls_alert_description_t</a></code></pre>
+<pre><span id="VALgnutls_alert_get_name"><span class="keyword">val</span> gnutls_alert_get_name</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_alert_description_t">gnutls_alert_description_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_alert_get_strname"><span class="keyword">val</span> gnutls_alert_get_strname</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_alert_description_t">gnutls_alert_description_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_alert_send"><span class="keyword">val</span> gnutls_alert_send</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_alert_level_t">gnutls_alert_level_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_alert_description_t">gnutls_alert_description_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_alert_send_appropriate"><span class="keyword">val</span> gnutls_alert_send_appropriate</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> int -> unit</code></pre>
+<pre><span id="VALgnutls_error_to_alert"><span class="keyword">val</span> gnutls_error_to_alert</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEerror_code">error_code</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_alert_description_t">gnutls_alert_description_t</a> *<br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_alert_level_t">gnutls_alert_level_t</a></code></pre>
+<pre><span id="VALgnutls_priority_init"><span class="keyword">val</span> gnutls_priority_init</span> : <code class="type">string -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_priority_t">gnutls_priority_t</a></code></pre>
+<pre><span id="VALgnutls_priority_get_cipher_suite_index"><span class="keyword">val</span> gnutls_priority_get_cipher_suite_index</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_priority_t">gnutls_priority_t</a> -> int -> int</code></pre>
+<pre><span id="VALgnutls_priority_set"><span class="keyword">val</span> gnutls_priority_set</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_priority_t">gnutls_priority_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_set_default_priority"><span class="keyword">val</span> gnutls_set_default_priority</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_sec_param_to_pk_bits"><span class="keyword">val</span> gnutls_sec_param_to_pk_bits</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_pk_algorithm_t">gnutls_pk_algorithm_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_sec_param_t">gnutls_sec_param_t</a> -> int</code></pre>
+<pre><span id="VALgnutls_pk_bits_to_sec_param"><span class="keyword">val</span> gnutls_pk_bits_to_sec_param</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_pk_algorithm_t">gnutls_pk_algorithm_t</a> -><br>       int -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_sec_param_t">gnutls_sec_param_t</a></code></pre>
+<pre><span id="VALgnutls_sec_param_get_name"><span class="keyword">val</span> gnutls_sec_param_get_name</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_sec_param_t">gnutls_sec_param_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_session_set_data"><span class="keyword">val</span> gnutls_session_set_data</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> Stdlib.Bytes.t -> unit</code></pre>
+<pre><span id="VALgnutls_session_get_data"><span class="keyword">val</span> gnutls_session_get_data</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_session_get_id"><span class="keyword">val</span> gnutls_session_get_id</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_session_is_resumed"><span class="keyword">val</span> gnutls_session_is_resumed</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> bool</code></pre>
+<pre><span id="VALgnutls_db_set_cache_expiration"><span class="keyword">val</span> gnutls_db_set_cache_expiration</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> int -> unit</code></pre>
+<pre><span id="VALgnutls_db_remove_session"><span class="keyword">val</span> gnutls_db_remove_session</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_db_check_entry"><span class="keyword">val</span> gnutls_db_check_entry</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> string -> int</code></pre>
+<pre><span id="VALgnutls_session_ticket_key_generate"><span class="keyword">val</span> gnutls_session_ticket_key_generate</span> : <code class="type">unit -> string</code></pre>
+<pre><span id="VALgnutls_session_ticket_enable_client"><span class="keyword">val</span> gnutls_session_ticket_enable_client</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_session_ticket_enable_server"><span class="keyword">val</span> gnutls_session_ticket_enable_server</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEstr_datum_p">str_datum_p</a> -> unit</code></pre>
+<pre><span id="VALgnutls_prf"><span class="keyword">val</span> gnutls_prf</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Netsys_mem.html#TYPEmemory">Netsys_mem.memory</a> -> bool -> <a href="Netsys_mem.html#TYPEmemory">Netsys_mem.memory</a> -> <a href="Netsys_mem.html#TYPEmemory">Netsys_mem.memory</a> -> unit</code></pre>
+<pre><span id="VALgnutls_prf_raw"><span class="keyword">val</span> gnutls_prf_raw</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Netsys_mem.html#TYPEmemory">Netsys_mem.memory</a> -> <a href="Netsys_mem.html#TYPEmemory">Netsys_mem.memory</a> -> <a href="Netsys_mem.html#TYPEmemory">Netsys_mem.memory</a> -> unit</code></pre>
+<pre><span id="VALgnutls_session_channel_binding"><span class="keyword">val</span> gnutls_session_channel_binding</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_channel_binding_t">gnutls_channel_binding_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_ecc_curve_get_name"><span class="keyword">val</span> gnutls_ecc_curve_get_name</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_ecc_curve_t">gnutls_ecc_curve_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_ecc_curve_get_size"><span class="keyword">val</span> gnutls_ecc_curve_get_size</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_ecc_curve_t">gnutls_ecc_curve_t</a> -> int</code></pre>
+<pre><span id="VALgnutls_ecc_curve_get"><span class="keyword">val</span> gnutls_ecc_curve_get</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_ecc_curve_t">gnutls_ecc_curve_t</a></code></pre>
+<pre><span id="VALgnutls_cipher_get"><span class="keyword">val</span> gnutls_cipher_get</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_cipher_algorithm_t">gnutls_cipher_algorithm_t</a></code></pre>
+<pre><span id="VALgnutls_kx_get"><span class="keyword">val</span> gnutls_kx_get</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_kx_algorithm_t">gnutls_kx_algorithm_t</a></code></pre>
+<pre><span id="VALgnutls_mac_get"><span class="keyword">val</span> gnutls_mac_get</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_mac_algorithm_t">gnutls_mac_algorithm_t</a></code></pre>
+<pre><span id="VALgnutls_compression_get"><span class="keyword">val</span> gnutls_compression_get</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_compression_method_t">gnutls_compression_method_t</a></code></pre>
+<pre><span id="VALgnutls_certificate_type_get"><span class="keyword">val</span> gnutls_certificate_type_get</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_type_t">gnutls_certificate_type_t</a></code></pre>
+<pre><span id="VALgnutls_cipher_get_key_size"><span class="keyword">val</span> gnutls_cipher_get_key_size</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_cipher_algorithm_t">gnutls_cipher_algorithm_t</a> -> int</code></pre>
+<pre><span id="VALgnutls_mac_get_key_size"><span class="keyword">val</span> gnutls_mac_get_key_size</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_mac_algorithm_t">gnutls_mac_algorithm_t</a> -> int</code></pre>
+<pre><span id="VALgnutls_cipher_get_name"><span class="keyword">val</span> gnutls_cipher_get_name</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_cipher_algorithm_t">gnutls_cipher_algorithm_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_mac_get_name"><span class="keyword">val</span> gnutls_mac_get_name</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_mac_algorithm_t">gnutls_mac_algorithm_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_compression_get_name"><span class="keyword">val</span> gnutls_compression_get_name</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_compression_method_t">gnutls_compression_method_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_kx_get_name"><span class="keyword">val</span> gnutls_kx_get_name</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_kx_algorithm_t">gnutls_kx_algorithm_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_certificate_type_get_name"><span class="keyword">val</span> gnutls_certificate_type_get_name</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_type_t">gnutls_certificate_type_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_pk_get_name"><span class="keyword">val</span> gnutls_pk_get_name</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_pk_algorithm_t">gnutls_pk_algorithm_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_sign_get_name"><span class="keyword">val</span> gnutls_sign_get_name</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_sign_algorithm_t">gnutls_sign_algorithm_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_mac_get_id"><span class="keyword">val</span> gnutls_mac_get_id</span> : <code class="type">string -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_mac_algorithm_t">gnutls_mac_algorithm_t</a></code></pre>
+<pre><span id="VALgnutls_compression_get_id"><span class="keyword">val</span> gnutls_compression_get_id</span> : <code class="type">string -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_compression_method_t">gnutls_compression_method_t</a></code></pre>
+<pre><span id="VALgnutls_cipher_get_id"><span class="keyword">val</span> gnutls_cipher_get_id</span> : <code class="type">string -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_cipher_algorithm_t">gnutls_cipher_algorithm_t</a></code></pre>
+<pre><span id="VALgnutls_kx_get_id"><span class="keyword">val</span> gnutls_kx_get_id</span> : <code class="type">string -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_kx_algorithm_t">gnutls_kx_algorithm_t</a></code></pre>
+<pre><span id="VALgnutls_protocol_get_id"><span class="keyword">val</span> gnutls_protocol_get_id</span> : <code class="type">string -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_protocol_t">gnutls_protocol_t</a></code></pre>
+<pre><span id="VALgnutls_certificate_type_get_id"><span class="keyword">val</span> gnutls_certificate_type_get_id</span> : <code class="type">string -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_type_t">gnutls_certificate_type_t</a></code></pre>
+<pre><span id="VALgnutls_pk_get_id"><span class="keyword">val</span> gnutls_pk_get_id</span> : <code class="type">string -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_pk_algorithm_t">gnutls_pk_algorithm_t</a></code></pre>
+<pre><span id="VALgnutls_sign_get_id"><span class="keyword">val</span> gnutls_sign_get_id</span> : <code class="type">string -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_sign_algorithm_t">gnutls_sign_algorithm_t</a></code></pre>
+<pre><span id="VALgnutls_cipher_list"><span class="keyword">val</span> gnutls_cipher_list</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_cipher_algorithm_t">gnutls_cipher_algorithm_t</a> list</code></pre>
+<pre><span id="VALgnutls_mac_list"><span class="keyword">val</span> gnutls_mac_list</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_mac_algorithm_t">gnutls_mac_algorithm_t</a> list</code></pre>
+<pre><span id="VALgnutls_compression_list"><span class="keyword">val</span> gnutls_compression_list</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_compression_method_t">gnutls_compression_method_t</a> list</code></pre>
+<pre><span id="VALgnutls_protocol_list"><span class="keyword">val</span> gnutls_protocol_list</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_protocol_t">gnutls_protocol_t</a> list</code></pre>
+<pre><span id="VALgnutls_certificate_type_list"><span class="keyword">val</span> gnutls_certificate_type_list</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_type_t">gnutls_certificate_type_t</a> list</code></pre>
+<pre><span id="VALgnutls_kx_list"><span class="keyword">val</span> gnutls_kx_list</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_kx_algorithm_t">gnutls_kx_algorithm_t</a> list</code></pre>
+<pre><span id="VALgnutls_pk_list"><span class="keyword">val</span> gnutls_pk_list</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_pk_algorithm_t">gnutls_pk_algorithm_t</a> list</code></pre>
+<pre><span id="VALgnutls_sign_list"><span class="keyword">val</span> gnutls_sign_list</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_sign_algorithm_t">gnutls_sign_algorithm_t</a> list</code></pre>
+<pre><span id="VALgnutls_protocol_get_version"><span class="keyword">val</span> gnutls_protocol_get_version</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_protocol_t">gnutls_protocol_t</a></code></pre>
+<pre><span id="VALgnutls_protocol_get_name"><span class="keyword">val</span> gnutls_protocol_get_name</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_protocol_t">gnutls_protocol_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_cipher_suite_get_name"><span class="keyword">val</span> gnutls_cipher_suite_get_name</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_kx_algorithm_t">gnutls_kx_algorithm_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_cipher_algorithm_t">gnutls_cipher_algorithm_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_mac_algorithm_t">gnutls_mac_algorithm_t</a> -> string</code></pre>
+<pre><span id="VALnet_have_crypto"><span class="keyword">val</span> net_have_crypto</span> : <code class="type">unit -> bool</code></pre>
+<pre><span id="VALgnutls_cipher_init"><span class="keyword">val</span> gnutls_cipher_init</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_cipher_algorithm_t">gnutls_cipher_algorithm_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEstr_datum_p">str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEstr_datum_p">str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_cipher_hd_t">gnutls_cipher_hd_t</a></code></pre>
+<pre><span id="VALgnutls_cipher_encrypt2"><span class="keyword">val</span> gnutls_cipher_encrypt2</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_cipher_hd_t">gnutls_cipher_hd_t</a> -><br>       <a href="Netsys_mem.html#TYPEmemory">Netsys_mem.memory</a> -> <a href="Netsys_mem.html#TYPEmemory">Netsys_mem.memory</a> -> unit</code></pre>
+<pre><span id="VALgnutls_cipher_decrypt2"><span class="keyword">val</span> gnutls_cipher_decrypt2</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_cipher_hd_t">gnutls_cipher_hd_t</a> -><br>       <a href="Netsys_mem.html#TYPEmemory">Netsys_mem.memory</a> -> <a href="Netsys_mem.html#TYPEmemory">Netsys_mem.memory</a> -> unit</code></pre>
+<pre><span id="VALgnutls_cipher_add_auth"><span class="keyword">val</span> gnutls_cipher_add_auth</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_cipher_hd_t">gnutls_cipher_hd_t</a> -> Stdlib.Bytes.t -> unit</code></pre>
+<pre><span id="VALgnutls_cipher_tag"><span class="keyword">val</span> gnutls_cipher_tag</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_cipher_hd_t">gnutls_cipher_hd_t</a> -> Stdlib.Bytes.t -> unit</code></pre>
+<pre><span id="VALgnutls_handshake_set_private_extensions"><span class="keyword">val</span> gnutls_handshake_set_private_extensions</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> bool -> unit</code></pre>
+<pre><span id="VALgnutls_handshake_get_last_out"><span class="keyword">val</span> gnutls_handshake_get_last_out</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_handshake_description_t">gnutls_handshake_description_t</a></code></pre>
+<pre><span id="VALgnutls_handshake_get_last_in"><span class="keyword">val</span> gnutls_handshake_get_last_in</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_handshake_description_t">gnutls_handshake_description_t</a></code></pre>
+<pre><span id="VALgnutls_handshake_set_max_packet_length"><span class="keyword">val</span> gnutls_handshake_set_max_packet_length</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> int -> unit</code></pre>
+<pre><span id="VALgnutls_sign_algorithm_get_requested"><span class="keyword">val</span> gnutls_sign_algorithm_get_requested</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       int -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_sign_algorithm_t">gnutls_sign_algorithm_t</a></code></pre>
+<pre><span id="VALgnutls_session_enable_compatibility_mode"><span class="keyword">val</span> gnutls_session_enable_compatibility_mode</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_record_disable_padding"><span class="keyword">val</span> gnutls_record_disable_padding</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_record_get_max_size"><span class="keyword">val</span> gnutls_record_get_max_size</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> int</code></pre>
+<pre><span id="VALgnutls_record_set_max_size"><span class="keyword">val</span> gnutls_record_set_max_size</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> int -> unit</code></pre>
+<pre><span id="VALgnutls_server_name_set"><span class="keyword">val</span> gnutls_server_name_set</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_server_name_type_t">gnutls_server_name_type_t</a> -> Stdlib.Bytes.t -> unit</code></pre>
+<pre><span id="VALgnutls_server_name_get"><span class="keyword">val</span> gnutls_server_name_get</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       int -> Stdlib.Bytes.t * <a href="Nettls_gnutls_bindings.html#TYPEgnutls_server_name_type_t">gnutls_server_name_type_t</a></code></pre>
+<pre><span id="VALgnutls_safe_renegotiation_status"><span class="keyword">val</span> gnutls_safe_renegotiation_status</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> bool</code></pre>
+<pre><span id="VALgnutls_supplemental_get_name"><span class="keyword">val</span> gnutls_supplemental_get_name</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_supplemental_data_format_type_t">gnutls_supplemental_data_format_type_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_credentials_clear"><span class="keyword">val</span> gnutls_credentials_clear</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_key_generate"><span class="keyword">val</span> gnutls_key_generate</span> : <code class="type">int -> string</code></pre>
+<pre><span id="VALgnutls_fingerprint"><span class="keyword">val</span> gnutls_fingerprint</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_digest_algorithm_t">gnutls_digest_algorithm_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEstr_datum_p">str_datum_p</a> -> Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_certificate_allocate_credentials"><span class="keyword">val</span> gnutls_certificate_allocate_credentials</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a></code></pre>
+<pre><span id="VALgnutls_certificate_set_x509_system_trust"><span class="keyword">val</span> gnutls_certificate_set_x509_system_trust</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_certificate_set_x509_trust_file"><span class="keyword">val</span> gnutls_certificate_set_x509_trust_file</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a> -><br>       string -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_certificate_set_x509_trust_mem"><span class="keyword">val</span> gnutls_certificate_set_x509_trust_mem</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEstr_datum_p">str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_certificate_set_x509_crl_file"><span class="keyword">val</span> gnutls_certificate_set_x509_crl_file</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a> -><br>       string -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_certificate_set_x509_crl_mem"><span class="keyword">val</span> gnutls_certificate_set_x509_crl_mem</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEstr_datum_p">str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_certificate_set_x509_key_file"><span class="keyword">val</span> gnutls_certificate_set_x509_key_file</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a> -><br>       string -> string -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_certificate_set_x509_key_mem"><span class="keyword">val</span> gnutls_certificate_set_x509_key_mem</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEstr_datum_p">str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEstr_datum_p">str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_certificate_set_x509_simple_pkcs12_file"><span class="keyword">val</span> gnutls_certificate_set_x509_simple_pkcs12_file</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a> -><br>       string -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -> string -> unit</code></pre>
+<pre><span id="VALgnutls_certificate_set_x509_simple_pkcs12_mem"><span class="keyword">val</span> gnutls_certificate_set_x509_simple_pkcs12_mem</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEstr_datum_p">str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -> string -> unit</code></pre>
+<pre><span id="VALgnutls_certificate_set_x509_key"><span class="keyword">val</span> gnutls_certificate_set_x509_key</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> array -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_privkey_t">gnutls_x509_privkey_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_certificate_set_x509_trust"><span class="keyword">val</span> gnutls_certificate_set_x509_trust</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> array -> int</code></pre>
+<pre><span id="VALgnutls_certificate_set_x509_crl"><span class="keyword">val</span> gnutls_certificate_set_x509_crl</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crl_t">gnutls_x509_crl_t</a> array -> int</code></pre>
+<pre><span id="VALgnutls_anon_allocate_server_credentials"><span class="keyword">val</span> gnutls_anon_allocate_server_credentials</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_anon_server_credentials_t">gnutls_anon_server_credentials_t</a></code></pre>
+<pre><span id="VALgnutls_anon_allocate_client_credentials"><span class="keyword">val</span> gnutls_anon_allocate_client_credentials</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_anon_client_credentials_t">gnutls_anon_client_credentials_t</a></code></pre>
+<pre><span id="VALgnutls_dh_params_init"><span class="keyword">val</span> gnutls_dh_params_init</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_dh_params_t">gnutls_dh_params_t</a></code></pre>
+<pre><span id="VALgnutls_dh_params_import_raw"><span class="keyword">val</span> gnutls_dh_params_import_raw</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_dh_params_t">gnutls_dh_params_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEstr_datum_p">str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEstr_datum_p">str_datum_p</a> -> unit</code></pre>
+<pre><span id="VALgnutls_dh_params_import_pkcs3"><span class="keyword">val</span> gnutls_dh_params_import_pkcs3</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_dh_params_t">gnutls_dh_params_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEstr_datum_p">str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_dh_params_generate2"><span class="keyword">val</span> gnutls_dh_params_generate2</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_dh_params_t">gnutls_dh_params_t</a> -> int -> unit</code></pre>
+<pre><span id="VALgnutls_dh_params_cpy"><span class="keyword">val</span> gnutls_dh_params_cpy</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_dh_params_t">gnutls_dh_params_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_dh_params_t">gnutls_dh_params_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_certificate_set_dh_params"><span class="keyword">val</span> gnutls_certificate_set_dh_params</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_dh_params_t">gnutls_dh_params_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_anon_set_server_dh_params"><span class="keyword">val</span> gnutls_anon_set_server_dh_params</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_anon_server_credentials_t">gnutls_anon_server_credentials_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_dh_params_t">gnutls_dh_params_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_psk_set_server_dh_params"><span class="keyword">val</span> gnutls_psk_set_server_dh_params</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_psk_server_credentials_t">gnutls_psk_server_credentials_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_dh_params_t">gnutls_dh_params_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_dh_set_prime_bits"><span class="keyword">val</span> gnutls_dh_set_prime_bits</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> int -> unit</code></pre>
+<pre><span id="VALgnutls_dh_get_secret_bits"><span class="keyword">val</span> gnutls_dh_get_secret_bits</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> int</code></pre>
+<pre><span id="VALgnutls_dh_get_peers_public_bits"><span class="keyword">val</span> gnutls_dh_get_peers_public_bits</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> int</code></pre>
+<pre><span id="VALgnutls_dh_get_prime_bits"><span class="keyword">val</span> gnutls_dh_get_prime_bits</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> int</code></pre>
+<pre><span id="VALgnutls_dh_get_group"><span class="keyword">val</span> gnutls_dh_get_group</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> string * string</code></pre>
+<pre><span id="VALgnutls_dh_get_pubkey"><span class="keyword">val</span> gnutls_dh_get_pubkey</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_auth_get_type"><span class="keyword">val</span> gnutls_auth_get_type</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_credentials_type_t">gnutls_credentials_type_t</a></code></pre>
+<pre><span id="VALgnutls_auth_server_get_type"><span class="keyword">val</span> gnutls_auth_server_get_type</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_credentials_type_t">gnutls_credentials_type_t</a></code></pre>
+<pre><span id="VALgnutls_auth_client_get_type"><span class="keyword">val</span> gnutls_auth_client_get_type</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_credentials_type_t">gnutls_credentials_type_t</a></code></pre>
+<pre><span id="VALgnutls_certificate_get_ours"><span class="keyword">val</span> gnutls_certificate_get_ours</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEconst_str_datum_p">const_str_datum_p</a></code></pre>
+<pre><span id="VALgnutls_certificate_activation_time_peers"><span class="keyword">val</span> gnutls_certificate_activation_time_peers</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> float</code></pre>
+<pre><span id="VALgnutls_certificate_expiration_time_peers"><span class="keyword">val</span> gnutls_certificate_expiration_time_peers</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> float</code></pre>
+<pre><span id="VALgnutls_certificate_client_get_request_status"><span class="keyword">val</span> gnutls_certificate_client_get_request_status</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> bool</code></pre>
+<pre><span id="VALgnutls_certificate_get_issuer"><span class="keyword">val</span> gnutls_certificate_get_issuer</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEempty_flags">empty_flags</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a></code></pre>
+<pre><span id="VALgnutls_certificate_set_verify_flags"><span class="keyword">val</span> gnutls_certificate_set_verify_flags</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_verify_flags">gnutls_certificate_verify_flags</a> -> unit</code></pre>
+<pre><span id="VALgnutls_certificate_set_verify_limits"><span class="keyword">val</span> gnutls_certificate_set_verify_limits</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a> -> int -> int -> unit</code></pre>
+<pre><span id="VALgnutls_srp_allocate_client_credentials"><span class="keyword">val</span> gnutls_srp_allocate_client_credentials</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_srp_client_credentials_t">gnutls_srp_client_credentials_t</a></code></pre>
+<pre><span id="VALgnutls_srp_set_client_credentials"><span class="keyword">val</span> gnutls_srp_set_client_credentials</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_srp_client_credentials_t">gnutls_srp_client_credentials_t</a> -><br>       string -> string -> unit</code></pre>
+<pre><span id="VALgnutls_srp_allocate_server_credentials"><span class="keyword">val</span> gnutls_srp_allocate_server_credentials</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_srp_server_credentials_t">gnutls_srp_server_credentials_t</a></code></pre>
+<pre><span id="VALgnutls_srp_set_server_credentials_file"><span class="keyword">val</span> gnutls_srp_set_server_credentials_file</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_srp_server_credentials_t">gnutls_srp_server_credentials_t</a> -><br>       string -> string -> unit</code></pre>
+<pre><span id="VALgnutls_srp_server_get_username"><span class="keyword">val</span> gnutls_srp_server_get_username</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_srp_set_prime_bits"><span class="keyword">val</span> gnutls_srp_set_prime_bits</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> int -> unit</code></pre>
+<pre><span id="VALgnutls_srp_verifier"><span class="keyword">val</span> gnutls_srp_verifier</span> : <code class="type">string -><br>       string -><br>       <a href="Nettls_gnutls_bindings.html#TYPEstr_datum_p">str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEstr_datum_p">str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEstr_datum_p">str_datum_p</a> -> string</code></pre>
+<pre><span id="VALgnutls_psk_allocate_client_credentials"><span class="keyword">val</span> gnutls_psk_allocate_client_credentials</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_psk_client_credentials_t">gnutls_psk_client_credentials_t</a></code></pre>
+<pre><span id="VALgnutls_psk_set_client_credentials"><span class="keyword">val</span> gnutls_psk_set_client_credentials</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_psk_client_credentials_t">gnutls_psk_client_credentials_t</a> -><br>       string -><br>       <a href="Nettls_gnutls_bindings.html#TYPEstr_datum_p">str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_psk_key_flags">gnutls_psk_key_flags</a> -> unit</code></pre>
+<pre><span id="VALgnutls_psk_allocate_server_credentials"><span class="keyword">val</span> gnutls_psk_allocate_server_credentials</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_psk_server_credentials_t">gnutls_psk_server_credentials_t</a></code></pre>
+<pre><span id="VALgnutls_psk_set_server_credentials_file"><span class="keyword">val</span> gnutls_psk_set_server_credentials_file</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_psk_server_credentials_t">gnutls_psk_server_credentials_t</a> -> string -> unit</code></pre>
+<pre><span id="VALgnutls_psk_set_server_credentials_hint"><span class="keyword">val</span> gnutls_psk_set_server_credentials_hint</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_psk_server_credentials_t">gnutls_psk_server_credentials_t</a> -> string -> unit</code></pre>
+<pre><span id="VALgnutls_psk_server_get_username"><span class="keyword">val</span> gnutls_psk_server_get_username</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_psk_client_get_hint"><span class="keyword">val</span> gnutls_psk_client_get_hint</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> string</code></pre>
+<pre><span id="VALgnutls_x509_crt_init"><span class="keyword">val</span> gnutls_x509_crt_init</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a></code></pre>
+<pre><span id="VALgnutls_x509_crt_import"><span class="keyword">val</span> gnutls_x509_crt_import</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEconst_str_datum_p">const_str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_x509_crt_export"><span class="keyword">val</span> gnutls_x509_crt_export</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -> Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_issuer_dn"><span class="keyword">val</span> gnutls_x509_crt_get_issuer_dn</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_issuer_dn_oid"><span class="keyword">val</span> gnutls_x509_crt_get_issuer_dn_oid</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> int -> Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_dn"><span class="keyword">val</span> gnutls_x509_crt_get_dn</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_dn_oid"><span class="keyword">val</span> gnutls_x509_crt_get_dn_oid</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> int -> Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_x509_crt_check_hostname"><span class="keyword">val</span> gnutls_x509_crt_check_hostname</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> string -> bool</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_signature_algorithm"><span class="keyword">val</span> gnutls_x509_crt_get_signature_algorithm</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_sign_algorithm_t">gnutls_sign_algorithm_t</a></code></pre>
+<pre><span id="VALgnutls_x509_crt_get_signature"><span class="keyword">val</span> gnutls_x509_crt_get_signature</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_version"><span class="keyword">val</span> gnutls_x509_crt_get_version</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> int</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_key_id"><span class="keyword">val</span> gnutls_x509_crt_get_key_id</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEempty_flags">empty_flags</a> -> Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_authority_key_id"><span class="keyword">val</span> gnutls_x509_crt_get_authority_key_id</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> Stdlib.Bytes.t * bool</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_subject_key_id"><span class="keyword">val</span> gnutls_x509_crt_get_subject_key_id</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> Stdlib.Bytes.t * bool</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_subject_unique_id"><span class="keyword">val</span> gnutls_x509_crt_get_subject_unique_id</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_issuer_unique_id"><span class="keyword">val</span> gnutls_x509_crt_get_issuer_unique_id</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_authority_info_access"><span class="keyword">val</span> gnutls_x509_crt_get_authority_info_access</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -><br>       int -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_info_access_what_t">gnutls_info_access_what_t</a> -> string * bool</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_activation_time"><span class="keyword">val</span> gnutls_x509_crt_get_activation_time</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> float</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_expiration_time"><span class="keyword">val</span> gnutls_x509_crt_get_expiration_time</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> float</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_serial"><span class="keyword">val</span> gnutls_x509_crt_get_serial</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_pk_algorithm"><span class="keyword">val</span> gnutls_x509_crt_get_pk_algorithm</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_pk_algorithm_t">gnutls_pk_algorithm_t</a> * int</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_pk_rsa_raw"><span class="keyword">val</span> gnutls_x509_crt_get_pk_rsa_raw</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> string * string</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_pk_dsa_raw"><span class="keyword">val</span> gnutls_x509_crt_get_pk_dsa_raw</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> string * string * string * string</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_subject_alt_name"><span class="keyword">val</span> gnutls_x509_crt_get_subject_alt_name</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -><br>       int -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_subject_alt_name_t">gnutls_x509_subject_alt_name_t</a> * Stdlib.Bytes.t * bool</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_subject_alt_othername_oid"><span class="keyword">val</span> gnutls_x509_crt_get_subject_alt_othername_oid</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -><br>       int -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_subject_alt_name_t">gnutls_x509_subject_alt_name_t</a> * Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_issuer_alt_name"><span class="keyword">val</span> gnutls_x509_crt_get_issuer_alt_name</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -><br>       int -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_subject_alt_name_t">gnutls_x509_subject_alt_name_t</a> * Stdlib.Bytes.t * bool</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_issuer_alt_othername_oid"><span class="keyword">val</span> gnutls_x509_crt_get_issuer_alt_othername_oid</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -><br>       int -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_subject_alt_name_t">gnutls_x509_subject_alt_name_t</a> * Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_ca_status"><span class="keyword">val</span> gnutls_x509_crt_get_ca_status</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> bool</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_basic_constraints"><span class="keyword">val</span> gnutls_x509_crt_get_basic_constraints</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> bool * bool * int</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_key_usage"><span class="keyword">val</span> gnutls_x509_crt_get_key_usage</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEkey_usage">key_usage</a> * bool</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_extension_oid"><span class="keyword">val</span> gnutls_x509_crt_get_extension_oid</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> int -> Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_extension_info"><span class="keyword">val</span> gnutls_x509_crt_get_extension_info</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> int -> Stdlib.Bytes.t * bool</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_extension_data"><span class="keyword">val</span> gnutls_x509_crt_get_extension_data</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> int -> Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_x509_crt_check_issuer"><span class="keyword">val</span> gnutls_x509_crt_check_issuer</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> bool</code></pre>
+<pre><span id="VALgnutls_x509_crt_list_verify"><span class="keyword">val</span> gnutls_x509_crt_list_verify</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> array -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> array -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crl_t">gnutls_x509_crl_t</a> array -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_verify_flags">gnutls_certificate_verify_flags</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_status_t">gnutls_certificate_status_t</a></code></pre>
+<pre><span id="VALgnutls_x509_crt_verify"><span class="keyword">val</span> gnutls_x509_crt_verify</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> array -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_verify_flags">gnutls_certificate_verify_flags</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_status_t">gnutls_certificate_status_t</a></code></pre>
+<pre><span id="VALgnutls_x509_crl_verify"><span class="keyword">val</span> gnutls_x509_crl_verify</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crl_t">gnutls_x509_crl_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> array -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_verify_flags">gnutls_certificate_verify_flags</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_status_t">gnutls_certificate_status_t</a></code></pre>
+<pre><span id="VALgnutls_x509_crt_check_revocation"><span class="keyword">val</span> gnutls_x509_crt_check_revocation</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crl_t">gnutls_x509_crl_t</a> array -> bool</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_fingerprint"><span class="keyword">val</span> gnutls_x509_crt_get_fingerprint</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_digest_algorithm_t">gnutls_digest_algorithm_t</a> -> Stdlib.Bytes.t</code></pre>
+<pre><span id="VALgnutls_x509_crt_get_key_purpose_oid"><span class="keyword">val</span> gnutls_x509_crt_get_key_purpose_oid</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> -> int -> Stdlib.Bytes.t * bool</code></pre>
+<pre><span id="VALgnutls_x509_privkey_init"><span class="keyword">val</span> gnutls_x509_privkey_init</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_privkey_t">gnutls_x509_privkey_t</a></code></pre>
+<pre><span id="VALgnutls_x509_privkey_import"><span class="keyword">val</span> gnutls_x509_privkey_import</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_privkey_t">gnutls_x509_privkey_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEconst_str_datum_p">const_str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_x509_privkey_import_pkcs8"><span class="keyword">val</span> gnutls_x509_privkey_import_pkcs8</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_privkey_t">gnutls_x509_privkey_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEconst_str_datum_p">const_str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -><br>       string -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_pkcs_encrypt_flags_t">gnutls_pkcs_encrypt_flags_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_x509_crl_init"><span class="keyword">val</span> gnutls_x509_crl_init</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crl_t">gnutls_x509_crl_t</a></code></pre>
+<pre><span id="VALgnutls_x509_crl_import"><span class="keyword">val</span> gnutls_x509_crl_import</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crl_t">gnutls_x509_crl_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEconst_str_datum_p">const_str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -> unit</code></pre>
+<pre><span id="VALnet_have_pubkey"><span class="keyword">val</span> net_have_pubkey</span> : <code class="type">unit -> bool</code></pre>
+<pre><span id="VALgnutls_pubkey_init"><span class="keyword">val</span> gnutls_pubkey_init</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_pubkey_t">gnutls_pubkey_t</a></code></pre>
+<pre><span id="VALgnutls_privkey_init"><span class="keyword">val</span> gnutls_privkey_init</span> : <code class="type">unit -> <a href="Nettls_gnutls_bindings.html#TYPEgnutls_privkey_t">gnutls_privkey_t</a></code></pre>
+<pre><span id="VALgnutls_pubkey_import"><span class="keyword">val</span> gnutls_pubkey_import</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_pubkey_t">gnutls_pubkey_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEconst_str_datum_p">const_str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -> unit</code></pre>
+<pre><span id="VALgnutls_pubkey_import_url"><span class="keyword">val</span> gnutls_pubkey_import_url</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_pubkey_t">gnutls_pubkey_t</a> -> string -> int -> unit</code></pre>
+<pre><span id="VALgnutls_pubkey_import_privkey"><span class="keyword">val</span> gnutls_pubkey_import_privkey</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_pubkey_t">gnutls_pubkey_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_privkey_t">gnutls_privkey_t</a> -> int -> int -> unit</code></pre>
+<pre><span id="VALgnutls_privkey_import_x509"><span class="keyword">val</span> gnutls_privkey_import_x509</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_privkey_t">gnutls_privkey_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_privkey_t">gnutls_x509_privkey_t</a> -> int -> unit</code></pre>
+<pre><span id="VALgnutls_pubkey_encrypt_data"><span class="keyword">val</span> gnutls_pubkey_encrypt_data</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_pubkey_t">gnutls_pubkey_t</a> -><br>       int -> <a href="Nettls_gnutls_bindings.html#TYPEconst_str_datum_p">const_str_datum_p</a> -> string</code></pre>
+<pre><span id="VALgnutls_privkey_decrypt_data"><span class="keyword">val</span> gnutls_privkey_decrypt_data</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_privkey_t">gnutls_privkey_t</a> -><br>       int -> <a href="Nettls_gnutls_bindings.html#TYPEconst_str_datum_p">const_str_datum_p</a> -> string</code></pre>
+<pre><span id="VALgnutls_privkey_sign_data"><span class="keyword">val</span> gnutls_privkey_sign_data</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_privkey_t">gnutls_privkey_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_digest_algorithm_t">gnutls_digest_algorithm_t</a> -><br>       int -> <a href="Nettls_gnutls_bindings.html#TYPEconst_str_datum_p">const_str_datum_p</a> -> string</code></pre>
+<pre><span id="VALgnutls_pubkey_verify_data2"><span class="keyword">val</span> gnutls_pubkey_verify_data2</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_pubkey_t">gnutls_pubkey_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_sign_algorithm_t">gnutls_sign_algorithm_t</a> -><br>       int -><br>       <a href="Nettls_gnutls_bindings.html#TYPEconst_str_datum_p">const_str_datum_p</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEconst_str_datum_p">const_str_datum_p</a> -> unit</code></pre>
+<pre><span id="VALb_error_of_name"><span class="keyword">val</span> b_error_of_name</span> : <code class="type">string -> <a href="Nettls_gnutls_bindings.html#TYPEerror_code">error_code</a></code></pre>
+<pre><span id="EXCEPTIONNull_pointer"><span class="keyword">exception</span> Null_pointer</span></pre>
+
+<pre><span id="EXCEPTIONError"><span class="keyword">exception</span> Error</span> <span class="keyword">of</span> <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEerror_code">error_code</a></code></pre>
+
+<pre><span id="EXCEPTIONShort_memory_buffer"><span class="keyword">exception</span> Short_memory_buffer</span> <span class="keyword">of</span> <code class="type">int</code></pre>
+
+<pre><span id="TYPEmemory"><span class="keyword">type</span> <code class="type"></code>memory</span> = <code class="type">(char, Bigarray.int8_unsigned_elt, Bigarray.c_layout) Bigarray.Array1.t</code> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>See <a href="Netsys_types.html#TYPEmemory"><code class="code">Netsys_types.memory</code></a></p>
+</div>
+</div>
+
+
+<pre><span id="TYPEgnutls_credentials"><span class="keyword">type</span> <code class="type"></code>gnutls_credentials</span> = <code class="type">[ `Anon_client of <a href="Nettls_gnutls_bindings.html#TYPEgnutls_anon_client_credentials_t">gnutls_anon_client_credentials_t</a><br>       | `Anon_server of <a href="Nettls_gnutls_bindings.html#TYPEgnutls_anon_server_credentials_t">gnutls_anon_server_credentials_t</a><br>       | `Certificate of <a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_credentials_t">gnutls_certificate_credentials_t</a><br>       | `Psk_client of <a href="Nettls_gnutls_bindings.html#TYPEgnutls_psk_client_credentials_t">gnutls_psk_client_credentials_t</a><br>       | `Psk_server of <a href="Nettls_gnutls_bindings.html#TYPEgnutls_psk_server_credentials_t">gnutls_psk_server_credentials_t</a><br>       | `Srp_client of <a href="Nettls_gnutls_bindings.html#TYPEgnutls_srp_client_credentials_t">gnutls_srp_client_credentials_t</a><br>       | `Srp_server of <a href="Nettls_gnutls_bindings.html#TYPEgnutls_srp_server_credentials_t">gnutls_srp_server_credentials_t</a> ]</code> </pre>
+
+
+<pre><span id="VALgnutls_credentials_set"><span class="keyword">val</span> gnutls_credentials_set</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_credentials">gnutls_credentials</a> -> unit</code></pre>
+<pre><span id="VALb_set_pull_callback"><span class="keyword">val</span> b_set_pull_callback</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       (<a href="Nettls_gnutls_bindings.html#TYPEmemory">memory</a> -> int) -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p>Sets the function for reading data. The function must return the number
+      of read bytes (like <code class="code">Unix.read</code>). The function can raise <code class="code">Unix_error</code>.
+      Only the codes <code class="code">EINTR</code>, <code class="code">EAGAIN</code>, <code class="code">EWOULDBLOCK</code>, and <code class="code">EMSGSIZE</code> are
+      interpreted.</p>
+</div>
+</div>
+
+<pre><span id="VALb_set_push_callback"><span class="keyword">val</span> b_set_push_callback</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       (<a href="Nettls_gnutls_bindings.html#TYPEmemory">memory</a> -> int -> int) -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p>Sets the function for writing data. The function must return the number
+      of written bytes (like <code class="code">Unix.write</code>). The function can raise <code class="code">Unix_error</code>.
+      Only the codes <code class="code">EINTR</code>, <code class="code">EAGAIN</code>, <code class="code">EWOULDBLOCK</code>, and <code class="code">EMSGSIZE</code> are
+      interpreted.</p>
+</div>
+</div>
+
+<pre><span id="VALb_set_pull_timeout_callback"><span class="keyword">val</span> b_set_pull_timeout_callback</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> (int -> bool) -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p>Sets the function for waiting for new data to arrive (only used for
+      DTLS). The integer are the milliseconds to wait at most. The function
+      shall return <code class="code">true</code> if there is data, and <code class="code">false</code> in case of a timeout.
+      The function can raise <code class="code">Unix_error</code>.
+      Only the codes <code class="code">EINTR</code>, <code class="code">EAGAIN</code>, <code class="code">EWOULDBLOCK</code>, and <code class="code">EMSGSIZE</code> are
+      interpreted.</p>
+</div>
+</div>
+
+<pre><span id="VALb_set_verify_callback"><span class="keyword">val</span> b_set_verify_callback</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       (<a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> bool) -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p>Sets the function for verifying the peer's certificate. The function
+      can return <code class="code">true</code> if the certificate is acceptable, and <code class="code">false</code> otherwise.
+      Note that this callback is set in this binding on the session, and
+      not on <code class="code">gnutls_certificate_credentials_t</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALset_fd"><span class="keyword">val</span> set_fd</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -> Unix.file_descr -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p>Sets that this file descriptor is used for I/O. NB. This function just
+      invokes <code class="code">b_set_pull_callback</code>, <code class="code">b_set_push_callback</code>, and
+      <code class="code">b_set_pull_timeout_callback</code> with the right argument functions.</p>
+</div>
+</div>
+
+<pre><span id="VALb_set_db_callbacks"><span class="keyword">val</span> b_set_db_callbacks</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_session_t">gnutls_session_t</a> -><br>       (string -> string -> unit) -> (string -> unit) -> (string -> string) -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">b_set_db_callbacks session store remove retrieve</code>: sets the three
+      callbacks for server-side session caching</p>
+</div>
+</div>
+
+<pre><span id="VALstring_of_verification_status_flag"><span class="keyword">val</span> string_of_verification_status_flag</span> : <code class="type"><a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_status_t_flag">gnutls_certificate_status_t_flag</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p>Returns a string for the status code</p>
+</div>
+</div>
+
+<pre><span id="VALgnutls_x509_crt_list_import"><span class="keyword">val</span> gnutls_x509_crt_list_import</span> : <code class="type">string -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_import_flags">gnutls_certificate_import_flags</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_t">gnutls_x509_crt_t</a> array</code></pre>
+<pre><span id="VALgnutls_x509_crl_list_import"><span class="keyword">val</span> gnutls_x509_crl_list_import</span> : <code class="type">string -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crt_fmt_t">gnutls_x509_crt_fmt_t</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_certificate_import_flags">gnutls_certificate_import_flags</a> -><br>       <a href="Nettls_gnutls_bindings.html#TYPEgnutls_x509_crl_t">gnutls_x509_crl_t</a> array</code></pre></body></html>

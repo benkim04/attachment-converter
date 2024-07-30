@@ -1,0 +1,20 @@
+version = "0.6.1"
+description = ""
+requires =
+"angstrom
+ base64
+ base64.rfc2045
+ emile
+ ipaddr
+ ke
+ pecu
+ prettym
+ ptime
+ rosetta
+ unstrctrd
+ unstrctrd.parser
+ uutf"
+archive(byte) = "mrmime.cma"
+archive(native) = "mrmime.cmxa"
+plugin(byte) = "mrmime.cma"
+plugin(native) = "mrmime.cmxs"

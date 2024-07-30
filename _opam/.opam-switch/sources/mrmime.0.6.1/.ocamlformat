@@ -1,0 +1,6 @@
+version=0.24.1
+module-item-spacing=compact
+break-infix=fit-or-vertical
+parens-tuple=always
+wrap-comments=false
+dock-collection-brackets=false

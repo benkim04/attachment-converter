@@ -1,0 +1,7 @@
+version = "0.1.4"
+description = ""
+requires = ""
+archive(byte) = "coin.cma"
+archive(native) = "coin.cmxa"
+plugin(byte) = "coin.cma"
+plugin(native) = "coin.cmxs"

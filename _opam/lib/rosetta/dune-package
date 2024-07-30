@@ -1,0 +1,34 @@
+(lang dune 3.16)
+(name rosetta)
+(version 0.3.0)
+(sections (lib .) (libexec .) (doc ../../doc/rosetta))
+(files
+ (lib
+  (META
+   dune-package
+   opam
+   rosetta.a
+   rosetta.cma
+   rosetta.cmi
+   rosetta.cmt
+   rosetta.cmti
+   rosetta.cmx
+   rosetta.cmxa
+   rosetta.ml
+   rosetta.mli))
+ (libexec (rosetta.cmxs))
+ (doc (CHANGES.md LICENSE.md README.md)))
+(library
+ (name rosetta)
+ (kind normal)
+ (archives (byte rosetta.cma) (native rosetta.cmxa))
+ (plugins (byte rosetta.cma) (native rosetta.cmxs))
+ (native_archives rosetta.a)
+ (requires uuuu yuscii coin)
+ (main_module_name Rosetta)
+ (modes byte native)
+ (modules
+  (singleton
+   (obj_name rosetta)
+   (visibility public)
+   (source (path Rosetta) (intf (path rosetta.mli)) (impl (path rosetta.ml))))))

@@ -1,0 +1,34 @@
+opam-version: "2.0"
+added: [
+  "doc/bigarray-overlap" {"D"}
+  "doc/bigarray-overlap/CHANGES.md" {"F:S390T1722365659.04"}
+  "doc/bigarray-overlap/LICENSE.md" {"F:S1086T1722365659.04"}
+  "doc/bigarray-overlap/README.md" {"F:S1080T1722365659.04"}
+  "lib/bigarray-overlap" {"D"}
+  "lib/bigarray-overlap/META" {"F:S262T1722365659.01"}
+  "lib/bigarray-overlap/dune-package" {"F:S28T1722365659.01"}
+  "lib/bigarray-overlap/liboverlap_freestanding_stubs.a"
+    {"F:S0T1722365659.01"}
+  "lib/bigarray-overlap/liboverlap_stubs.a" {"F:S13060T1722365659.01"}
+  "lib/bigarray-overlap/opam" {"F:S1225T1722365659.01"}
+  "lib/bigarray-overlap/overlap.a" {"F:S22442T1722365659.01"}
+  "lib/bigarray-overlap/overlap.cma" {"F:S24939T1722365659.01"}
+  "lib/bigarray-overlap/overlap.cmi" {"F:S1748T1722365659.01"}
+  "lib/bigarray-overlap/overlap.cmt" {"F:S43624T1722365659.01"}
+  "lib/bigarray-overlap/overlap.cmti" {"F:S8913T1722365659.02"}
+  "lib/bigarray-overlap/overlap.cmx" {"F:S891T1722365659.02"}
+  "lib/bigarray-overlap/overlap.cmxa" {"F:S909T1722365659.03"}
+  "lib/bigarray-overlap/overlap.cmxs" {"F:S34344T1722365659.04"}
+  "lib/bigarray-overlap/overlap.ml" {"F:S2659T1722365659.03"}
+  "lib/bigarray-overlap/overlap.mli" {"F:S497T1722365659.03"}
+  "lib/bigarray-overlap/overlap__.cmi" {"F:S235T1722365659.03"}
+  "lib/bigarray-overlap/overlap__.cmt" {"F:S2556T1722365659.03"}
+  "lib/bigarray-overlap/overlap__.cmx" {"F:S126T1722365659.03"}
+  "lib/bigarray-overlap/overlap__.ml" {"F:S111T1722365659.03"}
+  "lib/bigarray-overlap/overlap__Overlap_stubs.cmi" {"F:S605T1722365659.03"}
+  "lib/bigarray-overlap/overlap__Overlap_stubs.cmt" {"F:S3530T1722365659.03"}
+  "lib/bigarray-overlap/overlap__Overlap_stubs.cmx" {"F:S288T1722365659.03"}
+  "lib/bigarray-overlap/overlap_stubs.ml" {"F:S153T1722365659.03"}
+  "lib/bigarray-overlap/runtime.js" {"F:S362T1722365659.03"}
+  "lib/stublibs/dlloverlap_stubs.so" {"F:S21280T1722365659.04"}
+]

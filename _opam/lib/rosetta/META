@@ -1,0 +1,7 @@
+version = "0.3.0"
+description = ""
+requires = "coin uuuu yuscii"
+archive(byte) = "rosetta.cma"
+archive(native) = "rosetta.cmxa"
+plugin(byte) = "rosetta.cma"
+plugin(native) = "rosetta.cmxs"

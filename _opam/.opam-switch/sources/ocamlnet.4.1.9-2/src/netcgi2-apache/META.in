@@ -1,0 +1,12 @@
+# Specifications for the Netcgi_apache module                   -*-conf-*-
+#name = "netcgi_apache"
+version = "@VERSION@"
+description = "Apache mod connector"
+requires = "unix netstring netsys netcgi2 str"
+archive(byte) = "netcgi2-apache.cma"
+archive(native) = "netcgi2-apache2.cmxa"
+archive(native,gprof) = "netcgi2-apache.p.cmxa"
+error(pkg_netcgi1) = "The packages netcgi1 and netcgi2 cannot be used together"
+plugin(byte) = "netcgi2-apache.cma"
+plugin(native) = "netcgi2-apache.cmxs"
+plugin(native,gprof) = "netcgi2-apache.p.cmxs"

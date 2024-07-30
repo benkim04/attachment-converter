@@ -1,0 +1,692 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Regexp.html">
+<link rel="next" href="Crypto.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of extensions" rel=Appendix href="index_extensions.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of class attributes" rel=Appendix href="index_attributes.html">
+<link title="Index of class methods" rel=Appendix href="index_methods.html">
+<link title="Index of classes" rel=Appendix href="index_classes.html">
+<link title="Index of class types" rel=Appendix href="index_class_types.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Uq_gtk" rel="Chapter" href="Uq_gtk.html">
+<link title="Uq_tcl" rel="Chapter" href="Uq_tcl.html">
+<link title="Equeue" rel="Chapter" href="Equeue.html">
+<link title="Unixqueue" rel="Chapter" href="Unixqueue.html">
+<link title="Unixqueue_pollset" rel="Chapter" href="Unixqueue_pollset.html">
+<link title="Unixqueue_select" rel="Chapter" href="Unixqueue_select.html">
+<link title="Uq_resolver" rel="Chapter" href="Uq_resolver.html">
+<link title="Uq_engines" rel="Chapter" href="Uq_engines.html">
+<link title="Uq_multiplex" rel="Chapter" href="Uq_multiplex.html">
+<link title="Uq_transfer" rel="Chapter" href="Uq_transfer.html">
+<link title="Uq_socks5" rel="Chapter" href="Uq_socks5.html">
+<link title="Uq_io" rel="Chapter" href="Uq_io.html">
+<link title="Uq_lwt" rel="Chapter" href="Uq_lwt.html">
+<link title="Uq_libevent" rel="Chapter" href="Uq_libevent.html">
+<link title="Uq_mt" rel="Chapter" href="Uq_mt.html">
+<link title="Uq_client" rel="Chapter" href="Uq_client.html">
+<link title="Uq_server" rel="Chapter" href="Uq_server.html">
+<link title="Uq_datagram" rel="Chapter" href="Uq_datagram.html">
+<link title="Uq_engines_compat" rel="Chapter" href="Uq_engines_compat.html">
+<link title="Equeue_intro" rel="Chapter" href="Equeue_intro.html">
+<link title="Equeue_howto" rel="Chapter" href="Equeue_howto.html">
+<link title="Netcamlbox" rel="Chapter" href="Netcamlbox.html">
+<link title="Netcgi_apache" rel="Chapter" href="Netcgi_apache.html">
+<link title="Netcgi_modtpl" rel="Chapter" href="Netcgi_modtpl.html">
+<link title="Netcgi_plex" rel="Chapter" href="Netcgi_plex.html">
+<link title="Netcgi_common" rel="Chapter" href="Netcgi_common.html">
+<link title="Netcgi" rel="Chapter" href="Netcgi.html">
+<link title="Netcgi_ajp" rel="Chapter" href="Netcgi_ajp.html">
+<link title="Netcgi_scgi" rel="Chapter" href="Netcgi_scgi.html">
+<link title="Netcgi_cgi" rel="Chapter" href="Netcgi_cgi.html">
+<link title="Netcgi_fcgi" rel="Chapter" href="Netcgi_fcgi.html">
+<link title="Netcgi_dbi" rel="Chapter" href="Netcgi_dbi.html">
+<link title="Netcgi1_compat" rel="Chapter" href="Netcgi1_compat.html">
+<link title="Netcgi_test" rel="Chapter" href="Netcgi_test.html">
+<link title="Netcgi_porting" rel="Chapter" href="Netcgi_porting.html">
+<link title="Nethttp_client_conncache" rel="Chapter" href="Nethttp_client_conncache.html">
+<link title="Nethttp_client" rel="Chapter" href="Nethttp_client.html">
+<link title="Nettelnet_client" rel="Chapter" href="Nettelnet_client.html">
+<link title="Netftp_data_endpoint" rel="Chapter" href="Netftp_data_endpoint.html">
+<link title="Netftp_client" rel="Chapter" href="Netftp_client.html">
+<link title="Nethttp_fs" rel="Chapter" href="Nethttp_fs.html">
+<link title="Netftp_fs" rel="Chapter" href="Netftp_fs.html">
+<link title="Netsmtp" rel="Chapter" href="Netsmtp.html">
+<link title="Netpop" rel="Chapter" href="Netpop.html">
+<link title="Netldap" rel="Chapter" href="Netldap.html">
+<link title="Netclient_tut" rel="Chapter" href="Netclient_tut.html">
+<link title="Netgss_bindings" rel="Chapter" href="Netgss_bindings.html">
+<link title="Netgss" rel="Chapter" href="Netgss.html">
+<link title="Nethttpd_types" rel="Chapter" href="Nethttpd_types.html">
+<link title="Nethttpd_kernel" rel="Chapter" href="Nethttpd_kernel.html">
+<link title="Nethttpd_reactor" rel="Chapter" href="Nethttpd_reactor.html">
+<link title="Nethttpd_engine" rel="Chapter" href="Nethttpd_engine.html">
+<link title="Nethttpd_services" rel="Chapter" href="Nethttpd_services.html">
+<link title="Nethttpd_plex" rel="Chapter" href="Nethttpd_plex.html">
+<link title="Nethttpd_util" rel="Chapter" href="Nethttpd_util.html">
+<link title="Nethttpd_intro" rel="Chapter" href="Nethttpd_intro.html">
+<link title="Netmcore" rel="Chapter" href="Netmcore.html">
+<link title="Netmcore_camlbox" rel="Chapter" href="Netmcore_camlbox.html">
+<link title="Netmcore_mempool" rel="Chapter" href="Netmcore_mempool.html">
+<link title="Netmcore_heap" rel="Chapter" href="Netmcore_heap.html">
+<link title="Netmcore_ref" rel="Chapter" href="Netmcore_ref.html">
+<link title="Netmcore_array" rel="Chapter" href="Netmcore_array.html">
+<link title="Netmcore_sem" rel="Chapter" href="Netmcore_sem.html">
+<link title="Netmcore_mutex" rel="Chapter" href="Netmcore_mutex.html">
+<link title="Netmcore_condition" rel="Chapter" href="Netmcore_condition.html">
+<link title="Netmcore_queue" rel="Chapter" href="Netmcore_queue.html">
+<link title="Netmcore_buffer" rel="Chapter" href="Netmcore_buffer.html">
+<link title="Netmcore_matrix" rel="Chapter" href="Netmcore_matrix.html">
+<link title="Netmcore_hashtbl" rel="Chapter" href="Netmcore_hashtbl.html">
+<link title="Netmcore_process" rel="Chapter" href="Netmcore_process.html">
+<link title="Netmcore_tut" rel="Chapter" href="Netmcore_tut.html">
+<link title="Netmcore_basics" rel="Chapter" href="Netmcore_basics.html">
+<link title="Netplex_types" rel="Chapter" href="Netplex_types.html">
+<link title="Netplex_mp" rel="Chapter" href="Netplex_mp.html">
+<link title="Netplex_mt" rel="Chapter" href="Netplex_mt.html">
+<link title="Netplex_log" rel="Chapter" href="Netplex_log.html">
+<link title="Netplex_controller" rel="Chapter" href="Netplex_controller.html">
+<link title="Netplex_container" rel="Chapter" href="Netplex_container.html">
+<link title="Netplex_sockserv" rel="Chapter" href="Netplex_sockserv.html">
+<link title="Netplex_workload" rel="Chapter" href="Netplex_workload.html">
+<link title="Netplex_main" rel="Chapter" href="Netplex_main.html">
+<link title="Netplex_config" rel="Chapter" href="Netplex_config.html">
+<link title="Netplex_kit" rel="Chapter" href="Netplex_kit.html">
+<link title="Rpc_netplex" rel="Chapter" href="Rpc_netplex.html">
+<link title="Netplex_cenv" rel="Chapter" href="Netplex_cenv.html">
+<link title="Netplex_semaphore" rel="Chapter" href="Netplex_semaphore.html">
+<link title="Netplex_sharedvar" rel="Chapter" href="Netplex_sharedvar.html">
+<link title="Netplex_mutex" rel="Chapter" href="Netplex_mutex.html">
+<link title="Netplex_encap" rel="Chapter" href="Netplex_encap.html">
+<link title="Netplex_mbox" rel="Chapter" href="Netplex_mbox.html">
+<link title="Netplex_internal" rel="Chapter" href="Netplex_internal.html">
+<link title="Netplex_intro" rel="Chapter" href="Netplex_intro.html">
+<link title="Netplex_advanced" rel="Chapter" href="Netplex_advanced.html">
+<link title="Netplex_admin" rel="Chapter" href="Netplex_admin.html">
+<link title="Netshm" rel="Chapter" href="Netshm.html">
+<link title="Netshm_data" rel="Chapter" href="Netshm_data.html">
+<link title="Netshm_hashtbl" rel="Chapter" href="Netshm_hashtbl.html">
+<link title="Netshm_array" rel="Chapter" href="Netshm_array.html">
+<link title="Netshm_intro" rel="Chapter" href="Netshm_intro.html">
+<link title="Netstring_pcre" rel="Chapter" href="Netstring_pcre.html">
+<link title="Netconversion" rel="Chapter" href="Netconversion.html">
+<link title="Netchannels" rel="Chapter" href="Netchannels.html">
+<link title="Netstream" rel="Chapter" href="Netstream.html">
+<link title="Netmime_string" rel="Chapter" href="Netmime_string.html">
+<link title="Netmime" rel="Chapter" href="Netmime.html">
+<link title="Netsendmail" rel="Chapter" href="Netsendmail.html">
+<link title="Neturl" rel="Chapter" href="Neturl.html">
+<link title="Netaddress" rel="Chapter" href="Netaddress.html">
+<link title="Netbuffer" rel="Chapter" href="Netbuffer.html">
+<link title="Netmime_header" rel="Chapter" href="Netmime_header.html">
+<link title="Netmime_channels" rel="Chapter" href="Netmime_channels.html">
+<link title="Neturl_ldap" rel="Chapter" href="Neturl_ldap.html">
+<link title="Netdate" rel="Chapter" href="Netdate.html">
+<link title="Netencoding" rel="Chapter" href="Netencoding.html">
+<link title="Netulex" rel="Chapter" href="Netulex.html">
+<link title="Netaccel" rel="Chapter" href="Netaccel.html">
+<link title="Netaccel_link" rel="Chapter" href="Netaccel_link.html">
+<link title="Nethtml" rel="Chapter" href="Nethtml.html">
+<link title="Netstring_str" rel="Chapter" href="Netstring_str.html">
+<link title="Netmappings" rel="Chapter" href="Netmappings.html">
+<link title="Netaux" rel="Chapter" href="Netaux.html">
+<link title="Nethttp" rel="Chapter" href="Nethttp.html">
+<link title="Netpagebuffer" rel="Chapter" href="Netpagebuffer.html">
+<link title="Netfs" rel="Chapter" href="Netfs.html">
+<link title="Netglob" rel="Chapter" href="Netglob.html">
+<link title="Netauth" rel="Chapter" href="Netauth.html">
+<link title="Netsockaddr" rel="Chapter" href="Netsockaddr.html">
+<link title="Netnumber" rel="Chapter" href="Netnumber.html">
+<link title="Netxdr_mstring" rel="Chapter" href="Netxdr_mstring.html">
+<link title="Netxdr" rel="Chapter" href="Netxdr.html">
+<link title="Netcompression" rel="Chapter" href="Netcompression.html">
+<link title="Netunichar" rel="Chapter" href="Netunichar.html">
+<link title="Netasn1" rel="Chapter" href="Netasn1.html">
+<link title="Netasn1_encode" rel="Chapter" href="Netasn1_encode.html">
+<link title="Netoid" rel="Chapter" href="Netoid.html">
+<link title="Netstring_tstring" rel="Chapter" href="Netstring_tstring.html">
+<link title="Netdn" rel="Chapter" href="Netdn.html">
+<link title="Netx509" rel="Chapter" href="Netx509.html">
+<link title="Netascii_armor" rel="Chapter" href="Netascii_armor.html">
+<link title="Nettls_support" rel="Chapter" href="Nettls_support.html">
+<link title="Netmech_scram" rel="Chapter" href="Netmech_scram.html">
+<link title="Netmech_scram_gssapi" rel="Chapter" href="Netmech_scram_gssapi.html">
+<link title="Netmech_scram_sasl" rel="Chapter" href="Netmech_scram_sasl.html">
+<link title="Netmech_scram_http" rel="Chapter" href="Netmech_scram_http.html">
+<link title="Netgssapi_support" rel="Chapter" href="Netgssapi_support.html">
+<link title="Netgssapi_auth" rel="Chapter" href="Netgssapi_auth.html">
+<link title="Netchannels_crypto" rel="Chapter" href="Netchannels_crypto.html">
+<link title="Netx509_pubkey" rel="Chapter" href="Netx509_pubkey.html">
+<link title="Netx509_pubkey_crypto" rel="Chapter" href="Netx509_pubkey_crypto.html">
+<link title="Netsaslprep" rel="Chapter" href="Netsaslprep.html">
+<link title="Netmech_plain_sasl" rel="Chapter" href="Netmech_plain_sasl.html">
+<link title="Netmech_crammd5_sasl" rel="Chapter" href="Netmech_crammd5_sasl.html">
+<link title="Netmech_digest_sasl" rel="Chapter" href="Netmech_digest_sasl.html">
+<link title="Netmech_digest_http" rel="Chapter" href="Netmech_digest_http.html">
+<link title="Netmech_krb5_sasl" rel="Chapter" href="Netmech_krb5_sasl.html">
+<link title="Netmech_gs2_sasl" rel="Chapter" href="Netmech_gs2_sasl.html">
+<link title="Netmech_spnego_http" rel="Chapter" href="Netmech_spnego_http.html">
+<link title="Netchannels_tut" rel="Chapter" href="Netchannels_tut.html">
+<link title="Netmime_tut" rel="Chapter" href="Netmime_tut.html">
+<link title="Netsendmail_tut" rel="Chapter" href="Netsendmail_tut.html">
+<link title="Netulex_tut" rel="Chapter" href="Netulex_tut.html">
+<link title="Neturl_tut" rel="Chapter" href="Neturl_tut.html">
+<link title="Netsys" rel="Chapter" href="Netsys.html">
+<link title="Netsys_posix" rel="Chapter" href="Netsys_posix.html">
+<link title="Netsys_pollset" rel="Chapter" href="Netsys_pollset.html">
+<link title="Netlog" rel="Chapter" href="Netlog.html">
+<link title="Netexn" rel="Chapter" href="Netexn.html">
+<link title="Netsys_win32" rel="Chapter" href="Netsys_win32.html">
+<link title="Netsys_pollset_posix" rel="Chapter" href="Netsys_pollset_posix.html">
+<link title="Netsys_pollset_win32" rel="Chapter" href="Netsys_pollset_win32.html">
+<link title="Netsys_pollset_generic" rel="Chapter" href="Netsys_pollset_generic.html">
+<link title="Netsys_signal" rel="Chapter" href="Netsys_signal.html">
+<link title="Netsys_oothr" rel="Chapter" href="Netsys_oothr.html">
+<link title="Netsys_xdr" rel="Chapter" href="Netsys_xdr.html">
+<link title="Netsys_rng" rel="Chapter" href="Netsys_rng.html">
+<link title="Netsys_crypto_types" rel="Chapter" href="Netsys_crypto_types.html">
+<link title="Netsys_types" rel="Chapter" href="Netsys_types.html">
+<link title="Netsys_mem" rel="Chapter" href="Netsys_mem.html">
+<link title="Netsys_tmp" rel="Chapter" href="Netsys_tmp.html">
+<link title="Netsys_sem" rel="Chapter" href="Netsys_sem.html">
+<link title="Netsys_pmanage" rel="Chapter" href="Netsys_pmanage.html">
+<link title="Netsys_crypto" rel="Chapter" href="Netsys_crypto.html">
+<link title="Netsys_tls" rel="Chapter" href="Netsys_tls.html">
+<link title="Netsys_ciphers" rel="Chapter" href="Netsys_ciphers.html">
+<link title="Netsys_digests" rel="Chapter" href="Netsys_digests.html">
+<link title="Netsys_crypto_modes" rel="Chapter" href="Netsys_crypto_modes.html">
+<link title="Netsys_gssapi" rel="Chapter" href="Netsys_gssapi.html">
+<link title="Netsys_sasl_types" rel="Chapter" href="Netsys_sasl_types.html">
+<link title="Netsys_sasl" rel="Chapter" href="Netsys_sasl.html">
+<link title="Netsys_polypipe" rel="Chapter" href="Netsys_polypipe.html">
+<link title="Netsys_polysocket" rel="Chapter" href="Netsys_polysocket.html">
+<link title="Netsys_global" rel="Chapter" href="Netsys_global.html">
+<link title="Nettls_gnutls_bindings" rel="Chapter" href="Nettls_gnutls_bindings.html">
+<link title="Nettls_nettle_bindings" rel="Chapter" href="Nettls_nettle_bindings.html">
+<link title="Nettls_gnutls" rel="Chapter" href="Nettls_gnutls.html">
+<link title="Netunidata" rel="Chapter" href="Netunidata.html">
+<link title="Netgzip" rel="Chapter" href="Netgzip.html">
+<link title="Rpc_auth_local" rel="Chapter" href="Rpc_auth_local.html">
+<link title="Rpc_xti_client" rel="Chapter" href="Rpc_xti_client.html">
+<link title="Rpc" rel="Chapter" href="Rpc.html">
+<link title="Rpc_program" rel="Chapter" href="Rpc_program.html">
+<link title="Rpc_util" rel="Chapter" href="Rpc_util.html">
+<link title="Rpc_portmapper_aux" rel="Chapter" href="Rpc_portmapper_aux.html">
+<link title="Rpc_packer" rel="Chapter" href="Rpc_packer.html">
+<link title="Rpc_transport" rel="Chapter" href="Rpc_transport.html">
+<link title="Rpc_client" rel="Chapter" href="Rpc_client.html">
+<link title="Rpc_simple_client" rel="Chapter" href="Rpc_simple_client.html">
+<link title="Rpc_portmapper_clnt" rel="Chapter" href="Rpc_portmapper_clnt.html">
+<link title="Rpc_portmapper" rel="Chapter" href="Rpc_portmapper.html">
+<link title="Rpc_server" rel="Chapter" href="Rpc_server.html">
+<link title="Rpc_auth_sys" rel="Chapter" href="Rpc_auth_sys.html">
+<link title="Rpc_auth_gssapi" rel="Chapter" href="Rpc_auth_gssapi.html">
+<link title="Rpc_proxy" rel="Chapter" href="Rpc_proxy.html">
+<link title="Rpc_intro" rel="Chapter" href="Rpc_intro.html">
+<link title="Rpc_mapping_ref" rel="Chapter" href="Rpc_mapping_ref.html">
+<link title="Rpc_intro_gss" rel="Chapter" href="Rpc_intro_gss.html">
+<link title="Shell_sys" rel="Chapter" href="Shell_sys.html">
+<link title="Shell" rel="Chapter" href="Shell.html">
+<link title="Shell_uq" rel="Chapter" href="Shell_uq.html">
+<link title="Shell_fs" rel="Chapter" href="Shell_fs.html">
+<link title="Shell_intro" rel="Chapter" href="Shell_intro.html">
+<link title="Intro" rel="Chapter" href="Intro.html">
+<link title="Platform" rel="Chapter" href="Platform.html">
+<link title="Foreword" rel="Chapter" href="Foreword.html">
+<link title="Ipv6" rel="Chapter" href="Ipv6.html">
+<link title="Regexp" rel="Chapter" href="Regexp.html">
+<link title="Tls" rel="Chapter" href="Tls.html">
+<link title="Crypto" rel="Chapter" href="Crypto.html">
+<link title="Authentication" rel="Chapter" href="Authentication.html">
+<link title="Credentials" rel="Chapter" href="Credentials.html">
+<link title="Gssapi" rel="Chapter" href="Gssapi.html">
+<link title="Ocamlnet4" rel="Chapter" href="Ocamlnet4.html">
+<link title="Get" rel="Chapter" href="Get.html"><title>Ocamlnet 4 Reference Manual : Tls</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Regexp.html" title="Regexp">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Crypto.html" title="Crypto">Next</a>
+</div>
+<h1>Tls</h1>
+<div class="info-desc">
+<h2 id="1_TLSsupport">TLS support</h2>
+<p>Since Ocamlnet-4, all implemented network protocols support now TLS.
+This document here explains how TLS is generally configured, and points
+to other pages for details.</p>
+
+<p>Before Ocamlnet-4, there was some incomplete TLS support for HTTP
+clients. At that time, the ocaml-ssl wrappers were used to link with
+openssl. This was mainly a quick solution to satisfy the demand, but
+we could never implement all the features we would like to have. Also,
+the development of ocaml-ssl seems to have stalled, and because of
+this, the migration to a new TLS library was started.</p>
+
+<h3 id="2_TheTLSprovider">The TLS provider</h3>
+<p>Ocamlnet-4 uses first class modules to separate the definition of the
+TLS provider (the library implementing the TLS protocol) from the TLS
+user (the protocol interpreters in Ocamlnet). This mainly means that the
+TLS provider is not hard-coded into Ocamlnet, but that the same code
+can be linked with different providers. Even better, it is possible to
+plug in providers at runtime, and - believe it or not - to use several
+providers at the same time.</p>
+
+<p>The definition of the TLS provider is
+<a href="Netsys_crypto_types.TLS_PROVIDER.html"><code class="code">Netsys_crypto_types.TLS_PROVIDER</code></a>.  Any module implementing this
+module type can be plugged into the system.  There is the notion of a
+"current" provider (<a href="Netsys_crypto.html#VALcurrent_tls"><code class="code">Netsys_crypto.current_tls</code></a>), so that if any TLS
+provider is linked into the executable, the code checks whether the
+current provider is set, and automatically uses it. The protocol
+interpreters, however, also allow it to set the TLS provider per
+client, or even per connection.</p>
+
+<p>The provider defines types and functions that implement the TLS
+security mechanisms. Using the provider directly is a bit tricky,
+because the types it defines must always be in scope when value of
+these types are manipulated (a consequence of using first-class
+modules). Because of this, the protocol interpreters normally use the
+provider only via a thin layer around it that deals with these issues,
+<a href="Netsys_tls.html"><code class="code">Netsys_tls</code></a>.</p>
+
+<h3 id="2_GnuTLSasTLSprovider">GnuTLS as TLS provider</h3>
+<p>Currently, there is only one provider, GnuTLS. The bindings for GnuTLS
+are already quite complete, and are available as <code class="code">nettls-gnutls</code> library.
+So, enabling TLS in a program is quite easy:</p>
+
+<ul>
+<li>Add <code class="code">nettls-gnutls</code> to the list of findlib packages</li>
+<li>Call <code class="code">Nettls_gnutls.init()</code> (which mainly forces that the bindings are
+   really linked in). After <code class="code">init</code>, <a href="Netsys_crypto.html#VALcurrent_tls"><code class="code">Netsys_crypto.current_tls</code></a> returns
+   the GnuTLS provider.</li>
+</ul>
+<p><b>OPAM users</b>: Note that the OPAM package for OCamlnet does not
+build the TLS provider by default. The trigger for this is the presence
+of the <code class="code">conf-gnutls</code> OPAM package, i.e. do <code class="code">opam install conf-gnutls</code>
+to rebuild with TLS.</p>
+
+<p>At the moment, not all of the functionaliy of GnuTLS is available through
+the provider API. If necessary, you can access the bindings directly:</p>
+
+<ul>
+<li><a href="Nettls_gnutls_bindings.html"><code class="code">Nettls_gnutls_bindings</code></a>: the functions so far available</li>
+<li><a href="Nettls_gnutls.html#VALdowncast"><code class="code">Nettls_gnutls.downcast</code></a>: get access to GnuTLS from a generic provider module</li>
+</ul>
+<h3 id="2_Configurationsandendpoints">Configurations, and endpoints</h3>
+<p>Almost always TLS needs to be configured. For clients, there is a kind of
+secure default (by using the system-installed list of CA certificates as
+trusted list), but even then the configuration needs to be frequently
+adapted to the individual requirements.</p>
+
+<p>Note that we currently only support X.509 configurations (although
+GnuTLS also supports OpenPGP, SRP, and a few more).</p>
+
+<p>You get the secure default for clients by running:</p>
+
+<pre class="codepre"><code class="code">let provider = Netsys_crypto.current_tls()
+
+let tls_config = 
+  Netsys_tls.create_x509_config
+     ~system_trust:true
+     ~peer_auth:`Required
+     provider
+ </code></pre>
+<p>You can add more certificates to the trust list by passing the <code class="code">trust</code>
+option, e.g.</p>
+
+<pre class="codepre"><code class="code">let tls_config = 
+  Netsys_tls.create_x509_config
+     ~system_trust:true
+     ~trust:[ `PEM_file:"/path/file/with/certs" ]
+     ~peer_auth:`Required
+     provider
+ </code></pre>
+<p>For servers, the configuration looks a bit different. You need a
+server certificate with a private key:</p>
+
+<pre class="codepre"><code class="code">let tls_config = 
+  Netsys_tls.create_x509_config
+     ~keys:[ (`PEM_file "/path/to/cert", `PEM_file "/path/to/key", None) ]
+     ~peer_auth:`None
+     tp
+ </code></pre>
+<p>(replace <code class="code">None</code> by <code class="code">Some "password"</code> if the key is password-protected).
+This example does not authenticate the client (<code class="code">peer_auth:`None</code>).
+If you need that, change <code class="code">peer_auth</code> back to <code class="code">`Required</code>, and also pass
+<code class="code">trust</code> so that the CA signing the client certificate is trusted.</p>
+
+<p>The value <code class="code">tls_config</code> is actually also a first-class module, and includes the
+provider as sub-module:</p>
+
+<pre class="codepre"><code class="code">module type TLS_CONFIG =
+  sig
+    module TLS : TLS_PROVIDER
+    val config : TLS.config
+  end
+</code></pre>
+<p>Because of this, it is sufficient to pass a <code class="code">TLS_CONFIG</code> module to a
+protocol implementation to tell it about the combination of a provider
+and a configuration (e.g. look at the <code class="code">tls_config</code> argument of
+<a href="Netftp_fs.html#VALftp_fs"><code class="code">Netftp_fs.ftp_fs</code></a>). The reason for this kind of wrapping is that the
+type of the configuration is defined by the provider, and hence the
+configuration cannot exist without provider (the OCaml type checker
+enforces this).</p>
+
+<p>There is also</p>
+
+<pre class="codepre"><code class="code">module type TLS_ENDPOINT =
+  sig
+    module TLS : TLS_PROVIDER
+    val endpoint : TLS.endpoint
+  end
+</code></pre>
+<p>and even</p>
+
+<pre class="codepre"><code class="code">module type FILE_TLS_ENDPOINT =
+  sig
+    module TLS : TLS_PROVIDER
+    val endpoint : TLS.endpoint
+    val rd_file : Unix.file_descr
+    val wr_file : Unix.file_descr
+  end
+</code></pre>
+<p>An "endpoint" denotes here the TLS state for a single connection.</p>
+
+<h3 id="2_UsingTLSinclients">Using TLS in clients</h3>
+<p><b>HTTP:</b> In <a href="Nethttp_client.html"><code class="code">Nethttp_client</code></a>, TLS is now automatically available once a
+TLS provider is initialized. Just submit "https" URLs, and that's it.
+There is no <code class="code">Https_client</code> module anymore (as in earlier versions of
+Ocamlnet).</p>
+
+<p>If you need to change the TLS configuration (or want to enable a different
+provider), you can set the <a href="Nethttp_client.html#TYPEELThttp_options.tls"><code class="code">Nethttp_client.http_options.tls</code></a> option, e.g.</p>
+
+<pre class="codepre"><code class="code">let http_options = pipeline # get_options
+let new_options =
+  { http_options with
+      Nethttp_client.tls = Some tls_config
+  }
+pipeline # set_options new_options
+</code></pre>
+<p><a href="Nethttp_fs.html"><code class="code">Nethttp_fs</code></a> inherits the automatic configuration from <a href="Nethttp_client.html"><code class="code">Nethttp_client</code></a>.</p>
+
+<p><b>FTP:</b> After starting an FTP session, you need to enable TLS explicitly
+using <a href="Netftp_client.html#VALtls_method"><code class="code">Netftp_client.tls_method</code></a>. For instance:</p>
+
+<pre class="codepre"><code class="code">let client = new Netftp_client.ftp_client() ;;
+client # exec (connect_method ~host ());
+client # exec (tls_method ~config ~required ());
+client # exec (login_method ~user ~get_password ~get_account ());
+</code></pre>
+<p>Here, <code class="code">config</code> is the TLS configuration. Set <code class="code">required</code> if TLS
+is mandatory, and the file transfer will fail for servers not
+supporting TLS.</p>
+
+<p>For <a href="Netftp_fs.html"><code class="code">Netftp_fs</code></a>, things are a bit simpler: Just pass <code class="code">tls_enabled:true</code>
+when creating the fs object:</p>
+
+<pre class="codepre"><code class="code">let fs = Netftp_fs.ftp_fs ~tls_enabled:true "ftp://user@host/path"
+</code></pre>
+<p>Again, you can set whether TLS is required: <code class="code">tls_required</code>. There is
+also the <code class="code">tls_config</code> option to set an alternate TLS configuration.</p>
+
+<p><b>SMTP and POP:</b> These two clients have now additional methods
+<code class="code">starttls</code> (SMTP) and <code class="code">stls</code> (POP), respectively. These methods can
+be called when the right moment has come to switch to TLS. They
+take the TLS configuration and the domain name of the peer as arguments,
+e.g.</p>
+
+<pre class="codepre"><code class="code">smtp_client # starttls ~peer_name:(Some "smtp.google.com") config
+</code></pre>
+<p><b>RPC:</b> You need to run the client in <code class="code">`Socket</code> mode, and pass the special
+TLS socket configuration, e.g.</p>
+
+<pre class="codepre"><code class="code">let socket_config =
+  Rpc_client.tls_socket_config config
+
+let client =
+  Rpc_client.create2
+    (`Socket(Rpc.Tcp, connect_address, socket_config))
+    program
+    esys
+</code></pre>
+<p>where <code class="code">config</code> is still the TLS configuration.</p>
+
+<h3 id="2_Clientfeatures">Client features</h3>
+<p>Note that TLS security is bound to domain names, and not IP addresses.
+Because of this, you cannot create TLS sessions when the host name is
+only an IP address. (In some cases, Ocamlnet allows it to pass the
+domain name separately. This is the <code class="code">peer_name</code> argument you can find
+here and there.)</p>
+
+<p>All clients support SNI, and thus can talk to name-based virtual servers.
+SNI is a protocol extension that allows it clients to announce early in
+the feature negotiation to which domain they want to talk. SNI is
+not available on all servers, though.</p>
+
+<p>So far, only <a href="Nethttp_client.html"><code class="code">Nethttp_client</code></a> supports the caching of TLS sessions
+between TCP connects, but it needs to be explicitly configured
+(method <code class="code">set_tls_cache</code>). (A "TLS session" is an established security
+context where both parties know the secret credentials, and can exchange
+confidential messages. TLS sessions are independent of TCP connections,
+i.e. the next TCP connection can reuse the same TLS session if both parties
+allow it.)</p>
+
+<h3 id="2_UsingTLSinservers">Using TLS in servers</h3>
+<p><b>HTTP:</b> If you use the Netplex encapsulation of the server processes,
+TLS is normally available. Just add the required configuration to
+the configuration file: See <a href="Nethttpd_plex.html#tls"><i>Configuring TLS</i></a> for details.</p>
+
+<p>If you use the more low-level modules <a href="Nethttpd_kernel.html"><code class="code">Nethttpd_kernel</code></a>,
+<a href="Nethttpd_reactor.html"><code class="code">Nethttpd_reactor</code></a> and <a href="Nethttpd_engine.html"><code class="code">Nethttpd_engine</code></a>, things are a bit more
+complicated. The TLS configuration is hidden in the
+<a href="Nethttpd_kernel.http_protocol_config-c.html"><code class="code">Nethttpd_kernel.http_protocol_config</code></a>, and you need here to set
+<code class="code">config_tls</code>.</p>
+
+<p>Note that these low-level modules do not provide TLS session caching
+automatically. You need to do this on your own by getting an
+<a href="Nethttpd_kernel.http_protocol_hooks-c.html"><code class="code">Nethttpd_kernel.http_protocol_hooks</code></a> object, and calling <code class="code">tls_set_cache</code>
+there. For the Netplex-encapsulated version, this is already done.</p>
+
+<p><b>RPC:</b> This is almost identical to the client case:</p>
+
+<pre class="codepre"><code class="code">let socket_config =
+  Rpc_server.tls_socket_config config
+
+let server =
+  Rpc_server.create2
+    (`Socket(Rpc.Tcp, connect_address, socket_config))
+</code></pre>
+<p>If you use <a href="Rpc_netplex.html"><code class="code">Rpc_netplex</code></a>, the <code class="code">rpc_factory</code> doesn't allow to
+configure TLS via the configuration file. However, you can do it
+on your own, by calling <a href="Netplex_config.html#VALread_tls_config"><code class="code">Netplex_config.read_tls_config</code></a> to
+extract the TLS configuration from the file.</p>
+
+<h3 id="2_Serverfeatures">Server features</h3>
+<p>The HTTP server supports SNI, and thus name-based virtual hosting.
+For every domain, just configure a separate certificate.</p>
+
+<p>Wildcard certificates are supported.</p>
+
+<p>Both HTTP and RPC servers allow it to pass down the user name of a
+client that was authenticated with a client certificate. For HTTP,
+this name is available in the environment as <code class="code">REMOTE_USER</code> variable.
+For RPC, you can use the <a href="Rpc_server.html#VALauth_transport"><code class="code">Rpc_server.auth_transport</code></a>
+pseudo-authentication method (which does nothing on the RPC level, but
+just looks whether there is a more low-level way of authentication
+like a client certificate). The user name is then returned by
+<a href="Rpc_server.html#VALget_user"><code class="code">Rpc_server.get_user</code></a>.</p>
+
+<p>So far, we don't support that servers request a client certificate
+in a rehandshake.</p>
+
+<h3 id="2_ProgrammingwithTLS">Programming with TLS</h3>
+<p>As already mentioned, it is normally not advisable to program with the
+TLS provider directly. Better ways:</p>
+
+<ul>
+<li><a href="Netsys_tls.html"><code class="code">Netsys_tls</code></a> hides the first-class modules to some degree, but is
+   still close to what the provider defines.</li>
+<li><a href="Netchannels_crypto.tls_layer-c.html"><code class="code">Netchannels_crypto.tls_layer</code></a> and <a href="Netchannels_crypto.tls_endpoint-c.html"><code class="code">Netchannels_crypto.tls_endpoint</code></a> 
+   allow it to
+   add TLS security to an existing input or output channel (as defined
+   by the <a href="Netchannels.html"><code class="code">Netchannels</code></a> module).</li>
+<li><a href="Uq_multiplex.html#VALtls_multiplex_controller"><code class="code">Uq_multiplex.tls_multiplex_controller</code></a> allows it to add TLS
+   security to an existing <a href="Uq_multiplex.multiplex_controller-c.html"><code class="code">Uq_multiplex.multiplex_controller</code></a>.</li>
+<li>The generic read/write functions in <a href="Netsys.html"><code class="code">Netsys</code></a> can also deal with TLS-enabled
+   connections.</li>
+<li><a href="Netsys_types.html"><code class="code">Netsys_types</code></a> defines some important exceptions used by the
+   provider.</li>
+</ul>
+<p>In all cases, it is expected that there is already a bidirectional
+data connection between the client and the server. Unlike in the old
+<code class="code">ocaml-ssl</code> binding, there is no such thing like a TLS-enabled socket.
+Rather, TLS can be started on top of any kind of bidirectional connection, and
+instead of using special versions of the <code class="code">connect</code> and <code class="code">accept</code> routines
+you can run the TLS <code class="code">handshake</code> on the already existing connection.</p>
+
+<p>So, the following steps are needed:</p>
+
+<ul>
+<li>Establish the bidirectional data connection on a file descriptor
+   (which is often a socket, but is not restricted to this)</li>
+<li>Create the TLS endpoint for the TLS configuration. With <a href="Netsys_tls.html"><code class="code">Netsys_tls</code></a>,
+   this is done by calling <a href="Netsys_tls.html#VALcreate_file_endpoint"><code class="code">Netsys_tls.create_file_endpoint</code></a>.</li>
+<li>The handshake is done by calling <a href="Netsys_tls.html#VALhandshake"><code class="code">Netsys_tls.handshake</code></a>. It is not
+   mandatory for the user to call this function, but if not done, the
+   call is triggered by the next step implicitly.</li>
+<li>Now use <a href="Netsys_tls.html#VALrecv"><code class="code">Netsys_tls.recv</code></a>, <a href="Netsys_tls.html#VALmem_recv"><code class="code">Netsys_tls.mem_recv</code></a>, <a href="Netsys_tls.html#VALsend"><code class="code">Netsys_tls.send</code></a>
+   and <a href="Netsys_tls.html#VALmem_send"><code class="code">Netsys_tls.mem_send</code></a> to exchange application data with the peer.</li>
+<li>Finally, invoke <a href="Netsys_tls.html#VALshutdown"><code class="code">Netsys_tls.shutdown</code></a> to shut down the secure data
+   channel. Note that this function does not shut down the underlying
+   file descriptor, but just signals the end of the data transfer on TLS
+   level.</li>
+</ul>
+<p>The <a href="Netsys_tls.html"><code class="code">Netsys_tls</code></a> module assumes non-blocking data transfer. All I/O
+functions (including <code class="code">handshake</code> and <code class="code">shutdown</code>) may raise the
+two special exceptions <a href="Netsys_types.html#EXCEPTIONEAGAIN_RD"><code class="code">Netsys_types.EAGAIN_RD</code></a> and <a href="Netsys_types.html#EXCEPTIONEAGAIN_WR"><code class="code">Netsys_types.EAGAIN_WR</code></a>
+when they need to be called again when there is data to read, and buffer
+space for the next write, respectively. Note that it is possible that a
+<code class="code">send</code> raises <a href="Netsys_types.html#EXCEPTIONEAGAIN_RD"><code class="code">Netsys_types.EAGAIN_RD</code></a> and that a <code class="code">recv</code> raises
+<a href="Netsys_types.html#EXCEPTIONEAGAIN_WR"><code class="code">Netsys_types.EAGAIN_WR</code></a>.</p>
+
+<p>Example for using TLS on the descriptor <code class="code">fd</code> (omitting exception handling,
+which is ok for synchronous descriptors):</p>
+
+<pre class="codepre"><code class="code">(* Get fd e.g. with Unix.socket, and connect it to the peer. *)
+
+let endpoint =
+  Netsys_tls.create_file_endpoint
+     ~role:`Client
+     ~rd:fd
+     ~wr:fd
+     ~peer_name:(Some "www.domain.com")
+     tls_config
+
+let () =
+  Netsys_tls.handshake endpoint
+
+let n =
+  Netsys_tls.recv endpoint s pos len
+
+let n =
+  Netsys_tls.send endpoint s pos len
+
+let () =
+  Netsys_tls.shutdown endpoint Unix.SHUTDOWN_ALL
+</code></pre>
+<p>The <a href="Netsys_tls.html"><code class="code">Netsys_tls</code></a> module supports renegotiations of the security context.
+Normally, such renegotiations are just accepted, and automatically carried
+out. The <a href="Netsys_tls.html#VALrecv"><code class="code">Netsys_tls.recv</code></a> function allows it to intercept a renegotiation
+request, and to refuse it (or otherwise react on it) with the
+<code class="code">on_rehandshake</code> callback.</p>
+
+<p>Note that passing the domain name to <a href="Netsys_tls.html#VALcreate_file_endpoint"><code class="code">Netsys_tls.create_file_endpoint</code></a>
+is mandatory for clients that authenticate servers (i.e. for the "normal"
+case). Essentially, TLS ensures then that the server reachable under the
+IP address for the domain is really the server it claims to be.</p>
+
+<p>The <a href="Netsys.html#VALgread"><code class="code">Netsys.gread</code></a> and  functions also support TLS-protected
+descriptors. You need, however, pass the TLS endpoint explicitly to these
+functions, e.g.</p>
+
+<pre class="codepre"><code class="code">let fd_style = `TLS tls_endpoint
+
+(* Now use: *)
+let n = Netsys.gread fd_style fd s pos len
+let n = Netsys.gwrite fd_style fd s pos len
+let () = Netsys.gshutdown fd_style Unix.SHUTDOWN_ALL
+</code></pre>
+<p>Similar "convenience functions" exist for Netchannels (see
+<a href="Netchannels_crypto.tls_layer-c.html"><code class="code">Netchannels_crypto.tls_layer</code></a>) and multiplex controllers (see
+<a href="Uq_multiplex.html#VALtls_multiplex_controller"><code class="code">Uq_multiplex.tls_multiplex_controller</code></a>).</p>
+
+<p>Some word on the shutdown of a TLS session: TLS implements this by
+exchanging a special alert message called "close notify". Either party
+of the connection can start closing the data channel by sending such
+a "close notify" to the other side, which means that no more data will
+follow. The other side can send more data, but will finally reply with
+another "close notify". At this point, the connection is completely
+shut down on the TLS level. The "close notify" is just a special byte
+pattern in the encrypted data channel. Because it is encrypted, nobody
+else can fake such a message.</p>
+
+<p>Note that this part of the protocol was not done right in the first
+revisions of TLS (in particular in SSL 1.0 and 2.0), and even today
+many protocol implementations are broken in this respect. In particular,
+you should know that:</p>
+
+<ul>
+<li>Some implementations just tear down the TCP connection instead
+   of going through the "close notify" protocol. It depends very much
+   on the application protocol whether this is ok or not. For example,
+   such a "hard termination" of the connection is ok between
+   HTTP messages when there is <code class="code">Content-length</code> header, but it is not ok
+   to use it for signaling the end of a HTTP message when this header is
+   missing.</li>
+<li>Often, just one party sends a "close notify", but does not wait on
+   the closure message from the other side. For some protocols (e.g. HTTP)
+   this is explcitly allowed, for others not.</li>
+<li>Some implementations only react on a "close notify" when a closure on
+   TCP level follows. Because of this, it is common practice to just
+   do a one-sided TCP shutdown (<code class="code">SHUTDOWN_SEND</code>) directly after sending
+   a "close notify", at least when the protocol allows this.</li>
+</ul>
+<p>Note you have to program the latter explicitly. Neither <a href="Netsys_tls.html"><code class="code">Netsys_tls</code></a>
+nor one of the other ways of interacting with the TLS provider will
+trigger a TCP shutdown on its own.</p>
+
+<h3 id="2_X509Certificates">X.509 Certificates</h3>
+<p>For an introduction see <code class="code">Credentials.tls</code>.</p>
+
+<p>Ocamlnet includes now a simple parser for X.509 certificates. You can
+use this parser to add checks to clients and servers whether the
+certificates submitted by the peer are acceptable or not.</p>
+
+<p>The data structure used here is <a href="Netx509.x509_certificate-c.html"><code class="code">Netx509.x509_certificate</code></a>. If you get
+the certificate as binary blob it is normally DER-encoded, and you can
+use <a href="Netx509.x509_certificate_from_DER-c.html"><code class="code">Netx509.x509_certificate_from_DER</code></a> to parse it. Many protocol
+interpreters also export an object <a href="Nettls_support.tls_session_props-c.html"><code class="code">Nettls_support.tls_session_props</code></a>
+which includes the already decoded certificate.</p>
+
+<p>There are also functions for dealing with distinguished names:</p>
+
+<ul>
+<li><a href="Netx509.directory_name-c.html"><code class="code">Netx509.directory_name</code></a></li>
+<li><a href="Netx509.X509_DN_string.html"><code class="code">Netx509.X509_DN_string</code></a></li>
+<li><a href="Netx509.html#VALlookup_dn_ava_utf8"><code class="code">Netx509.lookup_dn_ava_utf8</code></a></li>
+<li><a href="Netx509.x509_dn_from_string-c.html"><code class="code">Netx509.x509_dn_from_string</code></a></li>
+</ul>
+<p>The most frequently used certificate extensions are also supported in
+<a href="Netx509.html"><code class="code">Netx509</code></a>. For writing parsers there is the generic ASN.1 module
+<a href="Netasn1.html"><code class="code">Netasn1</code></a>.</p>
+</div>
+</body></html>

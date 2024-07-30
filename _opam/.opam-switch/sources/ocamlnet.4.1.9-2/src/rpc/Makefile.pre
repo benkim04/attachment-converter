@@ -1,0 +1,28 @@
+TOP_DIR=../..
+
+include $(TOP_DIR)/Makefile.conf
+
+PRE = 1
+PKGNAME = rpc
+
+GENERATE = rpc_portmapper_aux.ml rpc_portmapper_clnt.ml META \
+           rpc_auth_gssapi_aux.ml
+
+RPCGEN = ../rpc-generator/ocamlrpcgen
+
+PP_OPTIONS = -pp "$(CPPO) $(PP_BYTES) $(PP_DEPRECATED)"
+
+include $(TOP_DIR)/Makefile.rules
+
+CLEAN_LIST += rpc_portmapper_aux.mli rpc_portmapper_clnt.mli \
+              rpc_auth_gssapi_aux.mli
+
+rpc_portmapper_aux.ml: rpc_portmapper.x
+	$(RPCGEN) -aux rpc_portmapper.x
+
+rpc_portmapper_clnt.ml: rpc_portmapper.x
+	$(RPCGEN) -clnt-only-functor rpc_portmapper.x
+
+rpc_auth_gssapi_aux.ml: rpc_auth_gssapi.x
+	$(RPCGEN) -aux rpc_auth_gssapi.x
+

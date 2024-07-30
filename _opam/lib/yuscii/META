@@ -1,0 +1,7 @@
+version = "0.3.0"
+description = ""
+requires = ""
+archive(byte) = "yuscii.cma"
+archive(native) = "yuscii.cmxa"
+plugin(byte) = "yuscii.cma"
+plugin(native) = "yuscii.cmxs"

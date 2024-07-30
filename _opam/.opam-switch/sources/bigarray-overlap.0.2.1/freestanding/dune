@@ -1,0 +1,14 @@
+(copy_files# ../lib/*.c)
+
+(rule
+ (deps Makefile overlap.c)
+ (targets liboverlap_freestanding_stubs.a)
+ (action
+  (no-infer
+   (progn
+    (run %{make})))))
+
+(install
+ (package bigarray-overlap)
+ (section lib)
+ (files liboverlap_freestanding_stubs.a))

@@ -1,0 +1,314 @@
+(lang dune 3.16)
+(name ounit2)
+(version 2.2.7)
+(sections (lib .) (libexec .) (doc ../../doc/ounit2))
+(files
+ (lib
+  (META
+   advanced/oUnitAdvanced.a
+   advanced/oUnitAdvanced.cma
+   advanced/oUnitAdvanced.cmxa
+   advanced/oUnitAssert.cmi
+   advanced/oUnitAssert.cmt
+   advanced/oUnitAssert.cmx
+   advanced/oUnitAssert.ml
+   advanced/oUnitBracket.cmi
+   advanced/oUnitBracket.cmt
+   advanced/oUnitBracket.cmx
+   advanced/oUnitBracket.ml
+   advanced/oUnitCache.cmi
+   advanced/oUnitCache.cmt
+   advanced/oUnitCache.cmx
+   advanced/oUnitCache.ml
+   advanced/oUnitCheckEnv.cmi
+   advanced/oUnitCheckEnv.cmt
+   advanced/oUnitCheckEnv.cmx
+   advanced/oUnitCheckEnv.ml
+   advanced/oUnitChooser.cmi
+   advanced/oUnitChooser.cmt
+   advanced/oUnitChooser.cmx
+   advanced/oUnitChooser.ml
+   advanced/oUnitConf.cmi
+   advanced/oUnitConf.cmt
+   advanced/oUnitConf.cmx
+   advanced/oUnitConf.ml
+   advanced/oUnitCore.cmi
+   advanced/oUnitCore.cmt
+   advanced/oUnitCore.cmx
+   advanced/oUnitCore.ml
+   advanced/oUnitDiff.cmi
+   advanced/oUnitDiff.cmt
+   advanced/oUnitDiff.cmti
+   advanced/oUnitDiff.cmx
+   advanced/oUnitDiff.ml
+   advanced/oUnitDiff.mli
+   advanced/oUnitLogger.cmi
+   advanced/oUnitLogger.cmt
+   advanced/oUnitLogger.cmx
+   advanced/oUnitLogger.ml
+   advanced/oUnitLoggerCI.cmi
+   advanced/oUnitLoggerCI.cmt
+   advanced/oUnitLoggerCI.cmx
+   advanced/oUnitLoggerCI.ml
+   advanced/oUnitLoggerHTML.cmi
+   advanced/oUnitLoggerHTML.cmt
+   advanced/oUnitLoggerHTML.cmx
+   advanced/oUnitLoggerHTML.ml
+   advanced/oUnitLoggerHTMLData.cmi
+   advanced/oUnitLoggerHTMLData.cmt
+   advanced/oUnitLoggerHTMLData.cmx
+   advanced/oUnitLoggerHTMLData.ml
+   advanced/oUnitLoggerJUnit.cmi
+   advanced/oUnitLoggerJUnit.cmt
+   advanced/oUnitLoggerJUnit.cmx
+   advanced/oUnitLoggerJUnit.ml
+   advanced/oUnitLoggerStd.cmi
+   advanced/oUnitLoggerStd.cmt
+   advanced/oUnitLoggerStd.cmx
+   advanced/oUnitLoggerStd.ml
+   advanced/oUnitPlugin.cmi
+   advanced/oUnitPlugin.cmt
+   advanced/oUnitPlugin.cmx
+   advanced/oUnitPlugin.ml
+   advanced/oUnitPropList.cmi
+   advanced/oUnitPropList.cmt
+   advanced/oUnitPropList.cmx
+   advanced/oUnitPropList.ml
+   advanced/oUnitResultSummary.cmi
+   advanced/oUnitResultSummary.cmt
+   advanced/oUnitResultSummary.cmx
+   advanced/oUnitResultSummary.ml
+   advanced/oUnitRunner.cmi
+   advanced/oUnitRunner.cmt
+   advanced/oUnitRunner.cmx
+   advanced/oUnitRunner.ml
+   advanced/oUnitRunnerProcesses.cmi
+   advanced/oUnitRunnerProcesses.cmt
+   advanced/oUnitRunnerProcesses.cmx
+   advanced/oUnitRunnerProcesses.ml
+   advanced/oUnitShared.cmi
+   advanced/oUnitShared.cmt
+   advanced/oUnitShared.cmx
+   advanced/oUnitShared.ml
+   advanced/oUnitState.cmi
+   advanced/oUnitState.cmt
+   advanced/oUnitState.cmx
+   advanced/oUnitState.ml
+   advanced/oUnitTest.cmi
+   advanced/oUnitTest.cmt
+   advanced/oUnitTest.cmx
+   advanced/oUnitTest.ml
+   advanced/oUnitTestData.cmi
+   advanced/oUnitTestData.cmt
+   advanced/oUnitTestData.cmx
+   advanced/oUnitTestData.ml
+   advanced/oUnitUtils.cmi
+   advanced/oUnitUtils.cmt
+   advanced/oUnitUtils.cmx
+   advanced/oUnitUtils.ml
+   dune-package
+   oUnit.a
+   oUnit.cma
+   oUnit.cmi
+   oUnit.cmt
+   oUnit.cmti
+   oUnit.cmx
+   oUnit.cmxa
+   oUnit.ml
+   oUnit.mli
+   oUnit2.cmi
+   oUnit2.cmt
+   oUnit2.cmti
+   oUnit2.cmx
+   oUnit2.ml
+   oUnit2.mli
+   opam
+   threads/.private/oUnitThreads__OUnitRunnerThreads.cmi
+   threads/.private/oUnitThreads__OUnitRunnerThreads.cmt
+   threads/oUnitRunnerThreads.ml
+   threads/oUnitThreads.a
+   threads/oUnitThreads.cma
+   threads/oUnitThreads.cmi
+   threads/oUnitThreads.cmt
+   threads/oUnitThreads.cmx
+   threads/oUnitThreads.cmxa
+   threads/oUnitThreads.ml
+   threads/oUnitThreads__.cmi
+   threads/oUnitThreads__.cmt
+   threads/oUnitThreads__.cmx
+   threads/oUnitThreads__.ml
+   threads/oUnitThreads__OUnitRunnerThreads.cmx))
+ (libexec (advanced/oUnitAdvanced.cmxs oUnit.cmxs threads/oUnitThreads.cmxs))
+ (doc (CHANGES.md LICENSE.txt README.md odoc-pages/index.mld)))
+(library
+ (name ounit2)
+ (kind normal)
+ (archives (byte oUnit.cma) (native oUnit.cmxa))
+ (plugins (byte oUnit.cma) (native oUnit.cmxs))
+ (native_archives oUnit.a)
+ (requires unix seq ounit2.advanced)
+ (modes byte native)
+ (modules
+  (unwrapped
+   (module
+    (obj_name oUnit)
+    (visibility public)
+    (source (path OUnit) (intf (path oUnit.mli)) (impl (path oUnit.ml))))
+   (module
+    (obj_name oUnit2)
+    (visibility public)
+    (source (path OUnit2) (intf (path oUnit2.mli)) (impl (path oUnit2.ml)))))))
+(library
+ (name ounit2.advanced)
+ (kind normal)
+ (archives
+  (byte advanced/oUnitAdvanced.cma)
+  (native advanced/oUnitAdvanced.cmxa))
+ (plugins
+  (byte advanced/oUnitAdvanced.cma)
+  (native advanced/oUnitAdvanced.cmxs))
+ (native_archives advanced/oUnitAdvanced.a)
+ (requires unix seq stdlib-shims)
+ (modes byte native)
+ (modules
+  (unwrapped
+   (module
+    (obj_name oUnitAssert)
+    (visibility public)
+    (source (path OUnitAssert) (impl (path advanced/oUnitAssert.ml))))
+   (module
+    (obj_name oUnitBracket)
+    (visibility public)
+    (source (path OUnitBracket) (impl (path advanced/oUnitBracket.ml))))
+   (module
+    (obj_name oUnitCache)
+    (visibility public)
+    (source (path OUnitCache) (impl (path advanced/oUnitCache.ml))))
+   (module
+    (obj_name oUnitCheckEnv)
+    (visibility public)
+    (source (path OUnitCheckEnv) (impl (path advanced/oUnitCheckEnv.ml))))
+   (module
+    (obj_name oUnitChooser)
+    (visibility public)
+    (source (path OUnitChooser) (impl (path advanced/oUnitChooser.ml))))
+   (module
+    (obj_name oUnitConf)
+    (visibility public)
+    (source (path OUnitConf) (impl (path advanced/oUnitConf.ml))))
+   (module
+    (obj_name oUnitCore)
+    (visibility public)
+    (source (path OUnitCore) (impl (path advanced/oUnitCore.ml))))
+   (module
+    (obj_name oUnitDiff)
+    (visibility public)
+    (source
+     (path OUnitDiff)
+     (intf (path advanced/oUnitDiff.mli))
+     (impl (path advanced/oUnitDiff.ml))))
+   (module
+    (obj_name oUnitLogger)
+    (visibility public)
+    (source (path OUnitLogger) (impl (path advanced/oUnitLogger.ml))))
+   (module
+    (obj_name oUnitLoggerCI)
+    (visibility public)
+    (source (path OUnitLoggerCI) (impl (path advanced/oUnitLoggerCI.ml))))
+   (module
+    (obj_name oUnitLoggerHTML)
+    (visibility public)
+    (source (path OUnitLoggerHTML) (impl (path advanced/oUnitLoggerHTML.ml))))
+   (module
+    (obj_name oUnitLoggerHTMLData)
+    (visibility public)
+    (source
+     (path OUnitLoggerHTMLData)
+     (impl (path advanced/oUnitLoggerHTMLData.ml))))
+   (module
+    (obj_name oUnitLoggerJUnit)
+    (visibility public)
+    (source
+     (path OUnitLoggerJUnit)
+     (impl (path advanced/oUnitLoggerJUnit.ml))))
+   (module
+    (obj_name oUnitLoggerStd)
+    (visibility public)
+    (source (path OUnitLoggerStd) (impl (path advanced/oUnitLoggerStd.ml))))
+   (module
+    (obj_name oUnitPlugin)
+    (visibility public)
+    (source (path OUnitPlugin) (impl (path advanced/oUnitPlugin.ml))))
+   (module
+    (obj_name oUnitPropList)
+    (visibility public)
+    (source (path OUnitPropList) (impl (path advanced/oUnitPropList.ml))))
+   (module
+    (obj_name oUnitResultSummary)
+    (visibility public)
+    (source
+     (path OUnitResultSummary)
+     (impl (path advanced/oUnitResultSummary.ml))))
+   (module
+    (obj_name oUnitRunner)
+    (visibility public)
+    (source (path OUnitRunner) (impl (path advanced/oUnitRunner.ml))))
+   (module
+    (obj_name oUnitRunnerProcesses)
+    (visibility public)
+    (source
+     (path OUnitRunnerProcesses)
+     (impl (path advanced/oUnitRunnerProcesses.ml))))
+   (module
+    (obj_name oUnitShared)
+    (visibility public)
+    (source (path OUnitShared) (impl (path advanced/oUnitShared.ml))))
+   (module
+    (obj_name oUnitState)
+    (visibility public)
+    (source (path OUnitState) (impl (path advanced/oUnitState.ml))))
+   (module
+    (obj_name oUnitTest)
+    (visibility public)
+    (source (path OUnitTest) (impl (path advanced/oUnitTest.ml))))
+   (module
+    (obj_name oUnitTestData)
+    (visibility public)
+    (source (path OUnitTestData) (impl (path advanced/oUnitTestData.ml))))
+   (module
+    (obj_name oUnitUtils)
+    (visibility public)
+    (source (path OUnitUtils) (impl (path advanced/oUnitUtils.ml)))))))
+(library
+ (name ounit2.threads)
+ (kind normal)
+ (archives (byte threads/oUnitThreads.cma) (native threads/oUnitThreads.cmxa))
+ (plugins (byte threads/oUnitThreads.cma) (native threads/oUnitThreads.cmxs))
+ (native_archives threads/oUnitThreads.a)
+ (requires threads ounit2)
+ (main_module_name OUnitThreads)
+ (modes byte native)
+ (obj_dir (private_dir .private))
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name oUnitThreads__)
+     (visibility public)
+     (kind alias)
+     (source
+      (path OUnitThreads__)
+      (impl (path threads/oUnitThreads__.ml-gen))))
+    (name OUnitThreads)
+    (modules
+     (module
+      (obj_name oUnitThreads__OUnitRunnerThreads)
+      (visibility private)
+      (source
+       (path OUnitRunnerThreads)
+       (impl (path threads/oUnitRunnerThreads.ml))))
+     (module
+      (obj_name oUnitThreads)
+      (visibility public)
+      (source (path OUnitThreads) (impl (path threads/oUnitThreads.ml))))))
+   (wrapped true))))

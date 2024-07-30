@@ -1,0 +1,37 @@
+opam-version: "2.0"
+added: [
+  "doc/ptime" {"D"}
+  "doc/ptime/CHANGES.md" {"F:S3371T1722366201.55"}
+  "doc/ptime/LICENSE.md" {"F:S739T1722366201.55"}
+  "doc/ptime/README.md" {"F:S1399T1722366201.55"}
+  "doc/ptime/min_clock.ml" {"F:S967T1722366201.55"}
+  "doc/ptime/odoc-pages/index.mld" {"F:S759T1722366201.55"}
+  "lib/ptime" {"D"}
+  "lib/ptime/META" {"F:S949T1722366201.49"}
+  "lib/ptime/clock/os/libptime_clock_stubs.a" {"F:S23498T1722366201.49"}
+  "lib/ptime/clock/os/ptime_clock.a" {"F:S6716T1722366201.51"}
+  "lib/ptime/clock/os/ptime_clock.cma" {"F:S4578T1722366201.51"}
+  "lib/ptime/clock/os/ptime_clock.cmi" {"F:S1021T1722366201.51"}
+  "lib/ptime/clock/os/ptime_clock.cmti" {"F:S12674T1722366201.51"}
+  "lib/ptime/clock/os/ptime_clock.cmx" {"F:S1020T1722366201.51"}
+  "lib/ptime/clock/os/ptime_clock.cmxa" {"F:S430T1722366201.51"}
+  "lib/ptime/clock/os/ptime_clock.cmxs" {"F:S28576T1722366201.51"}
+  "lib/ptime/clock/os/ptime_clock.mli" {"F:S4343T1722366201.51"}
+  "lib/ptime/clock/os/runtime.js" {"F:S2677T1722366201.51"}
+  "lib/ptime/opam" {"F:S1388T1722366201.49"}
+  "lib/ptime/ptime.a" {"F:S111208T1722366201.53"}
+  "lib/ptime/ptime.cma" {"F:S139871T1722366201.53"}
+  "lib/ptime/ptime.cmi" {"F:S9406T1722366201.53"}
+  "lib/ptime/ptime.cmti" {"F:S88747T1722366201.54"}
+  "lib/ptime/ptime.cmx" {"F:S7407T1722366201.54"}
+  "lib/ptime/ptime.cmxa" {"F:S708T1722366201.54"}
+  "lib/ptime/ptime.cmxs" {"F:S122840T1722366201.54"}
+  "lib/ptime/ptime.mli" {"F:S26206T1722366201.54"}
+  "lib/ptime/ptime_top_init.ml" {"F:S1289T1722366201.55"}
+  "lib/ptime/top/ptime_top.a" {"F:S3934T1722366201.54"}
+  "lib/ptime/top/ptime_top.cma" {"F:S3290T1722366201.54"}
+  "lib/ptime/top/ptime_top.cmx" {"F:S1292T1722366201.54"}
+  "lib/ptime/top/ptime_top.cmxa" {"F:S1298T1722366201.54"}
+  "lib/ptime/top/ptime_top.cmxs" {"F:S18344T1722366201.55"}
+  "lib/stublibs/dllptime_clock_stubs.so" {"F:S25472T1722366201.55"}
+]

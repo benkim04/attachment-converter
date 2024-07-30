@@ -1,0 +1,17 @@
+version = "1.1"
+description = ""
+requires = "angstrom base64 ipaddr pecu uutf"
+archive(byte) = "emile.cma"
+archive(native) = "emile.cmxa"
+plugin(byte) = "emile.cma"
+plugin(native) = "emile.cmxs"
+package "cmdliner" (
+  directory = "cmdliner"
+  version = "1.1"
+  description = ""
+  requires = "cmdliner emile"
+  archive(byte) = "emile_cmdliner.cma"
+  archive(native) = "emile_cmdliner.cmxa"
+  plugin(byte) = "emile_cmdliner.cma"
+  plugin(native) = "emile_cmdliner.cmxs"
+)

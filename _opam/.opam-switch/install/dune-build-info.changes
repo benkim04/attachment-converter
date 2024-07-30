@@ -1,0 +1,31 @@
+opam-version: "2.0"
+added: [
+  "doc/dune-build-info" {"D"}
+  "doc/dune-build-info/CHANGES.md" {"F:S170692T1722365674.69"}
+  "doc/dune-build-info/LICENSE.md" {"F:S1111T1722365674.69"}
+  "doc/dune-build-info/README.md" {"F:S6004T1722365674.69"}
+  "doc/dune-build-info/odoc-pages/index.mld" {"F:S1323T1722365674.69"}
+  "lib/dune-build-info" {"D"}
+  "lib/dune-build-info/META" {"F:S185T1722365674.67"}
+  "lib/dune-build-info/build_info.a" {"F:S10858T1722365674.67"}
+  "lib/dune-build-info/build_info.cma" {"F:S8204T1722365674.67"}
+  "lib/dune-build-info/build_info.cmi" {"F:S1211T1722365674.68"}
+  "lib/dune-build-info/build_info.cmt" {"F:S8911T1722365674.68"}
+  "lib/dune-build-info/build_info.cmti" {"F:S9228T1722365674.68"}
+  "lib/dune-build-info/build_info.cmx" {"F:S1361T1722365674.68"}
+  "lib/dune-build-info/build_info.cmxa" {"F:S555T1722365674.68"}
+  "lib/dune-build-info/build_info.cmxs" {"F:S19952T1722365674.68"}
+  "lib/dune-build-info/build_info.ml" {"F:S542T1722365674.68"}
+  "lib/dune-build-info/build_info.mli" {"F:S1653T1722365674.68"}
+  "lib/dune-build-info/build_info__.cmi" {"F:S463T1722365674.68"}
+  "lib/dune-build-info/build_info__.cmt" {"F:S3116T1722365674.68"}
+  "lib/dune-build-info/build_info__.cmx" {"F:S160T1722365674.68"}
+  "lib/dune-build-info/build_info__.ml" {"F:S198T1722365674.68"}
+  "lib/dune-build-info/build_info__Build_info_data.cmi"
+    {"F:S541T1722365674.68"}
+  "lib/dune-build-info/build_info__Build_info_data.cmti"
+    {"F:S3453T1722365674.68"}
+  "lib/dune-build-info/build_info_data.mli" {"F:S183T1722365674.68"}
+  "lib/dune-build-info/dune-package" {"F:S1507T1722365674.68"}
+  "lib/dune-build-info/opam" {"F:S1129T1722365674.68"}
+]

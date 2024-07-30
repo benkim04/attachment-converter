@@ -1,0 +1,43 @@
+opam-version: "2.0"
+added: [
+  "doc/prettym" {"D"}
+  "doc/prettym/CHANGES.md" {"F:S260T1722366212.85"}
+  "doc/prettym/LICENSE.md" {"F:S1086T1722366212.85"}
+  "doc/prettym/README.md" {"F:S444T1722366212.85"}
+  "lib/prettym" {"D"}
+  "lib/prettym/META" {"F:S207T1722366212.81"}
+  "lib/prettym/dune-package" {"F:S1940T1722366212.81"}
+  "lib/prettym/enclosure.ml" {"F:S15638T1722366212.81"}
+  "lib/prettym/enclosure.mli" {"F:S4306T1722366212.81"}
+  "lib/prettym/fancy.ml" {"F:S2729T1722366212.81"}
+  "lib/prettym/fancy.mli" {"F:S1107T1722366212.82"}
+  "lib/prettym/opam" {"F:S1011T1722366212.82"}
+  "lib/prettym/pretty.ml" {"F:S13368T1722366212.82"}
+  "lib/prettym/pretty.mli" {"F:S691T1722366212.82"}
+  "lib/prettym/prettym.a" {"F:S256688T1722366212.82"}
+  "lib/prettym/prettym.cma" {"F:S240846T1722366212.82"}
+  "lib/prettym/prettym.cmi" {"F:S6859T1722366212.82"}
+  "lib/prettym/prettym.cmt" {"F:S46630T1722366212.82"}
+  "lib/prettym/prettym.cmti" {"F:S39394T1722366212.83"}
+  "lib/prettym/prettym.cmx" {"F:S4684T1722366212.83"}
+  "lib/prettym/prettym.cmxa" {"F:S4509T1722366212.83"}
+  "lib/prettym/prettym.cmxs" {"F:S243440T1722366212.85"}
+  "lib/prettym/prettym.ml" {"F:S2426T1722366212.83"}
+  "lib/prettym/prettym.mli" {"F:S5349T1722366212.83"}
+  "lib/prettym/prettym__.cmi" {"F:S377T1722366212.83"}
+  "lib/prettym/prettym__.cmt" {"F:S3265T1722366212.83"}
+  "lib/prettym/prettym__.cmx" {"F:S159T1722366212.83"}
+  "lib/prettym/prettym__.ml" {"F:S228T1722366212.83"}
+  "lib/prettym/prettym__Enclosure.cmi" {"F:S6495T1722366212.83"}
+  "lib/prettym/prettym__Enclosure.cmt" {"F:S248203T1722366212.84"}
+  "lib/prettym/prettym__Enclosure.cmti" {"F:S32508T1722366212.84"}
+  "lib/prettym/prettym__Enclosure.cmx" {"F:S12443T1722366212.84"}
+  "lib/prettym/prettym__Fancy.cmi" {"F:S4434T1722366212.84"}
+  "lib/prettym/prettym__Fancy.cmt" {"F:S53284T1722366212.84"}
+  "lib/prettym/prettym__Fancy.cmti" {"F:S20368T1722366212.84"}
+  "lib/prettym/prettym__Fancy.cmx" {"F:S2452T1722366212.85"}
+  "lib/prettym/prettym__Pretty.cmi" {"F:S3266T1722366212.85"}
+  "lib/prettym/prettym__Pretty.cmt" {"F:S199765T1722366212.85"}
+  "lib/prettym/prettym__Pretty.cmti" {"F:S13367T1722366212.85"}
+  "lib/prettym/prettym__Pretty.cmx" {"F:S6818T1722366212.85"}
+]

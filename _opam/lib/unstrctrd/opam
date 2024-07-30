@@ -1,0 +1,29 @@
+version: "0.4"
+opam-version: "2.0"
+name: "unstrctrd"
+synopsis: "Fast and compliant Unstructured parser according RFC 822"
+description: """Unstrctrd is a library for managing values formatted according to \
+the unstructured rule introduced by RFC 822. This format can be found in emails, \
+HTTP/1.1 and also in the description of Debian packages."""
+maintainer: "Romain Calascibetta <romain.calascibetta@gmail.com>"
+authors: "Romain Calascibetta <romain.calascibetta@gmail.com>"
+license: "MIT"
+homepage: "https://github.com/dinosaure/unstrctrd"
+doc: "https://dinosaure.github.io/unstrctrd/"
+bug-reports: "https://github.com/dinosaure/unstrctrd/issues"
+depends: [
+  "ocaml" {>= "4.07.0"}
+  "dune" {>= "2.0"}
+  "uutf"
+  "angstrom" {>= "0.14.0"}
+  "rresult" {with-test}
+  "alcotest" {with-test}
+  "ke" {with-test}
+  "bigstringaf" {with-test}
+  "hxd" {with-test & >= "0.3.1"}
+  "fmt" {with-test & >= "0.8.7"}
+  "crowbar" {>= "0.2" & with-test}
+]
+build: ["dune" "build" "-p" name "-j" jobs]
+run-test: ["dune" "runtest" "-p" name "-j" jobs]
+dev-repo: "git+https://github.com/dinosaure/unstrctrd.git"

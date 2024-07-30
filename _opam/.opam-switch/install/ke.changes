@@ -1,0 +1,41 @@
+opam-version: "2.0"
+added: [
+  "doc/ke" {"D"}
+  "doc/ke/CHANGES.md" {"F:S1460T1722366203.96"}
+  "doc/ke/LICENSE.md" {"F:S1086T1722366203.96"}
+  "doc/ke/README.md" {"F:S1979T1722366203.96"}
+  "lib/ke" {"D"}
+  "lib/ke/META" {"F:S153T1722366203.91"}
+  "lib/ke/dune-package" {"F:S1482T1722366203.91"}
+  "lib/ke/fke.ml" {"F:S10265T1722366203.91"}
+  "lib/ke/fke.mli" {"F:S49T1722366203.92"}
+  "lib/ke/ke.a" {"F:S137656T1722366203.92"}
+  "lib/ke/ke.cma" {"F:S215010T1722366203.92"}
+  "lib/ke/ke.cmi" {"F:S338T1722366203.92"}
+  "lib/ke/ke.cmt" {"F:S2550T1722366203.92"}
+  "lib/ke/ke.cmti" {"F:S2872T1722366203.92"}
+  "lib/ke/ke.cmx" {"F:S190T1722366203.92"}
+  "lib/ke/ke.cmxa" {"F:S2421T1722366203.92"}
+  "lib/ke/ke.cmxs" {"F:S130944T1722366203.95"}
+  "lib/ke/ke.ml" {"F:S53T1722366203.92"}
+  "lib/ke/ke.mli" {"F:S53T1722366203.92"}
+  "lib/ke/ke__.cmi" {"F:S298T1722366203.93"}
+  "lib/ke/ke__.cmt" {"F:S3051T1722366203.93"}
+  "lib/ke/ke__.cmx" {"F:S129T1722366203.93"}
+  "lib/ke/ke__.ml" {"F:S168T1722366203.93"}
+  "lib/ke/ke__Fke.cmi" {"F:S2865T1722366203.93"}
+  "lib/ke/ke__Fke.cmt" {"F:S212819T1722366203.94"}
+  "lib/ke/ke__Fke.cmti" {"F:S8085T1722366203.94"}
+  "lib/ke/ke__Fke.cmx" {"F:S6576T1722366203.94"}
+  "lib/ke/ke__Rke.cmi" {"F:S5804T1722366203.94"}
+  "lib/ke/ke__Rke.cmt" {"F:S198450T1722366203.94"}
+  "lib/ke/ke__Rke.cmti" {"F:S14044T1722366203.94"}
+  "lib/ke/ke__Rke.cmx" {"F:S9000T1722366203.94"}
+  "lib/ke/ke__Sigs.cmi" {"F:S20901T1722366203.94"}
+  "lib/ke/ke__Sigs.cmt" {"F:S124866T1722366203.95"}
+  "lib/ke/ke__Sigs.cmx" {"F:S627T1722366203.95"}
+  "lib/ke/opam" {"F:S1188T1722366203.95"}
+  "lib/ke/rke.ml" {"F:S11394T1722366203.95"}
+  "lib/ke/rke.mli" {"F:S49T1722366203.95"}
+  "lib/ke/sigs.ml" {"F:S19802T1722366203.95"}
+]

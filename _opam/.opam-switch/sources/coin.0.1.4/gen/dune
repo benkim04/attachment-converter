@@ -1,0 +1,3 @@
+(executable
+ (name generate)
+ (public_name coin.generate))

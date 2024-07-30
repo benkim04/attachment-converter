@@ -1,0 +1,10 @@
+version = "0.2.1"
+description = ""
+requires = ""
+archive(byte) = "overlap.cma"
+archive(native) = "overlap.cmxa"
+plugin(byte) = "overlap.cma"
+plugin(native) = "overlap.cmxs"
+jsoo_runtime = "runtime.js"
+
+freestanding_linkopts = "-l:liboverlap_freestanding_stubs.a"

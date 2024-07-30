@@ -1,0 +1,840 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Nettls_support.html">
+<link rel="next" href="Netmech_scram_gssapi.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of extensions" rel=Appendix href="index_extensions.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of class attributes" rel=Appendix href="index_attributes.html">
+<link title="Index of class methods" rel=Appendix href="index_methods.html">
+<link title="Index of classes" rel=Appendix href="index_classes.html">
+<link title="Index of class types" rel=Appendix href="index_class_types.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Uq_gtk" rel="Chapter" href="Uq_gtk.html">
+<link title="Uq_tcl" rel="Chapter" href="Uq_tcl.html">
+<link title="Equeue" rel="Chapter" href="Equeue.html">
+<link title="Unixqueue" rel="Chapter" href="Unixqueue.html">
+<link title="Unixqueue_pollset" rel="Chapter" href="Unixqueue_pollset.html">
+<link title="Unixqueue_select" rel="Chapter" href="Unixqueue_select.html">
+<link title="Uq_resolver" rel="Chapter" href="Uq_resolver.html">
+<link title="Uq_engines" rel="Chapter" href="Uq_engines.html">
+<link title="Uq_multiplex" rel="Chapter" href="Uq_multiplex.html">
+<link title="Uq_transfer" rel="Chapter" href="Uq_transfer.html">
+<link title="Uq_socks5" rel="Chapter" href="Uq_socks5.html">
+<link title="Uq_io" rel="Chapter" href="Uq_io.html">
+<link title="Uq_lwt" rel="Chapter" href="Uq_lwt.html">
+<link title="Uq_libevent" rel="Chapter" href="Uq_libevent.html">
+<link title="Uq_mt" rel="Chapter" href="Uq_mt.html">
+<link title="Uq_client" rel="Chapter" href="Uq_client.html">
+<link title="Uq_server" rel="Chapter" href="Uq_server.html">
+<link title="Uq_datagram" rel="Chapter" href="Uq_datagram.html">
+<link title="Uq_engines_compat" rel="Chapter" href="Uq_engines_compat.html">
+<link title="Equeue_intro" rel="Chapter" href="Equeue_intro.html">
+<link title="Equeue_howto" rel="Chapter" href="Equeue_howto.html">
+<link title="Netcamlbox" rel="Chapter" href="Netcamlbox.html">
+<link title="Netcgi_apache" rel="Chapter" href="Netcgi_apache.html">
+<link title="Netcgi_modtpl" rel="Chapter" href="Netcgi_modtpl.html">
+<link title="Netcgi_plex" rel="Chapter" href="Netcgi_plex.html">
+<link title="Netcgi_common" rel="Chapter" href="Netcgi_common.html">
+<link title="Netcgi" rel="Chapter" href="Netcgi.html">
+<link title="Netcgi_ajp" rel="Chapter" href="Netcgi_ajp.html">
+<link title="Netcgi_scgi" rel="Chapter" href="Netcgi_scgi.html">
+<link title="Netcgi_cgi" rel="Chapter" href="Netcgi_cgi.html">
+<link title="Netcgi_fcgi" rel="Chapter" href="Netcgi_fcgi.html">
+<link title="Netcgi_dbi" rel="Chapter" href="Netcgi_dbi.html">
+<link title="Netcgi1_compat" rel="Chapter" href="Netcgi1_compat.html">
+<link title="Netcgi_test" rel="Chapter" href="Netcgi_test.html">
+<link title="Netcgi_porting" rel="Chapter" href="Netcgi_porting.html">
+<link title="Nethttp_client_conncache" rel="Chapter" href="Nethttp_client_conncache.html">
+<link title="Nethttp_client" rel="Chapter" href="Nethttp_client.html">
+<link title="Nettelnet_client" rel="Chapter" href="Nettelnet_client.html">
+<link title="Netftp_data_endpoint" rel="Chapter" href="Netftp_data_endpoint.html">
+<link title="Netftp_client" rel="Chapter" href="Netftp_client.html">
+<link title="Nethttp_fs" rel="Chapter" href="Nethttp_fs.html">
+<link title="Netftp_fs" rel="Chapter" href="Netftp_fs.html">
+<link title="Netsmtp" rel="Chapter" href="Netsmtp.html">
+<link title="Netpop" rel="Chapter" href="Netpop.html">
+<link title="Netldap" rel="Chapter" href="Netldap.html">
+<link title="Netclient_tut" rel="Chapter" href="Netclient_tut.html">
+<link title="Netgss_bindings" rel="Chapter" href="Netgss_bindings.html">
+<link title="Netgss" rel="Chapter" href="Netgss.html">
+<link title="Nethttpd_types" rel="Chapter" href="Nethttpd_types.html">
+<link title="Nethttpd_kernel" rel="Chapter" href="Nethttpd_kernel.html">
+<link title="Nethttpd_reactor" rel="Chapter" href="Nethttpd_reactor.html">
+<link title="Nethttpd_engine" rel="Chapter" href="Nethttpd_engine.html">
+<link title="Nethttpd_services" rel="Chapter" href="Nethttpd_services.html">
+<link title="Nethttpd_plex" rel="Chapter" href="Nethttpd_plex.html">
+<link title="Nethttpd_util" rel="Chapter" href="Nethttpd_util.html">
+<link title="Nethttpd_intro" rel="Chapter" href="Nethttpd_intro.html">
+<link title="Netmcore" rel="Chapter" href="Netmcore.html">
+<link title="Netmcore_camlbox" rel="Chapter" href="Netmcore_camlbox.html">
+<link title="Netmcore_mempool" rel="Chapter" href="Netmcore_mempool.html">
+<link title="Netmcore_heap" rel="Chapter" href="Netmcore_heap.html">
+<link title="Netmcore_ref" rel="Chapter" href="Netmcore_ref.html">
+<link title="Netmcore_array" rel="Chapter" href="Netmcore_array.html">
+<link title="Netmcore_sem" rel="Chapter" href="Netmcore_sem.html">
+<link title="Netmcore_mutex" rel="Chapter" href="Netmcore_mutex.html">
+<link title="Netmcore_condition" rel="Chapter" href="Netmcore_condition.html">
+<link title="Netmcore_queue" rel="Chapter" href="Netmcore_queue.html">
+<link title="Netmcore_buffer" rel="Chapter" href="Netmcore_buffer.html">
+<link title="Netmcore_matrix" rel="Chapter" href="Netmcore_matrix.html">
+<link title="Netmcore_hashtbl" rel="Chapter" href="Netmcore_hashtbl.html">
+<link title="Netmcore_process" rel="Chapter" href="Netmcore_process.html">
+<link title="Netmcore_tut" rel="Chapter" href="Netmcore_tut.html">
+<link title="Netmcore_basics" rel="Chapter" href="Netmcore_basics.html">
+<link title="Netplex_types" rel="Chapter" href="Netplex_types.html">
+<link title="Netplex_mp" rel="Chapter" href="Netplex_mp.html">
+<link title="Netplex_mt" rel="Chapter" href="Netplex_mt.html">
+<link title="Netplex_log" rel="Chapter" href="Netplex_log.html">
+<link title="Netplex_controller" rel="Chapter" href="Netplex_controller.html">
+<link title="Netplex_container" rel="Chapter" href="Netplex_container.html">
+<link title="Netplex_sockserv" rel="Chapter" href="Netplex_sockserv.html">
+<link title="Netplex_workload" rel="Chapter" href="Netplex_workload.html">
+<link title="Netplex_main" rel="Chapter" href="Netplex_main.html">
+<link title="Netplex_config" rel="Chapter" href="Netplex_config.html">
+<link title="Netplex_kit" rel="Chapter" href="Netplex_kit.html">
+<link title="Rpc_netplex" rel="Chapter" href="Rpc_netplex.html">
+<link title="Netplex_cenv" rel="Chapter" href="Netplex_cenv.html">
+<link title="Netplex_semaphore" rel="Chapter" href="Netplex_semaphore.html">
+<link title="Netplex_sharedvar" rel="Chapter" href="Netplex_sharedvar.html">
+<link title="Netplex_mutex" rel="Chapter" href="Netplex_mutex.html">
+<link title="Netplex_encap" rel="Chapter" href="Netplex_encap.html">
+<link title="Netplex_mbox" rel="Chapter" href="Netplex_mbox.html">
+<link title="Netplex_internal" rel="Chapter" href="Netplex_internal.html">
+<link title="Netplex_intro" rel="Chapter" href="Netplex_intro.html">
+<link title="Netplex_advanced" rel="Chapter" href="Netplex_advanced.html">
+<link title="Netplex_admin" rel="Chapter" href="Netplex_admin.html">
+<link title="Netshm" rel="Chapter" href="Netshm.html">
+<link title="Netshm_data" rel="Chapter" href="Netshm_data.html">
+<link title="Netshm_hashtbl" rel="Chapter" href="Netshm_hashtbl.html">
+<link title="Netshm_array" rel="Chapter" href="Netshm_array.html">
+<link title="Netshm_intro" rel="Chapter" href="Netshm_intro.html">
+<link title="Netstring_pcre" rel="Chapter" href="Netstring_pcre.html">
+<link title="Netconversion" rel="Chapter" href="Netconversion.html">
+<link title="Netchannels" rel="Chapter" href="Netchannels.html">
+<link title="Netstream" rel="Chapter" href="Netstream.html">
+<link title="Netmime_string" rel="Chapter" href="Netmime_string.html">
+<link title="Netmime" rel="Chapter" href="Netmime.html">
+<link title="Netsendmail" rel="Chapter" href="Netsendmail.html">
+<link title="Neturl" rel="Chapter" href="Neturl.html">
+<link title="Netaddress" rel="Chapter" href="Netaddress.html">
+<link title="Netbuffer" rel="Chapter" href="Netbuffer.html">
+<link title="Netmime_header" rel="Chapter" href="Netmime_header.html">
+<link title="Netmime_channels" rel="Chapter" href="Netmime_channels.html">
+<link title="Neturl_ldap" rel="Chapter" href="Neturl_ldap.html">
+<link title="Netdate" rel="Chapter" href="Netdate.html">
+<link title="Netencoding" rel="Chapter" href="Netencoding.html">
+<link title="Netulex" rel="Chapter" href="Netulex.html">
+<link title="Netaccel" rel="Chapter" href="Netaccel.html">
+<link title="Netaccel_link" rel="Chapter" href="Netaccel_link.html">
+<link title="Nethtml" rel="Chapter" href="Nethtml.html">
+<link title="Netstring_str" rel="Chapter" href="Netstring_str.html">
+<link title="Netmappings" rel="Chapter" href="Netmappings.html">
+<link title="Netaux" rel="Chapter" href="Netaux.html">
+<link title="Nethttp" rel="Chapter" href="Nethttp.html">
+<link title="Netpagebuffer" rel="Chapter" href="Netpagebuffer.html">
+<link title="Netfs" rel="Chapter" href="Netfs.html">
+<link title="Netglob" rel="Chapter" href="Netglob.html">
+<link title="Netauth" rel="Chapter" href="Netauth.html">
+<link title="Netsockaddr" rel="Chapter" href="Netsockaddr.html">
+<link title="Netnumber" rel="Chapter" href="Netnumber.html">
+<link title="Netxdr_mstring" rel="Chapter" href="Netxdr_mstring.html">
+<link title="Netxdr" rel="Chapter" href="Netxdr.html">
+<link title="Netcompression" rel="Chapter" href="Netcompression.html">
+<link title="Netunichar" rel="Chapter" href="Netunichar.html">
+<link title="Netasn1" rel="Chapter" href="Netasn1.html">
+<link title="Netasn1_encode" rel="Chapter" href="Netasn1_encode.html">
+<link title="Netoid" rel="Chapter" href="Netoid.html">
+<link title="Netstring_tstring" rel="Chapter" href="Netstring_tstring.html">
+<link title="Netdn" rel="Chapter" href="Netdn.html">
+<link title="Netx509" rel="Chapter" href="Netx509.html">
+<link title="Netascii_armor" rel="Chapter" href="Netascii_armor.html">
+<link title="Nettls_support" rel="Chapter" href="Nettls_support.html">
+<link title="Netmech_scram" rel="Chapter" href="Netmech_scram.html">
+<link title="Netmech_scram_gssapi" rel="Chapter" href="Netmech_scram_gssapi.html">
+<link title="Netmech_scram_sasl" rel="Chapter" href="Netmech_scram_sasl.html">
+<link title="Netmech_scram_http" rel="Chapter" href="Netmech_scram_http.html">
+<link title="Netgssapi_support" rel="Chapter" href="Netgssapi_support.html">
+<link title="Netgssapi_auth" rel="Chapter" href="Netgssapi_auth.html">
+<link title="Netchannels_crypto" rel="Chapter" href="Netchannels_crypto.html">
+<link title="Netx509_pubkey" rel="Chapter" href="Netx509_pubkey.html">
+<link title="Netx509_pubkey_crypto" rel="Chapter" href="Netx509_pubkey_crypto.html">
+<link title="Netsaslprep" rel="Chapter" href="Netsaslprep.html">
+<link title="Netmech_plain_sasl" rel="Chapter" href="Netmech_plain_sasl.html">
+<link title="Netmech_crammd5_sasl" rel="Chapter" href="Netmech_crammd5_sasl.html">
+<link title="Netmech_digest_sasl" rel="Chapter" href="Netmech_digest_sasl.html">
+<link title="Netmech_digest_http" rel="Chapter" href="Netmech_digest_http.html">
+<link title="Netmech_krb5_sasl" rel="Chapter" href="Netmech_krb5_sasl.html">
+<link title="Netmech_gs2_sasl" rel="Chapter" href="Netmech_gs2_sasl.html">
+<link title="Netmech_spnego_http" rel="Chapter" href="Netmech_spnego_http.html">
+<link title="Netchannels_tut" rel="Chapter" href="Netchannels_tut.html">
+<link title="Netmime_tut" rel="Chapter" href="Netmime_tut.html">
+<link title="Netsendmail_tut" rel="Chapter" href="Netsendmail_tut.html">
+<link title="Netulex_tut" rel="Chapter" href="Netulex_tut.html">
+<link title="Neturl_tut" rel="Chapter" href="Neturl_tut.html">
+<link title="Netsys" rel="Chapter" href="Netsys.html">
+<link title="Netsys_posix" rel="Chapter" href="Netsys_posix.html">
+<link title="Netsys_pollset" rel="Chapter" href="Netsys_pollset.html">
+<link title="Netlog" rel="Chapter" href="Netlog.html">
+<link title="Netexn" rel="Chapter" href="Netexn.html">
+<link title="Netsys_win32" rel="Chapter" href="Netsys_win32.html">
+<link title="Netsys_pollset_posix" rel="Chapter" href="Netsys_pollset_posix.html">
+<link title="Netsys_pollset_win32" rel="Chapter" href="Netsys_pollset_win32.html">
+<link title="Netsys_pollset_generic" rel="Chapter" href="Netsys_pollset_generic.html">
+<link title="Netsys_signal" rel="Chapter" href="Netsys_signal.html">
+<link title="Netsys_oothr" rel="Chapter" href="Netsys_oothr.html">
+<link title="Netsys_xdr" rel="Chapter" href="Netsys_xdr.html">
+<link title="Netsys_rng" rel="Chapter" href="Netsys_rng.html">
+<link title="Netsys_crypto_types" rel="Chapter" href="Netsys_crypto_types.html">
+<link title="Netsys_types" rel="Chapter" href="Netsys_types.html">
+<link title="Netsys_mem" rel="Chapter" href="Netsys_mem.html">
+<link title="Netsys_tmp" rel="Chapter" href="Netsys_tmp.html">
+<link title="Netsys_sem" rel="Chapter" href="Netsys_sem.html">
+<link title="Netsys_pmanage" rel="Chapter" href="Netsys_pmanage.html">
+<link title="Netsys_crypto" rel="Chapter" href="Netsys_crypto.html">
+<link title="Netsys_tls" rel="Chapter" href="Netsys_tls.html">
+<link title="Netsys_ciphers" rel="Chapter" href="Netsys_ciphers.html">
+<link title="Netsys_digests" rel="Chapter" href="Netsys_digests.html">
+<link title="Netsys_crypto_modes" rel="Chapter" href="Netsys_crypto_modes.html">
+<link title="Netsys_gssapi" rel="Chapter" href="Netsys_gssapi.html">
+<link title="Netsys_sasl_types" rel="Chapter" href="Netsys_sasl_types.html">
+<link title="Netsys_sasl" rel="Chapter" href="Netsys_sasl.html">
+<link title="Netsys_polypipe" rel="Chapter" href="Netsys_polypipe.html">
+<link title="Netsys_polysocket" rel="Chapter" href="Netsys_polysocket.html">
+<link title="Netsys_global" rel="Chapter" href="Netsys_global.html">
+<link title="Nettls_gnutls_bindings" rel="Chapter" href="Nettls_gnutls_bindings.html">
+<link title="Nettls_nettle_bindings" rel="Chapter" href="Nettls_nettle_bindings.html">
+<link title="Nettls_gnutls" rel="Chapter" href="Nettls_gnutls.html">
+<link title="Netunidata" rel="Chapter" href="Netunidata.html">
+<link title="Netgzip" rel="Chapter" href="Netgzip.html">
+<link title="Rpc_auth_local" rel="Chapter" href="Rpc_auth_local.html">
+<link title="Rpc_xti_client" rel="Chapter" href="Rpc_xti_client.html">
+<link title="Rpc" rel="Chapter" href="Rpc.html">
+<link title="Rpc_program" rel="Chapter" href="Rpc_program.html">
+<link title="Rpc_util" rel="Chapter" href="Rpc_util.html">
+<link title="Rpc_portmapper_aux" rel="Chapter" href="Rpc_portmapper_aux.html">
+<link title="Rpc_packer" rel="Chapter" href="Rpc_packer.html">
+<link title="Rpc_transport" rel="Chapter" href="Rpc_transport.html">
+<link title="Rpc_client" rel="Chapter" href="Rpc_client.html">
+<link title="Rpc_simple_client" rel="Chapter" href="Rpc_simple_client.html">
+<link title="Rpc_portmapper_clnt" rel="Chapter" href="Rpc_portmapper_clnt.html">
+<link title="Rpc_portmapper" rel="Chapter" href="Rpc_portmapper.html">
+<link title="Rpc_server" rel="Chapter" href="Rpc_server.html">
+<link title="Rpc_auth_sys" rel="Chapter" href="Rpc_auth_sys.html">
+<link title="Rpc_auth_gssapi" rel="Chapter" href="Rpc_auth_gssapi.html">
+<link title="Rpc_proxy" rel="Chapter" href="Rpc_proxy.html">
+<link title="Rpc_intro" rel="Chapter" href="Rpc_intro.html">
+<link title="Rpc_mapping_ref" rel="Chapter" href="Rpc_mapping_ref.html">
+<link title="Rpc_intro_gss" rel="Chapter" href="Rpc_intro_gss.html">
+<link title="Shell_sys" rel="Chapter" href="Shell_sys.html">
+<link title="Shell" rel="Chapter" href="Shell.html">
+<link title="Shell_uq" rel="Chapter" href="Shell_uq.html">
+<link title="Shell_fs" rel="Chapter" href="Shell_fs.html">
+<link title="Shell_intro" rel="Chapter" href="Shell_intro.html">
+<link title="Intro" rel="Chapter" href="Intro.html">
+<link title="Platform" rel="Chapter" href="Platform.html">
+<link title="Foreword" rel="Chapter" href="Foreword.html">
+<link title="Ipv6" rel="Chapter" href="Ipv6.html">
+<link title="Regexp" rel="Chapter" href="Regexp.html">
+<link title="Tls" rel="Chapter" href="Tls.html">
+<link title="Crypto" rel="Chapter" href="Crypto.html">
+<link title="Authentication" rel="Chapter" href="Authentication.html">
+<link title="Credentials" rel="Chapter" href="Credentials.html">
+<link title="Gssapi" rel="Chapter" href="Gssapi.html">
+<link title="Ocamlnet4" rel="Chapter" href="Ocamlnet4.html">
+<link title="Get" rel="Chapter" href="Get.html"><link title="Clients" rel="Section" href="#2_Clients">
+<link title="Servers" rel="Section" href="#2_Servers">
+<link title="Confidentiality" rel="Section" href="#2_Confidentiality">
+<title>Ocamlnet 4 Reference Manual : Netmech_scram</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Nettls_support.html" title="Nettls_support">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Netmech_scram_gssapi.html" title="Netmech_scram_gssapi">Next</a>
+</div>
+<h1>Module <a href="type_Netmech_scram.html">Netmech_scram</a></h1>
+
+<pre><span id="MODULENetmech_scram"><span class="keyword">module</span> Netmech_scram</span>: <code class="code">sig</code> <a href="Netmech_scram.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p>SCRAM mechanism for authentication (RFC 5802)</p>
+</div>
+</div>
+<hr width="100%">
+<p>This implements SCRAM for SASL and GSSAPI.</p>
+
+<p><b>This module needs the SHA-1 hash function. In order to use it,
+    initialize crypto support, e.g. by including the <code class="code">nettls-gnutls</code>
+    packages and calling <a href="Nettls_gnutls.html#VALinit"><code class="code">Nettls_gnutls.init</code></a>.</b></p>
+
+<p>As for all SASL mechanisms in OCamlnet, SASLprep is not automatically
+    called. Users of SCRAM should pass user names and passwords through
+    <a href="Netsaslprep.html#VALsaslprep"><code class="code">Netsaslprep.saslprep</code></a>.</p>
+
+<pre><span id="TYPEptype"><span class="keyword">type</span> <code class="type"></code>ptype</span> = <code class="type">[ `GSSAPI | `SASL ]</code> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>Profile types:</p>
+<ul>
+<li><code class="code">`GSSAPI</code>: as defined in RFC 5802, the gs2-header is omitted</li>
+<li><code class="code">`SASL</code>: as defined in RFC 5802</li>
+</ul>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEprofile"><span class="keyword">type</span> <code class="type"></code>profile</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTprofile.ptype">ptype</span>&nbsp;: <code class="type"><a href="Netmech_scram.html#TYPEptype">ptype</a></code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTprofile.hash_function">hash_function</span>&nbsp;: <code class="type"><a href="Netsys_digests.html#TYPEiana_hash_fn">Netsys_digests.iana_hash_fn</a></code>;</code></td>
+<td class="typefieldcomment" align="left" valign="top" ><code>(*</code></td><td class="typefieldcomment" align="left" valign="top" ><div class="info ">
+<div class="info-desc">
+<p>Which hash function</p>
+</div>
+</div>
+</td><td class="typefieldcomment" align="left" valign="bottom" ><code>*)</code></td>
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTprofile.return_unknown_user">return_unknown_user</span>&nbsp;: <code class="type">bool</code>;</code></td>
+<td class="typefieldcomment" align="left" valign="top" ><code>(*</code></td><td class="typefieldcomment" align="left" valign="top" ><div class="info ">
+<div class="info-desc">
+<p>Whether servers exhibit the fact that the
+				       user is unknown</p>
+</div>
+</div>
+</td><td class="typefieldcomment" align="left" valign="bottom" ><code>*)</code></td>
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTprofile.iteration_count_limit">iteration_count_limit</span>&nbsp;: <code class="type">int</code>;</code></td>
+<td class="typefieldcomment" align="left" valign="top" ><code>(*</code></td><td class="typefieldcomment" align="left" valign="top" ><div class="info ">
+<div class="info-desc">
+<p>Largest supported iteration number</p>
+</div>
+</div>
+</td><td class="typefieldcomment" align="left" valign="bottom" ><code>*)</code></td>
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p>Profile</p>
+</div>
+</div>
+
+
+<pre><span id="TYPEcb"><span class="keyword">type</span> <code class="type"></code>cb</span> = <code class="type"><a href="Netsys_sasl_types.html#TYPEcb">Netsys_sasl_types.cb</a></code> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>Using the same channel binding type as for SASL</p>
+</div>
+</div>
+
+
+<pre><span id="TYPEserver_error"><span class="keyword">type</span> <code class="type"></code>server_error</span> = <code class="type">[ `Channel_binding_not_supported<br>       | `Channel_bindings_dont_match<br>       | `Extension of string<br>       | `Extensions_not_supported<br>       | `Invalid_encoding<br>       | `Invalid_proof<br>       | `Invalid_username_encoding<br>       | `No_resources<br>       | `Other_error<br>       | `Server_does_support_channel_binding<br>       | `Unknown_user<br>       | `Unsupported_channel_binding_type ]</code> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>Error codes of this protocol</p>
+</div>
+</div>
+
+
+<pre><span id="TYPEclient_session"><span class="keyword">type</span> <code class="type"></code>client_session</span> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>Session context for clients</p>
+</div>
+</div>
+
+
+<pre><span id="TYPEserver_session"><span class="keyword">type</span> <code class="type"></code>server_session</span> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>Session context for servers</p>
+</div>
+</div>
+
+<p>Client exceptions: The exceptions are returned by <code class="code">client_error_flag</code>,
+    but never raised.</p>
+
+<pre><span id="EXCEPTIONInvalid_encoding"><span class="keyword">exception</span> Invalid_encoding</span> <span class="keyword">of</span> <code class="type">string * string</code></pre>
+<div class="info ">
+<div class="info-desc">
+<p>Returned by clients when something cannot be decoded. First string
+      is an error message, the second string the raw message that cannot
+      be decoded</p>
+</div>
+</div>
+
+<pre><span id="EXCEPTIONInvalid_username_encoding"><span class="keyword">exception</span> Invalid_username_encoding</span> <span class="keyword">of</span> <code class="type">string * string</code></pre>
+<div class="info ">
+<div class="info-desc">
+<p>Returned by clients when the username does not match the requirements.
+      Arguments as for <code class="code">Invalid_encoding</code>.</p>
+</div>
+</div>
+
+<pre><span id="EXCEPTIONExtensions_not_supported"><span class="keyword">exception</span> Extensions_not_supported</span> <span class="keyword">of</span> <code class="type">string * string</code></pre>
+<div class="info ">
+<div class="info-desc">
+<p>Returned by clients when the server enables an unsupported extension.
+      Arguments as for <code class="code">Invalid_encoding</code>.</p>
+</div>
+</div>
+
+<pre><span id="EXCEPTIONProtocol_error"><span class="keyword">exception</span> Protocol_error</span> <span class="keyword">of</span> <code class="type">string</code></pre>
+<div class="info ">
+<div class="info-desc">
+<p>Returned by clients when the server violates the protocol. The argument
+      is a message.</p>
+</div>
+</div>
+
+<pre><span id="EXCEPTIONInvalid_server_signature"><span class="keyword">exception</span> Invalid_server_signature</span></pre>
+<div class="info ">
+<div class="info-desc">
+<p>Returned by clients when the signature sent by the server is invalid
+      (i.e. the server does not know the client password)</p>
+</div>
+</div>
+
+<pre><span id="EXCEPTIONServer_error"><span class="keyword">exception</span> Server_error</span> <span class="keyword">of</span> <code class="type"><a href="Netmech_scram.html#TYPEserver_error">server_error</a></code></pre>
+<div class="info ">
+<div class="info-desc">
+<p>Returned by clients when the server sent an error code</p>
+</div>
+</div>
+
+<pre><span id="VALerror_of_exn"><span class="keyword">val</span> error_of_exn</span> : <code class="type">exn -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p>Converts one of the above exceptions to a human-readable string</p>
+</div>
+</div>
+
+<pre><span id="VALprofile"><span class="keyword">val</span> profile</span> : <code class="type">?return_unknown_user:bool -><br>       ?iteration_count_limit:int -><br>       <a href="Netmech_scram.html#TYPEptype">ptype</a> -> <a href="Netsys_digests.html#TYPEiana_hash_fn">Netsys_digests.iana_hash_fn</a> -> <a href="Netmech_scram.html#TYPEprofile">profile</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Creates a profile</p>
+</div>
+</div>
+
+<pre><span id="VALstring_of_server_error"><span class="keyword">val</span> string_of_server_error</span> : <code class="type"><a href="Netmech_scram.html#TYPEserver_error">server_error</a> -> string</code></pre>
+<pre><span id="VALserver_error_of_string"><span class="keyword">val</span> server_error_of_string</span> : <code class="type">string -> <a href="Netmech_scram.html#TYPEserver_error">server_error</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Conversion</p>
+</div>
+</div>
+
+<pre><span id="VALmechanism_name"><span class="keyword">val</span> mechanism_name</span> : <code class="type"><a href="Netmech_scram.html#TYPEprofile">profile</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p>The official name of the mechanism</p>
+</div>
+</div>
+<h3 id="2_Clients">Clients</h3><p>The idea is to create a client session <code class="code">s</code> first. The functions
+    <code class="code">client_emit_flag</code> and <code class="code">client_recv_flag</code> indicate now whether
+    the client needs to emit a new message, or whether it needs to
+    receive a message, respectively. Emission is done by <code class="code">client_emit_message</code>,
+    reception by <code class="code">client_recv_message</code>. If everything goes well, the
+    protocol state advances, and finally <code class="code">client_finish_flag</code> is true.
+    This indicates that the client is authenticated and that the server
+    knows the client's password. If an error occurs, an exception is
+    raised (see above for possibilities), and <code class="code">client_error_flag</code> signals
+    <code class="code">true</code>.</p>
+
+<pre><span id="VALcreate_client_session"><span class="keyword">val</span> create_client_session</span> : <code class="type">?nonce:string -><br>       <a href="Netmech_scram.html#TYPEprofile">profile</a> -> string -> string -> <a href="Netmech_scram.html#TYPEclient_session">client_session</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">create_client_session p username password</code>: Creates a new client
+      session for profile <code class="code">p</code> so that the client authenticates as user
+      <code class="code">username</code>, and proves its identity with the given <code class="code">password</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALcreate_client_session2"><span class="keyword">val</span> create_client_session2</span> : <code class="type">?nonce:string -><br>       <a href="Netmech_scram.html#TYPEprofile">profile</a> -><br>       string -> string -> string -> <a href="Netmech_scram.html#TYPEclient_session">client_session</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">create_client_session p username authzname password</code>: Like
+      <code class="code">create_client_session</code>, but also sets the authorization name
+      (only processed for the SASL profile).</p>
+</div>
+</div>
+
+<pre><span id="VALclient_configure_channel_binding"><span class="keyword">val</span> client_configure_channel_binding</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -><br>       <a href="Netmech_scram.html#TYPEcb">cb</a> -> <a href="Netmech_scram.html#TYPEclient_session">client_session</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Sets whether to request channel binding.</p>
+</div>
+</div>
+
+<pre><span id="VALclient_restart"><span class="keyword">val</span> client_restart</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -> string -> <a href="Netmech_scram.html#TYPEclient_session">client_session</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Restart a client session (draft-ietf-httpauth-scram-auth-15).
+      The string is the sr attribute.</p>
+</div>
+</div>
+
+<pre><span id="VALclient_restart_stale"><span class="keyword">val</span> client_restart_stale</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -> string -> <a href="Netmech_scram.html#TYPEclient_session">client_session</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Restart a client session after the server indicated that the session
+      is stale. The string arg is the new "sr" attribute
+      (draft-ietf-httpauth-scram-auth-15).</p>
+</div>
+</div>
+
+<pre><span id="VALclient_emit_flag"><span class="keyword">val</span> client_emit_flag</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p>Whether <code class="code">client_emit_message</code> can now be called</p>
+</div>
+</div>
+
+<pre><span id="VALclient_recv_flag"><span class="keyword">val</span> client_recv_flag</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p>Whether <code class="code">client_recv_message</code> can now be called</p>
+</div>
+</div>
+
+<pre><span id="VALclient_finish_flag"><span class="keyword">val</span> client_finish_flag</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p>Whether the client is authenticated and the server verified</p>
+</div>
+</div>
+
+<pre><span id="VALclient_semifinish_flag"><span class="keyword">val</span> client_semifinish_flag</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p>Whether the client is authentication</p>
+</div>
+</div>
+
+<pre><span id="VALclient_error_flag"><span class="keyword">val</span> client_error_flag</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -> exn option</code></pre><div class="info ">
+<div class="info-desc">
+<p>Whether an error occurred, and the protocol cannot advance anymore</p>
+</div>
+</div>
+
+<pre><span id="VALclient_channel_binding"><span class="keyword">val</span> client_channel_binding</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -> <a href="Netmech_scram.html#TYPEcb">cb</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Returns the channel binding</p>
+</div>
+</div>
+
+<pre><span id="VALclient_emit_message"><span class="keyword">val</span> client_emit_message</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -> <a href="Netmech_scram.html#TYPEclient_session">client_session</a> * string</code></pre><div class="info ">
+<div class="info-desc">
+<p>Emits the next message to be sent to the server</p>
+</div>
+</div>
+
+<pre><span id="VALclient_emit_message_kv"><span class="keyword">val</span> client_emit_message_kv</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -><br>       <a href="Netmech_scram.html#TYPEclient_session">client_session</a> * string option * (string * string) list</code></pre><div class="info ">
+<div class="info-desc">
+<p>Emits the next message to be sent to the server. The message is not
+      encoded as a single string, but as <code class="code">(gs2_opt, kv)</code> where
+      <code class="code">gs2_opt</code> is the optional GS2 header (the production <code class="code">gs2-header</code> from
+      the RFC), and <code class="code">kv</code> contains the parameters as key/value pairs.</p>
+</div>
+</div>
+
+<pre><span id="VALclient_recv_message"><span class="keyword">val</span> client_recv_message</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -> string -> <a href="Netmech_scram.html#TYPEclient_session">client_session</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Receives the next message from the server</p>
+</div>
+</div>
+
+<pre><span id="VALclient_protocol_key"><span class="keyword">val</span> client_protocol_key</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -> string option</code></pre><div class="info ">
+<div class="info-desc">
+<p>The 128-bit protocol key for encrypting messages. This is available 
+      as soon as the second client message is emitted.</p>
+</div>
+</div>
+
+<pre><span id="VALclient_user_name"><span class="keyword">val</span> client_user_name</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p>The user name</p>
+</div>
+</div>
+
+<pre><span id="VALclient_authz_name"><span class="keyword">val</span> client_authz_name</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p>The authorization name</p>
+</div>
+</div>
+
+<pre><span id="VALclient_password"><span class="keyword">val</span> client_password</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p>The password</p>
+</div>
+</div>
+
+<pre><span id="VALclient_export"><span class="keyword">val</span> client_export</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -> string</code></pre>
+<pre><span id="VALclient_import"><span class="keyword">val</span> client_import</span> : <code class="type">string -> <a href="Netmech_scram.html#TYPEclient_session">client_session</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Exports a client session as string, and imports the string again.</p>
+
+<p>The export format is just a marshalled Ocaml value.</p>
+</div>
+</div>
+
+<pre><span id="VALclient_prop"><span class="keyword">val</span> client_prop</span> : <code class="type"><a href="Netmech_scram.html#TYPEclient_session">client_session</a> -> string -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p>Returns a property of the client (or Not_found):</p>
+<ul>
+<li>"snonce": server nonce</li>
+<li>"cnonce": client nonce</li>
+<li>"salt": password salt</li>
+<li>"i": iteration count</li>
+<li>"client_key": this key is derived from the salted password but
+         cannot be derived from the stored key. Its presence proves that the
+         password was entered. It is ideal for encrypting data with a per-user
+         key. The client key is known both to the client and to the server
+         (after running the protocol).</li>
+<li>"protocol_key": another key defined in RFC-5801 known by both
+         sides. The protocol key is additionally also dependent on the nonces.</li>
+<li>"error"</li>
+</ul>
+</div>
+</div>
+<h3 id="2_Servers">Servers</h3><p>The idea is to create a server session <code class="code">s</code> first. The functions
+    <code class="code">server_emit_flag</code> and <code class="code">server_recv_flag</code> indicate now whether
+    the server needs to emit a new message, or whether it needs to
+    receive a message, respectively. Emission is done by <code class="code">server_emit_message</code>,
+    reception by <code class="code">server_recv_message</code>. If everything goes well, the
+    protocol state advances, and finally <code class="code">server_finish_flag</code> is true.
+    This indicates that the client could be authenticated.</p>
+
+<p>If an error occurs, <b>no</b> exception is raised, and the protocol
+    advances nevertheless, and finally the server sends an error token
+    to the client. After this, <code class="code">server_error_flag</code> returns true.</p>
+
+<pre><span id="TYPEcredentials"><span class="keyword">type</span> <code class="type"></code>credentials</span> = <code class="type">[ `Salted_password of string * string * int<br>       | `Stored_creds of string * string * string * int ]</code> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>Two forms of providing credentials:</p>
+<ul>
+<li><code class="code">`Salted_password(spw,salt,iteration_count)</code>: get the
+         salted password with
+         <code class="code">spw = salt_password h password salt iteration_count</code></li>
+<li><code class="code">`Stored(stkey, srvkey, salt, iteration_count)</code>: get the
+         pair (stkey, srvkey) with
+         <code class="code">stored_key h password salt iteration_count</code></li>
+</ul>
+</div>
+</div>
+
+
+<pre><span id="VALcreate_server_session"><span class="keyword">val</span> create_server_session</span> : <code class="type">?nonce:string -><br>       <a href="Netmech_scram.html#TYPEprofile">profile</a> -><br>       (string -> <a href="Netmech_scram.html#TYPEcredentials">credentials</a>) -> <a href="Netmech_scram.html#TYPEserver_session">server_session</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">create_server_session p auth</code>: Creates a new server session with
+      profile <code class="code">p</code> and authenticator function <code class="code">auth</code>.</p>
+
+<p>The function is <code class="code">auth</code> is called when the credentials of the
+      client have been received to check whether the client can be
+      authenticated. It is called as</p>
+
+<pre class="codepre"><code class="code">      let credentials = auth username
+      </code></pre>
+<p>where <code class="code">username</code> is the user name. The function can now raise
+      <code class="code">Not_found</code> if the user is unknown, or it can return the
+      credentials. Note that the cleartext password needs not to
+      be known. The credentials contain a salt and an iteration count:
+      <code class="code">salt</code> is a random string, and <code class="code">iteration_count</code> a
+      security parameter that should be at least 4096. Whereas <code class="code">salt</code>
+      should be different for each user, the <code class="code">iteration_count</code> can be
+      chosen as a constant (e.g. 4096). Now <code class="code">salted_password</code> can be
+      computed from the cleartext password and these two extra parameters.
+      See <code class="code">salt_password</code> below.</p>
+</div>
+</div>
+
+<pre><span id="VALcreate_server_session2"><span class="keyword">val</span> create_server_session2</span> : <code class="type">?nonce:string -><br>       <a href="Netmech_scram.html#TYPEprofile">profile</a> -><br>       (string -> string -> <a href="Netmech_scram.html#TYPEcredentials">credentials</a>) -><br>       <a href="Netmech_scram.html#TYPEserver_session">server_session</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Same as <code class="code">create_server_session</code>, but the authentication callback
+      gets two arguments:</p>
+
+<pre class="codepre"><code class="code">      let credentials = auth username authzname
+      </code></pre>
+<p>where <code class="code">authzname</code> is the passed authorization name (or "" if na).</p>
+</div>
+</div>
+
+<pre><span id="VALcreate_salt"><span class="keyword">val</span> create_salt</span> : <code class="type">unit -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p>Creates a random string suited as salt</p>
+</div>
+</div>
+
+<pre><span id="VALsalt_password"><span class="keyword">val</span> salt_password</span> : <code class="type"><a href="Netsys_digests.html#TYPEiana_hash_fn">Netsys_digests.iana_hash_fn</a> -> string -> string -> int -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">let salted_password = salt_password h password salt iteration_count</code></p>
+
+<p>Use this now as credentials
+      <code class="code">`Salted_password(salted_password,salt,iteration_count)</code>.</p>
+
+<p>As we do not implement <code class="code">SASLprep</code> only passwords consisting of
+      US-ASCII characters are accepted (<code class="code">Invalid_encoding</code> otherwise).</p>
+</div>
+</div>
+
+<pre><span id="VALstored_key"><span class="keyword">val</span> stored_key</span> : <code class="type"><a href="Netsys_digests.html#TYPEiana_hash_fn">Netsys_digests.iana_hash_fn</a> -> string -> string -> int -> string * string</code></pre><p><code class="code">let stkey,srvkey = stored_key h password salt iteration_count</code></p>
+
+<p>Use this now as credentials
+      <code class="code">`Stored_creds(stkey,srvkey,salt,iteration_count)</code>.</p>
+
+<pre><span id="VALserver_emit_flag"><span class="keyword">val</span> server_emit_flag</span> : <code class="type"><a href="Netmech_scram.html#TYPEserver_session">server_session</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p>Whether <code class="code">server_emit_message</code> can now be called</p>
+</div>
+</div>
+
+<pre><span id="VALserver_recv_flag"><span class="keyword">val</span> server_recv_flag</span> : <code class="type"><a href="Netmech_scram.html#TYPEserver_session">server_session</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p>Whether <code class="code">server_recv_message</code> can now be called</p>
+</div>
+</div>
+
+<pre><span id="VALserver_finish_flag"><span class="keyword">val</span> server_finish_flag</span> : <code class="type"><a href="Netmech_scram.html#TYPEserver_session">server_session</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p>Whether the client is authenticated</p>
+</div>
+</div>
+
+<pre><span id="VALserver_error_flag"><span class="keyword">val</span> server_error_flag</span> : <code class="type"><a href="Netmech_scram.html#TYPEserver_session">server_session</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p>Whether an error occurred, and the protocol cannot advance anymore</p>
+</div>
+</div>
+
+<pre><span id="VALserver_emit_message"><span class="keyword">val</span> server_emit_message</span> : <code class="type"><a href="Netmech_scram.html#TYPEserver_session">server_session</a> -> <a href="Netmech_scram.html#TYPEserver_session">server_session</a> * string</code></pre><div class="info ">
+<div class="info-desc">
+<p>Emits the next message to be sent to the client</p>
+</div>
+</div>
+
+<pre><span id="VALserver_emit_message_kv"><span class="keyword">val</span> server_emit_message_kv</span> : <code class="type"><a href="Netmech_scram.html#TYPEserver_session">server_session</a> -><br>       <a href="Netmech_scram.html#TYPEserver_session">server_session</a> * (string * string) list</code></pre><div class="info ">
+<div class="info-desc">
+<p>Emits the next message to be sent to the client. The message is returned
+      as a list of key/value pairs.</p>
+</div>
+</div>
+
+<pre><span id="VALserver_recv_message"><span class="keyword">val</span> server_recv_message</span> : <code class="type"><a href="Netmech_scram.html#TYPEserver_session">server_session</a> -> string -> <a href="Netmech_scram.html#TYPEserver_session">server_session</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Receives the next message from the client</p>
+</div>
+</div>
+
+<pre><span id="VALserver_protocol_key"><span class="keyword">val</span> server_protocol_key</span> : <code class="type"><a href="Netmech_scram.html#TYPEserver_session">server_session</a> -> string option</code></pre><div class="info ">
+<div class="info-desc">
+<p>The 128-bit protocol key for encrypting messages. This is available 
+      as soon as the second client message has been received.</p>
+</div>
+</div>
+
+<pre><span id="VALserver_channel_binding"><span class="keyword">val</span> server_channel_binding</span> : <code class="type"><a href="Netmech_scram.html#TYPEserver_session">server_session</a> -> <a href="Netmech_scram.html#TYPEcb">cb</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Returns the channel binding requirement. It is
+      up to the application to enforce the binding. This information is 
+      available as soon as the second client message has been received</p>
+</div>
+</div>
+
+<pre><span id="VALserver_user_name"><span class="keyword">val</span> server_user_name</span> : <code class="type"><a href="Netmech_scram.html#TYPEserver_session">server_session</a> -> string option</code></pre><div class="info ">
+<div class="info-desc">
+<p>The user name as transmitted from the client. This is returned here
+      even before the authentication is completed!</p>
+</div>
+</div>
+
+<pre><span id="VALserver_authz_name"><span class="keyword">val</span> server_authz_name</span> : <code class="type"><a href="Netmech_scram.html#TYPEserver_session">server_session</a> -> string option</code></pre><div class="info ">
+<div class="info-desc">
+<p>The authorization name as transmitted from the client. This is returned
+      here
+      even before the authentication is completed!</p>
+</div>
+</div>
+
+<pre><span id="VALserver_export"><span class="keyword">val</span> server_export</span> : <code class="type"><a href="Netmech_scram.html#TYPEserver_session">server_session</a> -> string</code></pre>
+<pre><span id="VALserver_import"><span class="keyword">val</span> server_import</span> : <code class="type">string -> <a href="Netmech_scram.html#TYPEserver_session">server_session</a></code></pre>
+<pre><span id="VALserver_import_any"><span class="keyword">val</span> server_import_any</span> : <code class="type">string -><br>       (string -> <a href="Netmech_scram.html#TYPEcredentials">credentials</a>) -> <a href="Netmech_scram.html#TYPEserver_session">server_session</a></code></pre>
+<pre><span id="VALserver_import_any2"><span class="keyword">val</span> server_import_any2</span> : <code class="type">string -><br>       (string -> string -> <a href="Netmech_scram.html#TYPEcredentials">credentials</a>) -><br>       <a href="Netmech_scram.html#TYPEserver_session">server_session</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Exports a server session as string, and imports the string again.
+      <code class="code">server_import</code> can only import established sessions.
+      <code class="code">server_import_any</code> can also import unfinished sessions, but one needs
+      to pass the authentication function as for <code class="code">server_create_session</code>.
+      <code class="code">server_import_any2</code> uses the modified auth function as in
+      <code class="code">server_create_session2</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALserver_prop"><span class="keyword">val</span> server_prop</span> : <code class="type"><a href="Netmech_scram.html#TYPEserver_session">server_session</a> -> string -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p>Returns a property of the server (or Not_found) - see also <code class="code">client_prop</code>
+      above:</p>
+<ul>
+<li>"snonce"</li>
+<li>"cnonce"</li>
+<li>"salt"</li>
+<li>"i" (iteration_count)</li>
+<li>"client_key"</li>
+<li>"protocol_key"</li>
+</ul>
+</div>
+</div>
+<h3 id="2_Confidentiality">Confidentiality</h3>
+<pre><code><span id="TYPEspecific_keys"><span class="keyword">type</span> <code class="type"></code>specific_keys</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTspecific_keys.kc">kc</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTspecific_keys.ke">ke</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTspecific_keys.ki">ki</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p>The specific keys to use</p>
+</div>
+</div>
+
+
+<pre><span id="MODULEAES_CTS"><span class="keyword">module</span> <a href="Netmech_scram.AES_CTS.html">AES_CTS</a></span>: <code class="code">sig</code> <a href="Netmech_scram.AES_CTS.html">..</a> <code class="code">end</code></pre><div class="info">
+<p>This module implements AES in Ciphertext Stealing mode (see RFC 3962)</p>
+
+</div>
+
+<pre><span id="MODULECryptosystem"><span class="keyword">module</span> <a href="Netmech_scram.Cryptosystem.html">Cryptosystem</a></span>: <code class="code">sig</code> <a href="Netmech_scram.Cryptosystem.html">..</a> <code class="code">end</code></pre><div class="info">
+<p>This is the cryptosystem as defined in RFC 3961, so far needed here.</p>
+
+</div>
+
+<pre><span id="MODULEDebug"><span class="keyword">module</span> <a href="Netmech_scram.Debug.html">Debug</a></span>: <code class="code">sig</code> <a href="Netmech_scram.Debug.html">..</a> <code class="code">end</code></pre></body></html>

@@ -1,0 +1,508 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Crypto.html">
+<link rel="next" href="Credentials.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of extensions" rel=Appendix href="index_extensions.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of class attributes" rel=Appendix href="index_attributes.html">
+<link title="Index of class methods" rel=Appendix href="index_methods.html">
+<link title="Index of classes" rel=Appendix href="index_classes.html">
+<link title="Index of class types" rel=Appendix href="index_class_types.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Uq_gtk" rel="Chapter" href="Uq_gtk.html">
+<link title="Uq_tcl" rel="Chapter" href="Uq_tcl.html">
+<link title="Equeue" rel="Chapter" href="Equeue.html">
+<link title="Unixqueue" rel="Chapter" href="Unixqueue.html">
+<link title="Unixqueue_pollset" rel="Chapter" href="Unixqueue_pollset.html">
+<link title="Unixqueue_select" rel="Chapter" href="Unixqueue_select.html">
+<link title="Uq_resolver" rel="Chapter" href="Uq_resolver.html">
+<link title="Uq_engines" rel="Chapter" href="Uq_engines.html">
+<link title="Uq_multiplex" rel="Chapter" href="Uq_multiplex.html">
+<link title="Uq_transfer" rel="Chapter" href="Uq_transfer.html">
+<link title="Uq_socks5" rel="Chapter" href="Uq_socks5.html">
+<link title="Uq_io" rel="Chapter" href="Uq_io.html">
+<link title="Uq_lwt" rel="Chapter" href="Uq_lwt.html">
+<link title="Uq_libevent" rel="Chapter" href="Uq_libevent.html">
+<link title="Uq_mt" rel="Chapter" href="Uq_mt.html">
+<link title="Uq_client" rel="Chapter" href="Uq_client.html">
+<link title="Uq_server" rel="Chapter" href="Uq_server.html">
+<link title="Uq_datagram" rel="Chapter" href="Uq_datagram.html">
+<link title="Uq_engines_compat" rel="Chapter" href="Uq_engines_compat.html">
+<link title="Equeue_intro" rel="Chapter" href="Equeue_intro.html">
+<link title="Equeue_howto" rel="Chapter" href="Equeue_howto.html">
+<link title="Netcamlbox" rel="Chapter" href="Netcamlbox.html">
+<link title="Netcgi_apache" rel="Chapter" href="Netcgi_apache.html">
+<link title="Netcgi_modtpl" rel="Chapter" href="Netcgi_modtpl.html">
+<link title="Netcgi_plex" rel="Chapter" href="Netcgi_plex.html">
+<link title="Netcgi_common" rel="Chapter" href="Netcgi_common.html">
+<link title="Netcgi" rel="Chapter" href="Netcgi.html">
+<link title="Netcgi_ajp" rel="Chapter" href="Netcgi_ajp.html">
+<link title="Netcgi_scgi" rel="Chapter" href="Netcgi_scgi.html">
+<link title="Netcgi_cgi" rel="Chapter" href="Netcgi_cgi.html">
+<link title="Netcgi_fcgi" rel="Chapter" href="Netcgi_fcgi.html">
+<link title="Netcgi_dbi" rel="Chapter" href="Netcgi_dbi.html">
+<link title="Netcgi1_compat" rel="Chapter" href="Netcgi1_compat.html">
+<link title="Netcgi_test" rel="Chapter" href="Netcgi_test.html">
+<link title="Netcgi_porting" rel="Chapter" href="Netcgi_porting.html">
+<link title="Nethttp_client_conncache" rel="Chapter" href="Nethttp_client_conncache.html">
+<link title="Nethttp_client" rel="Chapter" href="Nethttp_client.html">
+<link title="Nettelnet_client" rel="Chapter" href="Nettelnet_client.html">
+<link title="Netftp_data_endpoint" rel="Chapter" href="Netftp_data_endpoint.html">
+<link title="Netftp_client" rel="Chapter" href="Netftp_client.html">
+<link title="Nethttp_fs" rel="Chapter" href="Nethttp_fs.html">
+<link title="Netftp_fs" rel="Chapter" href="Netftp_fs.html">
+<link title="Netsmtp" rel="Chapter" href="Netsmtp.html">
+<link title="Netpop" rel="Chapter" href="Netpop.html">
+<link title="Netldap" rel="Chapter" href="Netldap.html">
+<link title="Netclient_tut" rel="Chapter" href="Netclient_tut.html">
+<link title="Netgss_bindings" rel="Chapter" href="Netgss_bindings.html">
+<link title="Netgss" rel="Chapter" href="Netgss.html">
+<link title="Nethttpd_types" rel="Chapter" href="Nethttpd_types.html">
+<link title="Nethttpd_kernel" rel="Chapter" href="Nethttpd_kernel.html">
+<link title="Nethttpd_reactor" rel="Chapter" href="Nethttpd_reactor.html">
+<link title="Nethttpd_engine" rel="Chapter" href="Nethttpd_engine.html">
+<link title="Nethttpd_services" rel="Chapter" href="Nethttpd_services.html">
+<link title="Nethttpd_plex" rel="Chapter" href="Nethttpd_plex.html">
+<link title="Nethttpd_util" rel="Chapter" href="Nethttpd_util.html">
+<link title="Nethttpd_intro" rel="Chapter" href="Nethttpd_intro.html">
+<link title="Netmcore" rel="Chapter" href="Netmcore.html">
+<link title="Netmcore_camlbox" rel="Chapter" href="Netmcore_camlbox.html">
+<link title="Netmcore_mempool" rel="Chapter" href="Netmcore_mempool.html">
+<link title="Netmcore_heap" rel="Chapter" href="Netmcore_heap.html">
+<link title="Netmcore_ref" rel="Chapter" href="Netmcore_ref.html">
+<link title="Netmcore_array" rel="Chapter" href="Netmcore_array.html">
+<link title="Netmcore_sem" rel="Chapter" href="Netmcore_sem.html">
+<link title="Netmcore_mutex" rel="Chapter" href="Netmcore_mutex.html">
+<link title="Netmcore_condition" rel="Chapter" href="Netmcore_condition.html">
+<link title="Netmcore_queue" rel="Chapter" href="Netmcore_queue.html">
+<link title="Netmcore_buffer" rel="Chapter" href="Netmcore_buffer.html">
+<link title="Netmcore_matrix" rel="Chapter" href="Netmcore_matrix.html">
+<link title="Netmcore_hashtbl" rel="Chapter" href="Netmcore_hashtbl.html">
+<link title="Netmcore_process" rel="Chapter" href="Netmcore_process.html">
+<link title="Netmcore_tut" rel="Chapter" href="Netmcore_tut.html">
+<link title="Netmcore_basics" rel="Chapter" href="Netmcore_basics.html">
+<link title="Netplex_types" rel="Chapter" href="Netplex_types.html">
+<link title="Netplex_mp" rel="Chapter" href="Netplex_mp.html">
+<link title="Netplex_mt" rel="Chapter" href="Netplex_mt.html">
+<link title="Netplex_log" rel="Chapter" href="Netplex_log.html">
+<link title="Netplex_controller" rel="Chapter" href="Netplex_controller.html">
+<link title="Netplex_container" rel="Chapter" href="Netplex_container.html">
+<link title="Netplex_sockserv" rel="Chapter" href="Netplex_sockserv.html">
+<link title="Netplex_workload" rel="Chapter" href="Netplex_workload.html">
+<link title="Netplex_main" rel="Chapter" href="Netplex_main.html">
+<link title="Netplex_config" rel="Chapter" href="Netplex_config.html">
+<link title="Netplex_kit" rel="Chapter" href="Netplex_kit.html">
+<link title="Rpc_netplex" rel="Chapter" href="Rpc_netplex.html">
+<link title="Netplex_cenv" rel="Chapter" href="Netplex_cenv.html">
+<link title="Netplex_semaphore" rel="Chapter" href="Netplex_semaphore.html">
+<link title="Netplex_sharedvar" rel="Chapter" href="Netplex_sharedvar.html">
+<link title="Netplex_mutex" rel="Chapter" href="Netplex_mutex.html">
+<link title="Netplex_encap" rel="Chapter" href="Netplex_encap.html">
+<link title="Netplex_mbox" rel="Chapter" href="Netplex_mbox.html">
+<link title="Netplex_internal" rel="Chapter" href="Netplex_internal.html">
+<link title="Netplex_intro" rel="Chapter" href="Netplex_intro.html">
+<link title="Netplex_advanced" rel="Chapter" href="Netplex_advanced.html">
+<link title="Netplex_admin" rel="Chapter" href="Netplex_admin.html">
+<link title="Netshm" rel="Chapter" href="Netshm.html">
+<link title="Netshm_data" rel="Chapter" href="Netshm_data.html">
+<link title="Netshm_hashtbl" rel="Chapter" href="Netshm_hashtbl.html">
+<link title="Netshm_array" rel="Chapter" href="Netshm_array.html">
+<link title="Netshm_intro" rel="Chapter" href="Netshm_intro.html">
+<link title="Netstring_pcre" rel="Chapter" href="Netstring_pcre.html">
+<link title="Netconversion" rel="Chapter" href="Netconversion.html">
+<link title="Netchannels" rel="Chapter" href="Netchannels.html">
+<link title="Netstream" rel="Chapter" href="Netstream.html">
+<link title="Netmime_string" rel="Chapter" href="Netmime_string.html">
+<link title="Netmime" rel="Chapter" href="Netmime.html">
+<link title="Netsendmail" rel="Chapter" href="Netsendmail.html">
+<link title="Neturl" rel="Chapter" href="Neturl.html">
+<link title="Netaddress" rel="Chapter" href="Netaddress.html">
+<link title="Netbuffer" rel="Chapter" href="Netbuffer.html">
+<link title="Netmime_header" rel="Chapter" href="Netmime_header.html">
+<link title="Netmime_channels" rel="Chapter" href="Netmime_channels.html">
+<link title="Neturl_ldap" rel="Chapter" href="Neturl_ldap.html">
+<link title="Netdate" rel="Chapter" href="Netdate.html">
+<link title="Netencoding" rel="Chapter" href="Netencoding.html">
+<link title="Netulex" rel="Chapter" href="Netulex.html">
+<link title="Netaccel" rel="Chapter" href="Netaccel.html">
+<link title="Netaccel_link" rel="Chapter" href="Netaccel_link.html">
+<link title="Nethtml" rel="Chapter" href="Nethtml.html">
+<link title="Netstring_str" rel="Chapter" href="Netstring_str.html">
+<link title="Netmappings" rel="Chapter" href="Netmappings.html">
+<link title="Netaux" rel="Chapter" href="Netaux.html">
+<link title="Nethttp" rel="Chapter" href="Nethttp.html">
+<link title="Netpagebuffer" rel="Chapter" href="Netpagebuffer.html">
+<link title="Netfs" rel="Chapter" href="Netfs.html">
+<link title="Netglob" rel="Chapter" href="Netglob.html">
+<link title="Netauth" rel="Chapter" href="Netauth.html">
+<link title="Netsockaddr" rel="Chapter" href="Netsockaddr.html">
+<link title="Netnumber" rel="Chapter" href="Netnumber.html">
+<link title="Netxdr_mstring" rel="Chapter" href="Netxdr_mstring.html">
+<link title="Netxdr" rel="Chapter" href="Netxdr.html">
+<link title="Netcompression" rel="Chapter" href="Netcompression.html">
+<link title="Netunichar" rel="Chapter" href="Netunichar.html">
+<link title="Netasn1" rel="Chapter" href="Netasn1.html">
+<link title="Netasn1_encode" rel="Chapter" href="Netasn1_encode.html">
+<link title="Netoid" rel="Chapter" href="Netoid.html">
+<link title="Netstring_tstring" rel="Chapter" href="Netstring_tstring.html">
+<link title="Netdn" rel="Chapter" href="Netdn.html">
+<link title="Netx509" rel="Chapter" href="Netx509.html">
+<link title="Netascii_armor" rel="Chapter" href="Netascii_armor.html">
+<link title="Nettls_support" rel="Chapter" href="Nettls_support.html">
+<link title="Netmech_scram" rel="Chapter" href="Netmech_scram.html">
+<link title="Netmech_scram_gssapi" rel="Chapter" href="Netmech_scram_gssapi.html">
+<link title="Netmech_scram_sasl" rel="Chapter" href="Netmech_scram_sasl.html">
+<link title="Netmech_scram_http" rel="Chapter" href="Netmech_scram_http.html">
+<link title="Netgssapi_support" rel="Chapter" href="Netgssapi_support.html">
+<link title="Netgssapi_auth" rel="Chapter" href="Netgssapi_auth.html">
+<link title="Netchannels_crypto" rel="Chapter" href="Netchannels_crypto.html">
+<link title="Netx509_pubkey" rel="Chapter" href="Netx509_pubkey.html">
+<link title="Netx509_pubkey_crypto" rel="Chapter" href="Netx509_pubkey_crypto.html">
+<link title="Netsaslprep" rel="Chapter" href="Netsaslprep.html">
+<link title="Netmech_plain_sasl" rel="Chapter" href="Netmech_plain_sasl.html">
+<link title="Netmech_crammd5_sasl" rel="Chapter" href="Netmech_crammd5_sasl.html">
+<link title="Netmech_digest_sasl" rel="Chapter" href="Netmech_digest_sasl.html">
+<link title="Netmech_digest_http" rel="Chapter" href="Netmech_digest_http.html">
+<link title="Netmech_krb5_sasl" rel="Chapter" href="Netmech_krb5_sasl.html">
+<link title="Netmech_gs2_sasl" rel="Chapter" href="Netmech_gs2_sasl.html">
+<link title="Netmech_spnego_http" rel="Chapter" href="Netmech_spnego_http.html">
+<link title="Netchannels_tut" rel="Chapter" href="Netchannels_tut.html">
+<link title="Netmime_tut" rel="Chapter" href="Netmime_tut.html">
+<link title="Netsendmail_tut" rel="Chapter" href="Netsendmail_tut.html">
+<link title="Netulex_tut" rel="Chapter" href="Netulex_tut.html">
+<link title="Neturl_tut" rel="Chapter" href="Neturl_tut.html">
+<link title="Netsys" rel="Chapter" href="Netsys.html">
+<link title="Netsys_posix" rel="Chapter" href="Netsys_posix.html">
+<link title="Netsys_pollset" rel="Chapter" href="Netsys_pollset.html">
+<link title="Netlog" rel="Chapter" href="Netlog.html">
+<link title="Netexn" rel="Chapter" href="Netexn.html">
+<link title="Netsys_win32" rel="Chapter" href="Netsys_win32.html">
+<link title="Netsys_pollset_posix" rel="Chapter" href="Netsys_pollset_posix.html">
+<link title="Netsys_pollset_win32" rel="Chapter" href="Netsys_pollset_win32.html">
+<link title="Netsys_pollset_generic" rel="Chapter" href="Netsys_pollset_generic.html">
+<link title="Netsys_signal" rel="Chapter" href="Netsys_signal.html">
+<link title="Netsys_oothr" rel="Chapter" href="Netsys_oothr.html">
+<link title="Netsys_xdr" rel="Chapter" href="Netsys_xdr.html">
+<link title="Netsys_rng" rel="Chapter" href="Netsys_rng.html">
+<link title="Netsys_crypto_types" rel="Chapter" href="Netsys_crypto_types.html">
+<link title="Netsys_types" rel="Chapter" href="Netsys_types.html">
+<link title="Netsys_mem" rel="Chapter" href="Netsys_mem.html">
+<link title="Netsys_tmp" rel="Chapter" href="Netsys_tmp.html">
+<link title="Netsys_sem" rel="Chapter" href="Netsys_sem.html">
+<link title="Netsys_pmanage" rel="Chapter" href="Netsys_pmanage.html">
+<link title="Netsys_crypto" rel="Chapter" href="Netsys_crypto.html">
+<link title="Netsys_tls" rel="Chapter" href="Netsys_tls.html">
+<link title="Netsys_ciphers" rel="Chapter" href="Netsys_ciphers.html">
+<link title="Netsys_digests" rel="Chapter" href="Netsys_digests.html">
+<link title="Netsys_crypto_modes" rel="Chapter" href="Netsys_crypto_modes.html">
+<link title="Netsys_gssapi" rel="Chapter" href="Netsys_gssapi.html">
+<link title="Netsys_sasl_types" rel="Chapter" href="Netsys_sasl_types.html">
+<link title="Netsys_sasl" rel="Chapter" href="Netsys_sasl.html">
+<link title="Netsys_polypipe" rel="Chapter" href="Netsys_polypipe.html">
+<link title="Netsys_polysocket" rel="Chapter" href="Netsys_polysocket.html">
+<link title="Netsys_global" rel="Chapter" href="Netsys_global.html">
+<link title="Nettls_gnutls_bindings" rel="Chapter" href="Nettls_gnutls_bindings.html">
+<link title="Nettls_nettle_bindings" rel="Chapter" href="Nettls_nettle_bindings.html">
+<link title="Nettls_gnutls" rel="Chapter" href="Nettls_gnutls.html">
+<link title="Netunidata" rel="Chapter" href="Netunidata.html">
+<link title="Netgzip" rel="Chapter" href="Netgzip.html">
+<link title="Rpc_auth_local" rel="Chapter" href="Rpc_auth_local.html">
+<link title="Rpc_xti_client" rel="Chapter" href="Rpc_xti_client.html">
+<link title="Rpc" rel="Chapter" href="Rpc.html">
+<link title="Rpc_program" rel="Chapter" href="Rpc_program.html">
+<link title="Rpc_util" rel="Chapter" href="Rpc_util.html">
+<link title="Rpc_portmapper_aux" rel="Chapter" href="Rpc_portmapper_aux.html">
+<link title="Rpc_packer" rel="Chapter" href="Rpc_packer.html">
+<link title="Rpc_transport" rel="Chapter" href="Rpc_transport.html">
+<link title="Rpc_client" rel="Chapter" href="Rpc_client.html">
+<link title="Rpc_simple_client" rel="Chapter" href="Rpc_simple_client.html">
+<link title="Rpc_portmapper_clnt" rel="Chapter" href="Rpc_portmapper_clnt.html">
+<link title="Rpc_portmapper" rel="Chapter" href="Rpc_portmapper.html">
+<link title="Rpc_server" rel="Chapter" href="Rpc_server.html">
+<link title="Rpc_auth_sys" rel="Chapter" href="Rpc_auth_sys.html">
+<link title="Rpc_auth_gssapi" rel="Chapter" href="Rpc_auth_gssapi.html">
+<link title="Rpc_proxy" rel="Chapter" href="Rpc_proxy.html">
+<link title="Rpc_intro" rel="Chapter" href="Rpc_intro.html">
+<link title="Rpc_mapping_ref" rel="Chapter" href="Rpc_mapping_ref.html">
+<link title="Rpc_intro_gss" rel="Chapter" href="Rpc_intro_gss.html">
+<link title="Shell_sys" rel="Chapter" href="Shell_sys.html">
+<link title="Shell" rel="Chapter" href="Shell.html">
+<link title="Shell_uq" rel="Chapter" href="Shell_uq.html">
+<link title="Shell_fs" rel="Chapter" href="Shell_fs.html">
+<link title="Shell_intro" rel="Chapter" href="Shell_intro.html">
+<link title="Intro" rel="Chapter" href="Intro.html">
+<link title="Platform" rel="Chapter" href="Platform.html">
+<link title="Foreword" rel="Chapter" href="Foreword.html">
+<link title="Ipv6" rel="Chapter" href="Ipv6.html">
+<link title="Regexp" rel="Chapter" href="Regexp.html">
+<link title="Tls" rel="Chapter" href="Tls.html">
+<link title="Crypto" rel="Chapter" href="Crypto.html">
+<link title="Authentication" rel="Chapter" href="Authentication.html">
+<link title="Credentials" rel="Chapter" href="Credentials.html">
+<link title="Gssapi" rel="Chapter" href="Gssapi.html">
+<link title="Ocamlnet4" rel="Chapter" href="Ocamlnet4.html">
+<link title="Get" rel="Chapter" href="Get.html"><title>Ocamlnet 4 Reference Manual : Authentication</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Crypto.html" title="Crypto">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Credentials.html" title="Credentials">Next</a>
+</div>
+<h1>Authentication</h1>
+<div class="info-desc">
+<h2 id="1_Authentication">Authentication</h2>
+<p>One of the bigger changes of Ocamlnet-4 is the focus on security
+topics, which also includes authentication. There are now four modular
+authentication frameworks:</p>
+
+<ul>
+<li>SASL (Simple Authentication and Security Layer). SASL focuses on
+   challenge/response password-checking. The IETF extended
+   many network protocols in order to support SASL. Among these protocols
+   there are SMTP, POP, IMAP, and LDAP.</li>
+<li>HTTP Authentication. Traditionally there were only two authentication
+   methods for HTTP ("basic" and "digest"), but recently the IETF paced
+   forward and defined not only principles for any HTTP method, but also
+   ported a number of SASL methods (SCRAM, updated DIGEST).</li>
+<li>GSSAPI (General Security Services API). This is a stricter approach
+   for an authentication and security framework than SASL. It is not
+   directly defined as a protocol, but as an API, which improves the
+   precision and extends the functionality. In particular, GSSAPI also
+   includes integrity and privacy protection of the application messages
+   as option. It is up to the application protocol how to adopt the API.
+   GSSAPI is often used for system authentication (e.g. by wrapping
+   the Kerberos suite), but not limited to that. Many SASL mechanisms
+   are also available as GSSAPI mechanisms. Note that there is some
+   confusion about the relationship between GSSAPI and Kerberos, and
+   sometimes GSSAPI is used as synonym for Kerberos. In reality, however,
+   GSSAPI means the API (and framework) that is used as primary API
+   for Kerberos. It is just not limited to it. GSSAPI is widely deployed
+   (e.g. MIT Kerberos and Heimdal for Linux/BSD/Unix/Windows, 
+   and Windows integrates a version of GSSAPI with a proprietary interface
+   called SSPI).
+   Especially system-oriented protocols support the GSSAPI, e.g. SSH,
+   FTP, and ONC-RPC. There is also a somewhat questionable way of
+   using GSSAPI together with HTTP ("negotiate" method). Read more
+   about the GSSAPI here: <a href="Gssapi.html"><code class="code">Gssapi</code></a>.</li>
+<li>TLS (Transport Level Security). TLS is often misunderstood as a way
+   to encrypt TCP connections. However, this is just a consequence of
+   its primary purpose, namely authenticating the endpoints. Normally,
+   only the server is authenticated in the sense that an agency (the
+   trust center) approved the credentials (then called "certificate").
+   TLS includes options to strengthen this quite weak authentication:
+   Clients may only accept certain server certificates (e.g. those
+   with extended validation attributes, or from a certain trust center,
+   or with some other specific attributes). Also, it is possible that servers
+   authenticate clients, also using certificates. Read more about TLS
+   here: <a href="Tls.html"><code class="code">Tls</code></a></li>
+</ul>
+<h3 id="2_Modularity">Modularity</h3>
+<p>For all these frameworks, Ocamlnet defines mechanism types in a
+modular way. There is a provider of the mechanism and a user (i.e. a
+protocol interpreter). The user code can be written so it can generically
+work with any mechanism of the expected type.</p>
+
+<p>Technically, the mechanism type is usually an OCaml <b>module type</b>, and
+the mechanism is an OCaml <b>module</b>. As OCaml supports first-class modules,
+the mechanisms can be passed as normal function arguments to the user
+code. Let us demonstrate this for the SASL mechanism SCRAM:</p>
+
+<ul>
+<li>SASL mechanisms are defined as this module type:
+   <a href="Netsys_sasl_types.SASL_MECHANISM.html"><code class="code">Netsys_sasl_types.SASL_MECHANISM</code></a></li>
+<li>The SCRAM mechanism is available for several frameworks. For SASL,
+   there is the module <a href="Netmech_scram_sasl.SCRAM_SHA1.html"><code class="code">Netmech_scram_sasl.SCRAM_SHA1</code></a> (more precisely,
+   this is SCRAM with SHA1 as hash function).</li>
+<li>In this example, let us use the POP network protocol. We can use
+   the POP protocol interpreter together with SCRAM as follows:
+   <pre class="codepre"><code class="code">let user = ... in     (* see below *)
+let creds = ... in    (* see below *)
+let client = new Netpop.connect ... in
+Netpop.authenticate
+  ~sasl_mechs:[ (module Netmech_scram_sasl.SCRAM_SHA1 ) ]
+  ~user
+  ~creds
+  client in
+(* now the user is logged in and access POP objects, e.g. *)
+let channel = client#retr ~msgno:0 in
+...
+   </code></pre></li>
+</ul>
+<p>Of course, you can also use any other SASL method together with POP.
+Note however, that POP servers usually do not implement all SASL
+methods, but just a subset. Because of that it is good practice to
+specify several methods in the <code class="code">sasl_mechs</code> argument. The POP client
+will use the first mechanism of this list that is also supported by
+the server. This is called mechanism negotiation. More about that
+later.</p>
+
+<p>Module types:</p>
+
+<ul>
+<li>SASL: <a href="Netsys_sasl_types.SASL_MECHANISM.html"><code class="code">Netsys_sasl_types.SASL_MECHANISM</code></a></li>
+<li>HTTP: <a href="Nethttp.HTTP_CLIENT_MECHANISM.html"><code class="code">Nethttp.HTTP_CLIENT_MECHANISM</code></a></li>
+<li>GSSAPI: <a href="Netsys_gssapi.GSSAPI.html"><code class="code">Netsys_gssapi.GSSAPI</code></a></li>
+<li>TLS: <a href="Netsys_crypto_types.TLS_PROVIDER.html"><code class="code">Netsys_crypto_types.TLS_PROVIDER</code></a></li>
+</ul>
+<p>Mechanisms:</p>
+
+<ul>
+<li>PLAIN: <a href="Netmech_plain_sasl.html"><code class="code">Netmech_plain_sasl</code></a></li>
+<li>CRAM-MD5: <a href="Netmech_crammd5_sasl.html"><code class="code">Netmech_crammd5_sasl</code></a></li>
+<li>DIGEST: <a href="Netmech_digest_sasl.html"><code class="code">Netmech_digest_sasl</code></a>, <a href="Netmech_digest_http.html"><code class="code">Netmech_digest_http</code></a></li>
+<li>SCRAM: <a href="Netmech_scram_sasl.html"><code class="code">Netmech_scram_sasl</code></a>, <a href="Netmech_scram_gssapi.html"><code class="code">Netmech_scram_gssapi</code></a>,
+   <a href="Netmech_scram_http.html"><code class="code">Netmech_scram_http</code></a></li>
+<li>GSSAPI system authentication: <a href="Netgss.System.html"><code class="code">Netgss.System</code></a></li>
+<li>TLS: TLS mechanisms are defined by the provider of TLS. At present,
+   there is <a href="Nettls_gnutls.html"><code class="code">Nettls_gnutls</code></a> covering all TLS 1.2 mechanisms.</li>
+</ul>
+<h3 id="2_Credentials">Credentials</h3>
+<p>We've left out what to pass as <code class="code">user</code> and as <code class="code">creds</code> in this example.
+It depends on the framework how user names and how credentials can be
+expressed:</p>
+
+<ul>
+<li>For SASL, user names are simply UTF-8 encoded strings. Credentials
+   can be specified in many forms (see the separate page about
+   <a href="Credentials.html"><code class="code">Credentials</code></a>). For Ocamlnet, SASL credentials are expressed
+   as list of credential elements, and every element includes a type,
+   a value, and optional parameters:
+   <pre class="codepre"><code class="code">type credentials =
+  (string * string * (string * string) list) list
+   </code></pre>
+   For clients, passwords are normally given in the cleartext form:
+   <pre class="codepre"><code class="code">("password", password, [])
+   </code></pre>
+   Note that the string "password" is the element type, and must always
+   be literally "password", and should not be confused with the actual
+   password which is the second value. For servers, passwords may be
+   given in different forms (i.e. after applying a key derivation function),
+   which saves computation time. See <code class="code">Credentials.sasl</code> for details.</li>
+<li>HTTP Authentication expresses user names and credentials in the same
+   way as SASL.</li>
+<li>GSSAPI can use several schemes for identifying users. Credentials are
+   opaque in the API. It is not specified how credentials look like, and
+   there are private mechanism-specific functions covering how to submit
+   and how to check credentials. This is usually no problem for system
+   authentication where the credentials are implicitly known (e.g. as
+   Kerberos tickets), but it is impractical for application-level identity
+   checking. In Ocamlnet GSSAPI mechanisms can be either written in OCaml,
+   or the system libraries can be used. In the former case, the credentials
+   are usually specified when the GSSAPI object is instantiated (in a
+   mechanism-specific way). In the latter case, there is so far no way to
+   specify credentials from OCaml code (but this may change in the future,
+   as there is a GSSAPI extension for specifying passwords).
+   See <code class="code">Credentials.gssapi</code> for details.</li>
+<li>TLS uses certificates as (extended) user names, and credentials are
+   public/private key pairs. The public key is embedded in the certificate.
+   Normally certificates and private keys are stored in specially encoded
+   files.
+   See <code class="code">Credentials.tls</code> for details.</li>
+</ul>
+<h3 id="2_Cleartextpasswords">Cleartext passwords</h3>
+<p>Some warnings about using "mechanisms" that only transmit a cleartext
+password, including</p>
+
+<ul>
+<li>the HTTP "basic" authentication (or even form-based password submission)</li>
+<li>the PLAIN SASL mechanism</li>
+<li>protocol-specific login methods (e.g. for POP or FTP)</li>
+</ul>
+<p>Even if TLS is enabled for the underlying transport channel, it is a very
+bad idea to use such methods, simply because the server will get the
+password in the clear. This allows a number of attack vectors that are
+very dangerous:</p>
+
+<ul>
+<li>Phishing: the client is tricked into connecting to the wrong server.
+   This server may even have a valid TLS certificate from a trust center
+   (criminals are not systematically excluded here). You can only be safe
+   if you also deploy a strong check on the server certificate.</li>
+<li>The server may be compromised so that the passwords are intercepted
+   directly after they were sent by the client.</li>
+<li>As good key derivation functions are computationally expensive, password
+   databases cannot be protected well (it would consume too much CPU).</li>
+</ul>
+<p>Cleartext passwords are like an invitation to hackers: <b>Don't use them
+at all.</b></p>
+
+<h3 id="2_Passwordcheckingwithchallengeresponsemechanisms">Password checking with challenge/response mechanisms</h3>
+<p>The other password-based mechanisms are much better:</p>
+
+<ul>
+<li>SCRAM (best and newest)</li>
+<li>DIGEST (widely available)</li>
+<li>CRAM (try to avoid)</li>
+</ul>
+<p>If the client connects to the wrong server this server will not get
+the password directly. The client only proves that it knows the
+password without transmitting it. DIGEST and SCRAM add even more
+protection:</p>
+
+<ul>
+<li>Both "salt" the challenges. This makes it more difficult to crack
+   the password if an attacker can spoof the authentication exchange.</li>
+<li>Both authenticate the server, i.e. the client can check whether the
+   server has access to the legitimate password database.</li>
+<li>SCRAM even implements a fairly expensive key derivation function.
+   The interesting point is that only the client needs to actually
+   run this function. The server can simply store the derived key
+   in the password database. If an attacker gets access to this database,
+   it is very hard to crack the passwords, because the attacker can
+   only try out passwords at a low rate.</li>
+</ul>
+<p>Note that SASL does not protect the TCP connection. It is advisable to
+run SASL over TLS, because:</p>
+
+<ul>
+<li>this encrypts the connection</li>
+<li>this prevents man-in-the-middle attacks (if basic server authentication
+   is enabled for TLS)</li>
+<li>this prevents subtle downgrade attacks, e.g. a man-in-the-middle
+   could otherwise modify the protocol stream so that a weaker authentication
+   scheme is used than possible</li>
+</ul>
+<h3 id="2_Publickeymechanisms">Public key mechanisms</h3>
+<p>At the moment, these mechanisms are only indirectly available via:</p>
+
+<ul>
+<li>TLS, or</li>
+<li>GSS-API system authentication (so far available, e.g. LIPKEY)</li>
+</ul>
+<h3 id="2_Mechanismnegotiation">Mechanism negotiation</h3>
+<p>There are more or less two common ways how client and server negotiate a certain
+authentication mechanism:</p>
+
+<ul>
+<li>The "relaxed" way, used for SASL and HTTP: The server offers a few
+   authentication options, and the client picks one.</li>
+<li>The "strict" way, used for GSSAPI (in the form of SPNEGO) and TLS: 
+   There is a multi-step negotiation protocol
+   between client and server. Both parties can express preferences. The
+   protocol is protected, so that a man-in-the-middle cannot take influence
+   on the outcome.</li>
+</ul>
+<p>The "relaxed" negotiation is unprotected, which may have a serious effect
+on the overall security of the mechanism. In particular, a man-in-the-middle
+can run a downgrade attack, so that client and server negotiate a weaker
+mechanism than they actually support. This is in particular dangerous when
+the mechanism is downgraded to a plaintext mechanism, as the attacker can
+then easily sniff the password.</p>
+
+<p>In particular you should keep in mind that the HTTP negotiation is always
+relaxed, and that it is often not possible to turn completely off cleartext
+authentication. This means that offering more secure options makes only
+sense when the communication channel is secure (i.e. when TLS is on). Or
+in other words: you should always use TLS when authentication comes into
+play.</p>
+</div>
+</body></html>

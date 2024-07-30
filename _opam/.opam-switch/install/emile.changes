@@ -1,0 +1,29 @@
+opam-version: "2.0"
+added: [
+  "doc/emile" {"D"}
+  "doc/emile/CHANGES.md" {"F:S2146T1722366290.47"}
+  "doc/emile/LICENSE.md" {"F:S1086T1722366290.47"}
+  "doc/emile/README.md" {"F:S2362T1722366290.47"}
+  "lib/emile" {"D"}
+  "lib/emile/META" {"F:S469T1722366290.44"}
+  "lib/emile/cmdliner/emile_cmdliner.a" {"F:S7036T1722366290.44"}
+  "lib/emile/cmdliner/emile_cmdliner.cma" {"F:S5148T1722366290.44"}
+  "lib/emile/cmdliner/emile_cmdliner.cmi" {"F:S1158T1722366290.44"}
+  "lib/emile/cmdliner/emile_cmdliner.cmt" {"F:S11044T1722366290.44"}
+  "lib/emile/cmdliner/emile_cmdliner.cmx" {"F:S923T1722366290.44"}
+  "lib/emile/cmdliner/emile_cmdliner.cmxa" {"F:S849T1722366290.44"}
+  "lib/emile/cmdliner/emile_cmdliner.cmxs" {"F:S19440T1722366290.46"}
+  "lib/emile/cmdliner/emile_cmdliner.ml" {"F:S305T1722366290.44"}
+  "lib/emile/dune-package" {"F:S1470T1722366290.44"}
+  "lib/emile/emile.a" {"F:S250464T1722366290.44"}
+  "lib/emile/emile.cma" {"F:S264772T1722366290.45"}
+  "lib/emile/emile.cmi" {"F:S15487T1722366290.45"}
+  "lib/emile/emile.cmt" {"F:S614293T1722366290.45"}
+  "lib/emile/emile.cmti" {"F:S169265T1722366290.46"}
+  "lib/emile/emile.cmx" {"F:S9244T1722366290.46"}
+  "lib/emile/emile.cmxa" {"F:S1352T1722366290.46"}
+  "lib/emile/emile.cmxs" {"F:S225488T1722366290.47"}
+  "lib/emile/emile.ml" {"F:S82233T1722366290.46"}
+  "lib/emile/emile.mli" {"F:S55271T1722366290.46"}
+  "lib/emile/opam" {"F:S943T1722366290.46"}
+]

@@ -32,7 +32,7 @@ setup.log
 *.maketrack
 
 # Local OPAM switch
-_opam/
+
 
 lib/3164_crlf
 lib/application.pdf

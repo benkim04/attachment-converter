@@ -1,0 +1,39 @@
+opam-version: "2.0"
+added: [
+  "doc/base64" {"D"}
+  "doc/base64/CHANGES.md" {"F:S3974T1722365657.31"}
+  "doc/base64/LICENSE.md" {"F:S800T1722365657.31"}
+  "doc/base64/README.md" {"F:S714T1722365657.31"}
+  "lib/base64" {"D"}
+  "lib/base64/META" {"F:S429T1722365657.12"}
+  "lib/base64/base64.a" {"F:S40804T1722365657.13"}
+  "lib/base64/base64.cma" {"F:S55381T1722365657.13"}
+  "lib/base64/base64.cmi" {"F:S3123T1722365657.13"}
+  "lib/base64/base64.cmt" {"F:S122136T1722365657.13"}
+  "lib/base64/base64.cmti" {"F:S20073T1722365657.13"}
+  "lib/base64/base64.cmx" {"F:S3716T1722365657.13"}
+  "lib/base64/base64.cmxa" {"F:S1083T1722365657.13"}
+  "lib/base64/base64.cmxs" {"F:S53376T1722365657.3"}
+  "lib/base64/base64.ml" {"F:S10627T1722365657.13"}
+  "lib/base64/base64.mli" {"F:S4426T1722365657.13"}
+  "lib/base64/base64__.cmi" {"F:S206T1722365657.29"}
+  "lib/base64/base64__.cmt" {"F:S2472T1722365657.29"}
+  "lib/base64/base64__.cmx" {"F:S117T1722365657.29"}
+  "lib/base64/base64__.ml" {"F:S88T1722365657.29"}
+  "lib/base64/base64__Unsafe.cmi" {"F:S478T1722365657.29"}
+  "lib/base64/base64__Unsafe.cmt" {"F:S3055T1722365657.29"}
+  "lib/base64/base64__Unsafe.cmx" {"F:S206T1722365657.29"}
+  "lib/base64/dune-package" {"F:S2012T1722365657.29"}
+  "lib/base64/opam" {"F:S969T1722365657.29"}
+  "lib/base64/rfc2045/base64_rfc2045.a" {"F:S51324T1722365657.29"}
+  "lib/base64/rfc2045/base64_rfc2045.cma" {"F:S63679T1722365657.29"}
+  "lib/base64/rfc2045/base64_rfc2045.cmi" {"F:S2475T1722365657.29"}
+  "lib/base64/rfc2045/base64_rfc2045.cmt" {"F:S170573T1722365657.3"}
+  "lib/base64/rfc2045/base64_rfc2045.cmti" {"F:S19431T1722365657.3"}
+  "lib/base64/rfc2045/base64_rfc2045.cmx" {"F:S5537T1722365657.3"}
+  "lib/base64/rfc2045/base64_rfc2045.cmxa" {"F:S632T1722365657.3"}
+  "lib/base64/rfc2045/base64_rfc2045.cmxs" {"F:S61528T1722365657.3"}
+  "lib/base64/rfc2045/base64_rfc2045.ml" {"F:S15264T1722365657.3"}
+  "lib/base64/rfc2045/base64_rfc2045.mli" {"F:S4725T1722365657.3"}
+  "lib/base64/unsafe.ml" {"F:S94T1722365657.3"}
+]

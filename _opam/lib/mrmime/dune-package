@@ -1,0 +1,289 @@
+(lang dune 3.16)
+(name mrmime)
+(version 0.6.1)
+(sections (lib .) (libexec .) (doc ../../doc/mrmime))
+(files
+ (lib
+  (META
+   address.ml
+   address.mli
+   b64.ml
+   content_encoding.ml
+   content_encoding.mli
+   content_type.ml
+   content_type.mli
+   date.ml
+   date.mli
+   dune-package
+   encoded_word.ml
+   encoded_word.mli
+   field.ml
+   field.mli
+   field_name.ml
+   field_name.mli
+   group.ml
+   group.mli
+   hd.ml
+   hd.mli
+   header.ml
+   header.mli
+   iana.ml
+   location.ml
+   location.mli
+   mail.ml
+   mail.mli
+   mailbox.ml
+   mailbox.mli
+   messageID.ml
+   messageID.mli
+   mrmime.a
+   mrmime.cma
+   mrmime.cmi
+   mrmime.cmt
+   mrmime.cmx
+   mrmime.cmxa
+   mrmime.ml
+   mrmime__.cmi
+   mrmime__.cmt
+   mrmime__.cmx
+   mrmime__.ml
+   mrmime__Address.cmi
+   mrmime__Address.cmt
+   mrmime__Address.cmti
+   mrmime__Address.cmx
+   mrmime__B64.cmi
+   mrmime__B64.cmt
+   mrmime__B64.cmx
+   mrmime__Content_encoding.cmi
+   mrmime__Content_encoding.cmt
+   mrmime__Content_encoding.cmti
+   mrmime__Content_encoding.cmx
+   mrmime__Content_type.cmi
+   mrmime__Content_type.cmt
+   mrmime__Content_type.cmti
+   mrmime__Content_type.cmx
+   mrmime__Date.cmi
+   mrmime__Date.cmt
+   mrmime__Date.cmti
+   mrmime__Date.cmx
+   mrmime__Encoded_word.cmi
+   mrmime__Encoded_word.cmt
+   mrmime__Encoded_word.cmti
+   mrmime__Encoded_word.cmx
+   mrmime__Field.cmi
+   mrmime__Field.cmt
+   mrmime__Field.cmti
+   mrmime__Field.cmx
+   mrmime__Field_name.cmi
+   mrmime__Field_name.cmt
+   mrmime__Field_name.cmti
+   mrmime__Field_name.cmx
+   mrmime__Group.cmi
+   mrmime__Group.cmt
+   mrmime__Group.cmti
+   mrmime__Group.cmx
+   mrmime__Hd.cmi
+   mrmime__Hd.cmt
+   mrmime__Hd.cmti
+   mrmime__Hd.cmx
+   mrmime__Header.cmi
+   mrmime__Header.cmt
+   mrmime__Header.cmti
+   mrmime__Header.cmx
+   mrmime__Iana.cmi
+   mrmime__Iana.cmt
+   mrmime__Iana.cmx
+   mrmime__Location.cmi
+   mrmime__Location.cmt
+   mrmime__Location.cmti
+   mrmime__Location.cmx
+   mrmime__Mail.cmi
+   mrmime__Mail.cmt
+   mrmime__Mail.cmti
+   mrmime__Mail.cmx
+   mrmime__Mailbox.cmi
+   mrmime__Mailbox.cmt
+   mrmime__Mailbox.cmti
+   mrmime__Mailbox.cmx
+   mrmime__MessageID.cmi
+   mrmime__MessageID.cmt
+   mrmime__MessageID.cmti
+   mrmime__MessageID.cmx
+   mrmime__Mt.cmi
+   mrmime__Mt.cmt
+   mrmime__Mt.cmti
+   mrmime__Mt.cmx
+   mrmime__Option.cmi
+   mrmime__Option.cmt
+   mrmime__Option.cmx
+   mrmime__Peano.cmi
+   mrmime__Peano.cmt
+   mrmime__Peano.cmx
+   mrmime__Quoted_printable.cmi
+   mrmime__Quoted_printable.cmt
+   mrmime__Quoted_printable.cmx
+   mrmime__Rfc2046.cmi
+   mrmime__Rfc2046.cmt
+   mrmime__Rfc2046.cmx
+   mrmime__Unstructured.cmi
+   mrmime__Unstructured.cmt
+   mrmime__Unstructured.cmx
+   mt.ml
+   mt.mli
+   opam
+   option.ml
+   peano.ml
+   quoted_printable.ml
+   rfc2046.ml
+   unstructured.ml))
+ (libexec (mrmime.cmxs))
+ (doc (CHANGES.md LICENSE.md README.md)))
+(library
+ (name mrmime)
+ (kind normal)
+ (archives (byte mrmime.cma) (native mrmime.cmxa))
+ (plugins (byte mrmime.cma) (native mrmime.cmxs))
+ (native_archives mrmime.a)
+ (requires
+  emile
+  unstrctrd
+  unstrctrd.parser
+  base64
+  base64.rfc2045
+  pecu
+  ptime
+  ipaddr
+  rosetta
+  angstrom
+  prettym
+  ke
+  uutf)
+ (main_module_name Mrmime)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name mrmime__)
+     (visibility public)
+     (kind alias)
+     (source (path Mrmime__) (impl (path mrmime__.ml-gen))))
+    (name Mrmime)
+    (modules
+     (module
+      (obj_name mrmime__Address)
+      (visibility public)
+      (source
+       (path Address)
+       (intf (path address.mli))
+       (impl (path address.ml))))
+     (module
+      (obj_name mrmime__B64)
+      (visibility public)
+      (source (path B64) (impl (path b64.ml))))
+     (module
+      (obj_name mrmime__Content_encoding)
+      (visibility public)
+      (source
+       (path Content_encoding)
+       (intf (path content_encoding.mli))
+       (impl (path content_encoding.ml))))
+     (module
+      (obj_name mrmime__Content_type)
+      (visibility public)
+      (source
+       (path Content_type)
+       (intf (path content_type.mli))
+       (impl (path content_type.ml))))
+     (module
+      (obj_name mrmime__Date)
+      (visibility public)
+      (source (path Date) (intf (path date.mli)) (impl (path date.ml))))
+     (module
+      (obj_name mrmime__Encoded_word)
+      (visibility public)
+      (source
+       (path Encoded_word)
+       (intf (path encoded_word.mli))
+       (impl (path encoded_word.ml))))
+     (module
+      (obj_name mrmime__Field)
+      (visibility public)
+      (source (path Field) (intf (path field.mli)) (impl (path field.ml))))
+     (module
+      (obj_name mrmime__Field_name)
+      (visibility public)
+      (source
+       (path Field_name)
+       (intf (path field_name.mli))
+       (impl (path field_name.ml))))
+     (module
+      (obj_name mrmime__Group)
+      (visibility public)
+      (source (path Group) (intf (path group.mli)) (impl (path group.ml))))
+     (module
+      (obj_name mrmime__Hd)
+      (visibility public)
+      (source (path Hd) (intf (path hd.mli)) (impl (path hd.ml))))
+     (module
+      (obj_name mrmime__Header)
+      (visibility public)
+      (source (path Header) (intf (path header.mli)) (impl (path header.ml))))
+     (module
+      (obj_name mrmime__Iana)
+      (visibility public)
+      (source (path Iana) (impl (path iana.ml))))
+     (module
+      (obj_name mrmime__Location)
+      (visibility public)
+      (source
+       (path Location)
+       (intf (path location.mli))
+       (impl (path location.ml))))
+     (module
+      (obj_name mrmime__Mail)
+      (visibility public)
+      (source (path Mail) (intf (path mail.mli)) (impl (path mail.ml))))
+     (module
+      (obj_name mrmime__Mailbox)
+      (visibility public)
+      (source
+       (path Mailbox)
+       (intf (path mailbox.mli))
+       (impl (path mailbox.ml))))
+     (module
+      (obj_name mrmime__MessageID)
+      (visibility public)
+      (source
+       (path MessageID)
+       (intf (path messageID.mli))
+       (impl (path messageID.ml))))
+     (module
+      (obj_name mrmime)
+      (visibility public)
+      (source (path Mrmime) (impl (path mrmime.ml))))
+     (module
+      (obj_name mrmime__Mt)
+      (visibility public)
+      (source (path Mt) (intf (path mt.mli)) (impl (path mt.ml))))
+     (module
+      (obj_name mrmime__Option)
+      (visibility public)
+      (source (path Option) (impl (path option.ml))))
+     (module
+      (obj_name mrmime__Peano)
+      (visibility public)
+      (source (path Peano) (impl (path peano.ml))))
+     (module
+      (obj_name mrmime__Quoted_printable)
+      (visibility public)
+      (source (path Quoted_printable) (impl (path quoted_printable.ml))))
+     (module
+      (obj_name mrmime__Rfc2046)
+      (visibility public)
+      (source (path Rfc2046) (impl (path rfc2046.ml))))
+     (module
+      (obj_name mrmime__Unstructured)
+      (visibility public)
+      (source (path Unstructured) (impl (path unstructured.ml))))))
+   (wrapped true))))

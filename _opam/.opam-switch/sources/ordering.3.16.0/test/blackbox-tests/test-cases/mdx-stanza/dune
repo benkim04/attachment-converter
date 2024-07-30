@@ -1,0 +1,12 @@
+(cram
+ (applies_to :whole_subtree)
+ (deps
+  (package mdx))
+ (alias all-mdx-tests))
+
+(cram
+ (applies_to shared-libraries)
+ (deps
+  %{bin:gcc}
+  %{bin:ar}
+  (package mdx)))

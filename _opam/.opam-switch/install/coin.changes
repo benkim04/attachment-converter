@@ -1,0 +1,34 @@
+opam-version: "2.0"
+added: [
+  "bin/coin.generate" {"F:S1306264T1722366228.69"}
+  "doc/coin" {"D"}
+  "doc/coin/CHANGES.md" {"F:S584T1722366228.71"}
+  "doc/coin/LICENSE.md" {"F:S1086T1722366228.71"}
+  "doc/coin/README.md" {"F:S352T1722366228.71"}
+  "lib/coin" {"D"}
+  "lib/coin/KOI8_R.ml" {"F:S1535T1722366228.7"}
+  "lib/coin/KOI8_U.ml" {"F:S1535T1722366228.7"}
+  "lib/coin/META" {"F:S160T1722366228.7"}
+  "lib/coin/coin.a" {"F:S43216T1722366228.7"}
+  "lib/coin/coin.cma" {"F:S43123T1722366228.7"}
+  "lib/coin/coin.cmi" {"F:S3440T1722366228.7"}
+  "lib/coin/coin.cmt" {"F:S78668T1722366228.7"}
+  "lib/coin/coin.cmti" {"F:S20621T1722366228.7"}
+  "lib/coin/coin.cmx" {"F:S4211T1722366228.71"}
+  "lib/coin/coin.cmxa" {"F:S1292T1722366228.71"}
+  "lib/coin/coin.cmxs" {"F:S53712T1722366228.71"}
+  "lib/coin/coin.ml" {"F:S5015T1722366228.71"}
+  "lib/coin/coin.mli" {"F:S3338T1722366228.71"}
+  "lib/coin/coin__.cmi" {"F:S267T1722366228.71"}
+  "lib/coin/coin__.cmt" {"F:S2797T1722366228.71"}
+  "lib/coin/coin__.cmx" {"F:S129T1722366228.71"}
+  "lib/coin/coin__.ml" {"F:S144T1722366228.71"}
+  "lib/coin/coin__KOI8_R.cmi" {"F:S310T1722366228.71"}
+  "lib/coin/coin__KOI8_R.cmt" {"F:S13935T1722366228.71"}
+  "lib/coin/coin__KOI8_R.cmx" {"F:S221T1722366228.71"}
+  "lib/coin/coin__KOI8_U.cmi" {"F:S310T1722366228.71"}
+  "lib/coin/coin__KOI8_U.cmt" {"F:S13935T1722366228.71"}
+  "lib/coin/coin__KOI8_U.cmx" {"F:S221T1722366228.71"}
+  "lib/coin/dune-package" {"F:S1355T1722366228.71"}
+  "lib/coin/opam" {"F:S745T1722366228.71"}
+]

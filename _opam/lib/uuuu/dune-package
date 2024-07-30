@@ -1,0 +1,168 @@
+(lang dune 3.16)
+(name uuuu)
+(version 0.3.0)
+(sections (lib .) (libexec .) (bin ../../bin) (doc ../../doc/uuuu))
+(files
+ (lib
+  (ISO_8859_1.ml
+   ISO_8859_10.ml
+   ISO_8859_11.ml
+   ISO_8859_13.ml
+   ISO_8859_14.ml
+   ISO_8859_15.ml
+   ISO_8859_16.ml
+   ISO_8859_2.ml
+   ISO_8859_3.ml
+   ISO_8859_4.ml
+   ISO_8859_5.ml
+   ISO_8859_6.ml
+   ISO_8859_7.ml
+   ISO_8859_8.ml
+   ISO_8859_9.ml
+   META
+   dune-package
+   opam
+   uuuu.a
+   uuuu.cma
+   uuuu.cmi
+   uuuu.cmt
+   uuuu.cmti
+   uuuu.cmx
+   uuuu.cmxa
+   uuuu.ml
+   uuuu.mli
+   uuuu__.cmi
+   uuuu__.cmt
+   uuuu__.cmx
+   uuuu__.ml
+   uuuu__ISO_8859_1.cmi
+   uuuu__ISO_8859_1.cmt
+   uuuu__ISO_8859_1.cmx
+   uuuu__ISO_8859_10.cmi
+   uuuu__ISO_8859_10.cmt
+   uuuu__ISO_8859_10.cmx
+   uuuu__ISO_8859_11.cmi
+   uuuu__ISO_8859_11.cmt
+   uuuu__ISO_8859_11.cmx
+   uuuu__ISO_8859_13.cmi
+   uuuu__ISO_8859_13.cmt
+   uuuu__ISO_8859_13.cmx
+   uuuu__ISO_8859_14.cmi
+   uuuu__ISO_8859_14.cmt
+   uuuu__ISO_8859_14.cmx
+   uuuu__ISO_8859_15.cmi
+   uuuu__ISO_8859_15.cmt
+   uuuu__ISO_8859_15.cmx
+   uuuu__ISO_8859_16.cmi
+   uuuu__ISO_8859_16.cmt
+   uuuu__ISO_8859_16.cmx
+   uuuu__ISO_8859_2.cmi
+   uuuu__ISO_8859_2.cmt
+   uuuu__ISO_8859_2.cmx
+   uuuu__ISO_8859_3.cmi
+   uuuu__ISO_8859_3.cmt
+   uuuu__ISO_8859_3.cmx
+   uuuu__ISO_8859_4.cmi
+   uuuu__ISO_8859_4.cmt
+   uuuu__ISO_8859_4.cmx
+   uuuu__ISO_8859_5.cmi
+   uuuu__ISO_8859_5.cmt
+   uuuu__ISO_8859_5.cmx
+   uuuu__ISO_8859_6.cmi
+   uuuu__ISO_8859_6.cmt
+   uuuu__ISO_8859_6.cmx
+   uuuu__ISO_8859_7.cmi
+   uuuu__ISO_8859_7.cmt
+   uuuu__ISO_8859_7.cmx
+   uuuu__ISO_8859_8.cmi
+   uuuu__ISO_8859_8.cmt
+   uuuu__ISO_8859_8.cmx
+   uuuu__ISO_8859_9.cmi
+   uuuu__ISO_8859_9.cmt
+   uuuu__ISO_8859_9.cmx))
+ (libexec (uuuu.cmxs))
+ (bin (uuuu.generate))
+ (doc (CHANGES.md LICENSE.md README.md)))
+(library
+ (name uuuu)
+ (kind normal)
+ (archives (byte uuuu.cma) (native uuuu.cmxa))
+ (plugins (byte uuuu.cma) (native uuuu.cmxs))
+ (native_archives uuuu.a)
+ (main_module_name Uuuu)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name uuuu__)
+     (visibility public)
+     (kind alias)
+     (source (path Uuuu__) (impl (path uuuu__.ml-gen))))
+    (name Uuuu)
+    (modules
+     (module
+      (obj_name uuuu__ISO_8859_1)
+      (visibility public)
+      (source (path ISO_8859_1) (impl (path ISO_8859_1.ml))))
+     (module
+      (obj_name uuuu__ISO_8859_10)
+      (visibility public)
+      (source (path ISO_8859_10) (impl (path ISO_8859_10.ml))))
+     (module
+      (obj_name uuuu__ISO_8859_11)
+      (visibility public)
+      (source (path ISO_8859_11) (impl (path ISO_8859_11.ml))))
+     (module
+      (obj_name uuuu__ISO_8859_13)
+      (visibility public)
+      (source (path ISO_8859_13) (impl (path ISO_8859_13.ml))))
+     (module
+      (obj_name uuuu__ISO_8859_14)
+      (visibility public)
+      (source (path ISO_8859_14) (impl (path ISO_8859_14.ml))))
+     (module
+      (obj_name uuuu__ISO_8859_15)
+      (visibility public)
+      (source (path ISO_8859_15) (impl (path ISO_8859_15.ml))))
+     (module
+      (obj_name uuuu__ISO_8859_16)
+      (visibility public)
+      (source (path ISO_8859_16) (impl (path ISO_8859_16.ml))))
+     (module
+      (obj_name uuuu__ISO_8859_2)
+      (visibility public)
+      (source (path ISO_8859_2) (impl (path ISO_8859_2.ml))))
+     (module
+      (obj_name uuuu__ISO_8859_3)
+      (visibility public)
+      (source (path ISO_8859_3) (impl (path ISO_8859_3.ml))))
+     (module
+      (obj_name uuuu__ISO_8859_4)
+      (visibility public)
+      (source (path ISO_8859_4) (impl (path ISO_8859_4.ml))))
+     (module
+      (obj_name uuuu__ISO_8859_5)
+      (visibility public)
+      (source (path ISO_8859_5) (impl (path ISO_8859_5.ml))))
+     (module
+      (obj_name uuuu__ISO_8859_6)
+      (visibility public)
+      (source (path ISO_8859_6) (impl (path ISO_8859_6.ml))))
+     (module
+      (obj_name uuuu__ISO_8859_7)
+      (visibility public)
+      (source (path ISO_8859_7) (impl (path ISO_8859_7.ml))))
+     (module
+      (obj_name uuuu__ISO_8859_8)
+      (visibility public)
+      (source (path ISO_8859_8) (impl (path ISO_8859_8.ml))))
+     (module
+      (obj_name uuuu__ISO_8859_9)
+      (visibility public)
+      (source (path ISO_8859_9) (impl (path ISO_8859_9.ml))))
+     (module
+      (obj_name uuuu)
+      (visibility public)
+      (source (path Uuuu) (intf (path uuuu.mli)) (impl (path uuuu.ml))))))
+   (wrapped true))))

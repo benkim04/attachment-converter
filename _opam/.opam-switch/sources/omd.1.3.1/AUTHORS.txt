@@ -1,0 +1,12 @@
+(* OASIS_START *)
+(* DO NOT EDIT (digest: 3710988688c65f6e4b9bb9bb6fbd1a7a) *)
+
+Authors of omd:
+
+* Philippe Wang <philippe.wang@gmail.com>
+
+Current maintainers of omd:
+
+* Philippe Wang <philippe.wang@gmail.com>
+
+(* OASIS_STOP *)

@@ -1,0 +1,51 @@
+opam-version: "2.0"
+added: [
+  "doc/ppx_yojson_conv_lib" {"D"}
+  "doc/ppx_yojson_conv_lib/LICENSE.md" {"F:S1117T1722366392.28"}
+  "lib/ppx_yojson_conv_lib" {"D"}
+  "lib/ppx_yojson_conv_lib/META" {"F:S228T1722366392.24"}
+  "lib/ppx_yojson_conv_lib/dune-package" {"F:S2362T1722366392.24"}
+  "lib/ppx_yojson_conv_lib/opam" {"F:S669T1722366392.24"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib.a" {"F:S89060T1722366392.25"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib.cma"
+    {"F:S80356T1722366392.25"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib.cmi" {"F:S1080T1722366392.25"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib.cmt" {"F:S6483T1722366392.25"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib.cmx" {"F:S417T1722366392.25"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib.cmxa"
+    {"F:S3614T1722366392.25"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib.cmxs"
+    {"F:S94736T1722366392.27"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib.ml" {"F:S350T1722366392.25"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib__.cmi"
+    {"F:S560T1722366392.25"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib__.cmt"
+    {"F:S3730T1722366392.25"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib__.cmx"
+    {"F:S233T1722366392.25"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib__.ml" {"F:S369T1722366392.25"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib__Yojson_conv.cmi"
+    {"F:S12849T1722366392.25"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib__Yojson_conv.cmt"
+    {"F:S92556T1722366392.25"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib__Yojson_conv.cmti"
+    {"F:S63689T1722366392.25"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib__Yojson_conv.cmx"
+    {"F:S7239T1722366392.27"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib__Yojson_conv_error.cmi"
+    {"F:S4516T1722366392.27"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib__Yojson_conv_error.cmt"
+    {"F:S45031T1722366392.27"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib__Yojson_conv_error.cmx"
+    {"F:S8083T1722366392.27"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib__Yojsonable_intf.cmi"
+    {"F:S2881T1722366392.27"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib__Yojsonable_intf.cmt"
+    {"F:S12828T1722366392.27"}
+  "lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib__Yojsonable_intf.cmx"
+    {"F:S636T1722366392.27"}
+  "lib/ppx_yojson_conv_lib/yojson_conv.ml" {"F:S7130T1722366392.27"}
+  "lib/ppx_yojson_conv_lib/yojson_conv.mli" {"F:S10732T1722366392.27"}
+  "lib/ppx_yojson_conv_lib/yojson_conv_error.ml" {"F:S3643T1722366392.27"}
+  "lib/ppx_yojson_conv_lib/yojsonable_intf.ml" {"F:S907T1722366392.27"}
+]
