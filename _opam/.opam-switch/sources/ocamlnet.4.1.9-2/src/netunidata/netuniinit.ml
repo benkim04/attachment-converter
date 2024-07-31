@@ -1,4 +1,0 @@
-(* $Id$ *)
-
-Netunichecksums.init()
-

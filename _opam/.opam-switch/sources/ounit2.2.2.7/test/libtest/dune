@@ -1,4 +1,0 @@
-(library
- (name libtest)
- (wrapped false)
- (libraries str ounit2 ounit2.advanced testcommon))

@@ -1,7 +1,0 @@
-version = "0.7"
-description = ""
-requires = ""
-archive(byte) = "pecu.cma"
-archive(native) = "pecu.cmxa"
-plugin(byte) = "pecu.cma"
-plugin(native) = "pecu.cmxs"

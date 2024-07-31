@@ -1,4 +1,0 @@
-(library
-  (name trie)
-  (public_name trie)
-  (flags (:standard -safe-string)))

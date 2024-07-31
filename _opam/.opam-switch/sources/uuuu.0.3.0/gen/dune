@@ -1,3 +1,0 @@
-(executable
- (name generate)
- (public_name uuuu.generate))

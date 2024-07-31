@@ -1,4 +1,0 @@
-(* $Id$ *)
-
-Qserver.main()
-;;

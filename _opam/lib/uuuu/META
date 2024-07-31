@@ -1,7 +1,0 @@
-version = "0.3.0"
-description = ""
-requires = ""
-archive(byte) = "uuuu.cma"
-archive(native) = "uuuu.cmxa"
-plugin(byte) = "uuuu.cma"
-plugin(native) = "uuuu.cmxs"

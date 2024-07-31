@@ -1,6 +1,0 @@
-(library
-  (name test)
-  (flags (:standard -safe-string))
-  (libraries mew_vi)
-  (inline_tests)
-  (preprocess (pps ppx_expect)))

@@ -1,4 +1,0 @@
-(lang dune 2.7)
-(name mrmime)
-(version v0.6.1)
-(cram enable)

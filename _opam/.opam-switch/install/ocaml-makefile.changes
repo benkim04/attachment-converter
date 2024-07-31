@@ -1,5 +1,0 @@
-opam-version: "2.0"
-added: [
-  "lib/ocaml-makefile" {"D"}
-  "lib/ocaml-makefile/OCamlMakefile" {"F:S35483T1722365278.61"}
-]

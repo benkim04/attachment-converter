@@ -1,4 +1,0 @@
-(lang dune 1.0)
-(name uuuu)
-(version v0.3.0)
-(using menhir 1.0)
