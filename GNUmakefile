@@ -140,20 +140,9 @@ pkg-opam:
 	opam init --yes --yes --disable-sandboxing
 .PHONY: pkg-opam
 
-pkg-opam-deps.maketrack: pkg-opam cd-home deps
-	eval $$(opam env)
-	touch opam-deps.maketrack
-	touch os-deps.maketrack
-
-pkg-opam-install::
+pkg-build: pkg-opam cd-home deps
 	eval $$(opam env)
 	$(call DUNE,build)
-.PHONY: pkg-opam-install
-
-pkg-install: pkg-opam-deps.maketrack pkg-opam-install
-	@eval `opam env`
-#	@echo "Installing to $(HOME_DESTDIR)/bin/attc..."
-#	cp $(shell opam var bin)/attc $(HOME_DESTDIR)/bin
 	cd $(PROJECT_ROOT)
 .PHONY: pkg-install
 
