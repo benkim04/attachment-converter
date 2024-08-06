@@ -156,3 +156,19 @@ pkg-install: pkg-opam-deps.maketrack pkg-opam-install
 #	cp $(shell opam var bin)/attc $(HOME_DESTDIR)/bin
 	cd $(PROJECT_ROOT)
 .PHONY: pkg-install
+
+dep-opam:
+	cd $(PROJECT_ROOT)
+	tar -xzf opampack.tar.gz
+	./opampack/install.sh
+	export OPAMROOT=$(PROJECT_ROOT)/opampack/OPAMROOT
+	eval $$(opam env --root=$(PROJECT_ROOT)/opampack/opamroot --switch=opampack --set-switch --set-root)
+	ls
+	ls opampack/opamroot/opampack/bin
+	file opampack/opamroot/opampack/bin/dune
+	pwd
+	echo $(PROJECT_ROOT)
+	echo $$(OPAMROOT)
+
+deb-install: dep-opam
+	opam exec --root=$(PROJECT_ROOT)/opampack/opamroot --switch=opampack -- dune build --display short
