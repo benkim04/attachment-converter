@@ -144,7 +144,7 @@ pkg-build: pkg-opam cd-home deps
 	eval $$(opam env)
 	$(call DUNE,build)
 	cd $(PROJECT_ROOT)
-.PHONY: pkg-install
+.PHONY: pkg-build
 
 dep-opam:
 	cd $(PROJECT_ROOT)
