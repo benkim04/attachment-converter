@@ -1,4 +1,6 @@
 open Prelude
+module E = Mime_type_error
+module Trace = Error.T
 
 module Type = struct
   type t =
@@ -51,20 +53,17 @@ module Subtype = struct
     of_string
       "vnd.openxmlformats-officedocument.wordprocessingml.document"
 
-  let excel = of_string "vnd.ms-excel"
+  let xls = of_string "vnd.ms-excel"
+
+  let xlsx =
+    of_string
+      "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+
   let tsv = of_string "tab-separated-values"
   let gif = of_string "gif"
   let bmp = of_string "bmp"
   let tiff = of_string "tiff"
   let jpeg = of_string "jpeg"
-end
-
-module Error = struct
-  type t = [`MimeType]
-
-  let message err =
-    match err with
-    | `MimeType -> "Cannot parse mime type"
 end
 
 type t = { typ : Type.t; subtype : Subtype.t }
@@ -79,11 +78,11 @@ let to_string mt =
   ^ Subtype.to_string (subtype mt)
 
 let of_string s =
+  let open Trace in
+  let open E.Smart in
   let ( let* ) = Result.( >>= ) in
   let ty_str, opt_subty_str = String.cut ~sep:"/" s in
-  let* subty_str =
-    Result.of_option `MimeType opt_subty_str
-  in
+  let* subty_str = of_option parse_err opt_subty_str in
   let mt =
     make
       (Type.of_string ty_str)
@@ -103,6 +102,8 @@ let extension mt =
   | "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
     -> ".docx"
   | "application/vnd.ms-excel" -> ".xls"
+  | "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    -> ".xlsx"
   | _ -> ".unknown"
 (* TODO: default to no extension should be logged *)
 
@@ -114,7 +115,8 @@ let pdfa = make Type.application Subtype.pdf
 let txt = make Type.text Subtype.plain
 let doc = make Type.application Subtype.msword
 let docx = make Type.application Subtype.docx_subty
-let xls = make Type.application Subtype.excel
+let xls = make Type.application Subtype.xls
+let xlsx = make Type.application Subtype.xlsx
 let tsv = make Type.text Subtype.tsv
 let gif = make Type.image Subtype.gif
 let bmp = make Type.image Subtype.bmp

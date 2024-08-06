@@ -99,7 +99,7 @@ module StringInput :
 
   exception End_of_input
 
-  let create s = { lines = String.split ~sep:"\r\n" s }
+  let create s = { lines = String.split ~sep:"\n" s }
 
   let next t =
     try
@@ -139,10 +139,11 @@ struct
         if Buffer.length t.buf > 0
         then (fromline, Buffer.contents t.buf)
         else read () )
-      else (
+      else begin
         Buffer.add_string t.buf line ;
-        Buffer.add_string t.buf (eol CRLF) ;
-        read () )
+        Buffer.add_string t.buf (eol LF) ;
+        read ()
+      end
     in
     try read ()
     with I.End_of_input ->
@@ -186,23 +187,9 @@ module ToOutput = struct
         match C.acopy_email ~idem config em pbar with
         | Ok converted -> fromline ^ "\n" ^ converted
         | Error _ ->
-          let open ErrorHandling.Printer in
-          print "conversion failure\n" ;
+          Utils.print_err "conversion failure\n" ;
           fromline ^ "\n" ^ em (* TODO: better logging *)
       in
       Ok (convert_mbox in_chan converter)
   end
 end
-
-(*
- * A simple utility function for reading in emails
- * and replacing newlines
- *)
-let read_email ic =
-  let buf = Buffer.create 50000 in
-  let rec read () =
-    Buffer.add_string buf (readline ic) ;
-    Buffer.add_string buf (eol CRLF) ;
-    read ()
-  in
-  try read () with End_of_file -> Buffer.contents buf

@@ -1,5 +1,6 @@
 open Prelude
 open Utils
+module Trace = Error.T
 
 module Attachment = struct
   type 'a t = { header : 'a; data : string }
@@ -16,19 +17,72 @@ let gen_multi_header =
         (Field.Value.make "multipart/mixed"
            ~params:
              [ Field.Value.Parameter.make "boundary"
-                 "attachment converter generated boundary"
+                 "attachmentconvertergeneratedboundary"
              ] );
       Field.make Constants.meta_header_name
         (Field.Value.make "generated multipart")
     ]
 
-module type PARSETREE = sig
-  module Error : ERROR
+module type LINE_FEED = sig
+  type t = Dos | Unix
 
+  val figure_out_line_ending : string -> t
+  val remove_crs : string -> string
+  val add_crs : string -> string
+end
+
+module Line_feed : LINE_FEED = struct
+  type t = Dos | Unix
+
+  let figure_out_line_ending email_string =
+    let open Prelude.String in
+    let not_cr c = not (contains "\r\n" c) in
+    match dropwhile not_cr email_string with
+    | "" -> Unix
+    | nonempty -> begin
+      match nonempty.[0] with
+      | '\r' -> Dos
+      | _ -> Unix
+    end
+
+  let remove_crs str =
+    let b = Buffer.create 0 in
+    let mk_new_string () =
+      let each_char c =
+        match c with
+        | '\r' -> ()
+        | _ -> Buffer.add_char b c
+      in
+      String.iter each_char str
+    in
+    mk_new_string () ;
+    Buffer.contents b
+
+  let add_crs str =
+    let b = Buffer.create 0 in
+    let mk_new_string () =
+      let each_char c =
+        match c with
+        | '\n' ->
+          Buffer.add_char b '\r' ;
+          Buffer.add_char b '\n'
+        | _ -> Buffer.add_char b c
+      in
+      String.iter each_char str
+    in
+    mk_new_string () ;
+    Buffer.contents b
+end
+
+module type PARSETREE = sig
   type t
 
-  val of_string : string -> (t, Error.t) result
-  val to_string : t -> string
+  val of_string_line_feed :
+    string -> (t * Line_feed.t, Error.t) result
+
+  val to_string_line_feed :
+    ?line_feed:Line_feed.t -> t -> string
+
   val of_list : t list -> t
 
   type header
@@ -74,13 +128,9 @@ module Parsetree_utils (T : PARSETREE) = struct
 end
 
 module Mrmime_parsetree = struct
+  module E = Parsetree_error
+
   exception HeaderRepresentationError
-
-  module Error = struct
-    type t = [`EmailParse]
-
-    let message _ = "Error parsing email"
-  end
 
   type t = Mrmime.Header.t * string Mrmime.Mail.t option
   type header = Mrmime.Header.t
@@ -90,9 +140,31 @@ module Mrmime_parsetree = struct
     Angstrom.parse_string ~consume:All
       (Mrmime.Mail.mail None)
     >> Result.map (fun (h, b) -> (h, Some b))
-    >> Result.witherr (k `EmailParse)
+    >> flip Result.on_error
+         (k (Trace.throw E.Smart.parse_err))
+
+  let of_string_line_feed email_str =
+    let ( let* ) = Result.( >>= ) in
+    let lf_type =
+      Line_feed.figure_out_line_ending email_str
+    in
+    let processed =
+      match lf_type with
+      | Unix -> Line_feed.add_crs email_str
+      | Dos -> email_str
+    in
+    let* parsed = of_string processed in
+    Ok (parsed, lf_type)
 
   let to_string = Serialize.(make >> to_string)
+
+  let to_string_line_feed ?(line_feed = Line_feed.Unix) tree
+      =
+    let preliminary_output = to_string tree in
+    match line_feed with
+    | Unix -> Line_feed.remove_crs preliminary_output
+    | Dos -> preliminary_output
+
   let header = fst
 
   let make_header h =
@@ -120,7 +192,7 @@ module Mrmime_parsetree = struct
       ( Prettym.to_string ~margin:Constants.max_line_length
           Mrmime.Unstructured.Encoder.unstructured
       >> Header.Field.Value.of_string
-      >> Result.to_option )
+      >> fun x -> Some x )
         data
     | _ -> None
 
@@ -236,11 +308,7 @@ end
 module _ : PARSETREE = Mrmime_parsetree
 
 module Ocamlnet_parsetree = struct
-  module Error = struct
-    type t = [`EmailParse]
-
-    let message _ = "Error parsing email"
-  end
+  module E = Parsetree_error
 
   type t = Netmime.complex_mime_message
   type header = Netmime.mime_header
@@ -254,11 +322,21 @@ module Ocamlnet_parsetree = struct
         ~multipart_style:`Deep ch
     in
     Result.trapc
-      `EmailParse (* TODO: Better Error Handling *)
+      (Trace.new_list E.Smart.parse_err)
+      (* TODO: Better Error Handling *)
       (Netchannels.with_in_obj_channel ch)
       f
 
-  let to_string tree =
+  let of_string_line_feed email_str =
+    let ( let* ) = Result.( >>= ) in
+    let lf_type =
+      Line_feed.figure_out_line_ending email_str
+    in
+    let* processed = of_string email_str in
+    Ok (processed, lf_type)
+
+  let to_string_line_feed ?(line_feed = Line_feed.Unix) tree
+      =
     let header, _ = tree in
     (* defaulting to a megabyte seems like a nice round
        number *)
@@ -267,9 +345,13 @@ module Ocamlnet_parsetree = struct
         Netmime_header.get_content_length header
     in
     let buf = Stdlib.Buffer.create n in
+    let crlf =
+      match line_feed with
+      | Dos -> Some true
+      | Unix -> Some false
+    in
     let channel_writer ch =
-      Netmime_channels.write_mime_message ?crlf:(Some false)
-        ch tree
+      Netmime_channels.write_mime_message ?crlf ch tree
     in
     Netchannels.with_out_obj_channel
       (new Netchannels.output_buffer buf)
@@ -293,8 +375,7 @@ module Ocamlnet_parsetree = struct
     match header#field field_name with
     | exception Not_found -> None
     | exception e -> raise e
-    | hv_str ->
-      Result.to_option (Header.Field.Value.of_string hv_str)
+    | hv_str -> Some (Header.Field.Value.of_string hv_str)
 
   let meta_val = lookup_value Constants.meta_header_name
 
@@ -589,8 +670,9 @@ module Conversion = struct
       let () =
         Progress_bar.Printer.print "Parsing email..." pbar
       in
-      let* tree =
-        Result.witherr (k `EmailParse) (T.of_string email)
+      let* tree, line_feed =
+        Trace.with_error Parsetree_error.Smart.parse_err
+          (T.of_string_line_feed email)
       in
       let convs =
         attachments_to_convert ~idem config tree
@@ -602,7 +684,7 @@ module Conversion = struct
             "Nothing to convert...\nProcessing complete."
             pbar
         in
-        Ok (T.to_string tree)
+        Ok email
       else
         let () =
           let skel_str =
@@ -648,7 +730,7 @@ module Conversion = struct
           in
           Progress_bar.Printer.print msg pbar
         in
-        Ok (T.to_string converted_tree)
+        Ok (T.to_string_line_feed ~line_feed converted_tree)
   end
 end
 
@@ -660,7 +742,7 @@ module type CONVERTER = sig
     Configuration.Formats.t ->
     string ->
     out_channel ->
-    (string, [> `EmailParse]) result
+    (string, Error.t) result
 end
 
 module Ocamlnet_Converter =
