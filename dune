@@ -8,7 +8,7 @@
  (promote (until-clean))
  (libraries prelude lib mrmime threads netstring unix cmdliner))
 
-(data_only_dirs opampack/opamroot/opampack/bin)
+(data_only_dirs opampack opamroot bin)
 
 (env
  (dev ; make warnings non-fatal
