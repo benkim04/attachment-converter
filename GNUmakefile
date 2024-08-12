@@ -135,7 +135,7 @@ install: shell-copy opam-install
 	mv _build/default/main.exe $(DESTDIR)/bin/attc
 .PHONY: install
 
-# Homebrew, ARCH, and Debian specific Targets
+# Homebrew and ARCH specific Targets
 pkg-opam:
 	opam init --yes --yes --disable-sandboxing
 .PHONY: pkg-opam
@@ -145,19 +145,3 @@ pkg-build: pkg-opam cd-home deps
 	$(call DUNE,build)
 	cd $(PROJECT_ROOT)
 .PHONY: pkg-build
-
-dep-opam:
-	cd $(PROJECT_ROOT)
-	tar -xzf opampack.tar.gz
-	./opampack/install.sh
-	export OPAMROOT=$(PROJECT_ROOT)/opampack/OPAMROOT
-	eval $$(opam env --root=$(PROJECT_ROOT)/opampack/opamroot --switch=opampack --set-switch --set-root)
-	ls
-	ls opampack/opamroot/opampack/bin
-	file opampack/opamroot/opampack/bin/dune
-	pwd
-	echo $(PROJECT_ROOT)
-	echo $$(OPAMROOT)
-
-deb-install: dep-opam
-	opam exec --root=$(PROJECT_ROOT)/opampack/opamroot --switch=opampack -- dune build --display short
