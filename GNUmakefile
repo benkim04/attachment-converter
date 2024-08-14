@@ -57,6 +57,7 @@ clean: $(SUBCLEANS)		## clean up build artifacts
 	eval $$(opam env)
 	$(call DUNE,clean)
 	rm -f $(wildcard *.maketrack)
+	rm -fr opampack
 .PHONY: clean
 
 sandbox::

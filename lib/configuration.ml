@@ -82,7 +82,18 @@ module ConvUtil = struct
   let envoke ut = ut.envoke
 
   let default_script_dir () =
-    File.squiggle "/opt/homebrew/Cellar/attc/0.1.19/lib/"
+    let paths = [
+      "/opt/homebrew/Cellar/attc/" ^ Version.ver_num ^ "/lib/";
+      "/usr/local/Cellar/attc/" ^ Version.ver_num ^ "/lib/";
+      "/usr/lib/attachment-converter/scripts/"
+    ] in
+    let rec find_existing_path = function
+      | [] -> failwith "No valid script directory found."
+      | path :: rest ->
+          if Sys.file_exists path then path
+          else find_existing_path rest
+    in
+    find_existing_path paths
 
   let script_call nm mt1 mt2 =
     let open Mime_type in
