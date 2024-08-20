@@ -1,0 +1,26 @@
+opam-version: "2.0"
+synopsis: "OCaml standard library additions and renamings"
+maintainer: "Keith WACLENA <keith@lib.uchicago.edu>"
+authors: "Keith WACLENA <keith@lib.uchicago.edu>"
+license: "GPL-3.0"
+homepage: "https://www.lib.uchicago.edu/keith/software/prelude/"
+bug-reports: "Keith WACLENA <keith@lib.uchicago.edu>"
+depends: [
+  "camlp-streams"
+  "ctypes" {with-test}
+  "ctypes-foreign" {with-test}
+  "ocamlbuild" {with-test}
+  "ounit2" {with-test}
+  "qcheck" {with-test}
+  "ocamlfind" {build}
+  "ocaml-makefile" {build}
+]
+build: [make "all"]
+install: [make "install"]
+remove: [make "uninstall"]
+dev-repo: "hg+file:///home/keith/src/prelude"
+url {
+  src: "https://www.lib.uchicago.edu/keith/hg/prelude.tar.gz"
+  checksum:
+    "sha256=fb3546dc26c3a1d5da0d8c7e4d2e52f0eecca8ce1ef1f117c1fe0d4bb867540a"
+}
