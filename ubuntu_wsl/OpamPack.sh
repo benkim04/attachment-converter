@@ -55,7 +55,8 @@ for p in $PACKAGES ; do
   mv packages_old/$p packages
 done
 
-mv ../prelude.100.0 packages/prelude/
+rm -r packages/prelude/*
+cp -r ../prelude.100.0 packages/prelude/
 
 # Remove unnecessary packages and git files
 
@@ -63,6 +64,35 @@ rm -rf packages_old
 rm -rf .git
 cd ..
 
+rm -rf opamroot
+mkdir opamroot
+
+
+
+# Set it as the default OPAM root directory
+
+export OPAMROOT=$PWD/opamroot
+
+
+
+# Initialize it as an Opam repository, without creating a switch to
+# prevent the installation of an OCaml compiler.
+
+echo n \
+    | opam init \
+             --bare \
+             --disable-sandboxing \
+             --disable-shell-hook \
+             --root=$PWD/opamroot \
+             $PWD/opam-repository
+eval $(opam env)
+
+
+
+# Create an empty switch named =opampack=
+
+opam switch create --empty opampack
+eval $(opam env --switch=opampack)
 
 # Download all the required packages for the installation
 
@@ -76,9 +106,9 @@ INSTALL_SCRIPT=install.sh
 
 cat << EOF > $INSTALL_SCRIPT
 #!/bin/bash
-export OPAMROOT=\$PWD/opamroot
-eval \$(./opam env --root=\$PWD/opamroot)
-./opam install -y --assume-depexts $USER_PACKAGES
+export OPAMROOT=\$PWD/ubuntu_wsl/opamroot
+eval \$(opam env --root=\$PWD/ubuntu_wsl/opamroot)
+opam install -y --assume-depexts $USER_PACKAGES
 EOF
 chmod +x $INSTALL_SCRIPT
 
@@ -87,5 +117,5 @@ chmod +x $INSTALL_SCRIPT
 # Make a =tar.gz= of all the needed files for exporting OPAM
 
 cd ..  # back in _build
-tar -zcvf opampack.tar.gz opampack
-rm -rf opampack
+tar -zcvf opampack.tar.gz ubuntu_wsl
+rm -rf ubuntu_wsl
