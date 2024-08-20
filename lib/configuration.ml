@@ -87,13 +87,14 @@ module ConvUtil = struct
       "/usr/local/Cellar/attc/" ^ Version.ver_num ^ "/lib/";
       "/usr/lib/attachment-converter/scripts/"
     ] in
-    let rec find_existing_path = function
+    let rec find_path = function
+    (* TODO: Integrate existing error handling functionality *)
       | [] -> failwith "No valid script directory found."
       | path :: rest ->
           if Sys.file_exists path then path
-          else find_existing_path rest
+          else find_path rest
     in
-    find_existing_path paths
+    find_path paths
 
   let script_call nm mt1 mt2 =
     let open Mime_type in
