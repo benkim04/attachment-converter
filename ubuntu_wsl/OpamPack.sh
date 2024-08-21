@@ -56,7 +56,7 @@ for p in $PACKAGES ; do
 done
 
 rm -r packages/prelude/*
-cp -r ../prelude.100.0 packages/prelude/
+cp -r ../prelude.100.1 packages/prelude/
 
 # Remove unnecessary packages and git files
 
@@ -117,5 +117,5 @@ chmod +x $INSTALL_SCRIPT
 # Make a =tar.gz= of all the needed files for exporting OPAM
 
 cd ..  # back in _build
-tar -zcvf opampack.tar.gz ubuntu_wsl
+tar -zcf opampack.tar.gz ubuntu_wsl
 rm -rf ubuntu_wsl
