@@ -1,7 +1,7 @@
 #!/bin/bash
 # Initialization
 
-USER_PACKAGES="ocaml.4.14.2 ocamlbuild dune ocamlfind mrmime ocamlnet camlp-streams ounit2 cmdliner utop ocamlformat-rpc ocaml-lsp-server prelude"
+USER_PACKAGES="ocaml.4.14.2 ocaml-base-compiler.4.14.2 ocamlbuild dune ocamlfind mrmime ocamlnet camlp-streams ounit2 cmdliner utop ocamlformat-rpc ocaml-lsp-server prelude"
 
 git clone https://github.com/ocaml/opam-repository.git --depth=1
 
